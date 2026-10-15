@@ -1,0 +1,62 @@
+company,symbol,board,sector,industry,listing_date,price_band,issue_price,listing_open,listing_close,listing_open_gain_pct,current_price,current_gain_pct
+Bharti Hexacom Ltd.,BHARTIHEXA,mainboard,Communication Services,Telecom Services,2024-04-12,542-570,570.0,755.0,813.3,32.5,1570.3,175.5
+FSN E-Commerce Ventures Ltd.,NYKAA,mainboard,Consumer Cyclical,Internet Retail,2021-11-10,1085-1125,1125.0,2018.0,2205.8,79.4,336.5,-70.1
+Brainbees Solutions Ltd.,FIRSTCRY,mainboard,Consumer Cyclical,Internet Retail,2024-08-13,440-465,465.0,651.0,679.1,40.0,181.65,-60.9
+Swiggy Ltd.,SWIGGY,mainboard,Consumer Cyclical,Internet Retail,2024-11-13,371-390,390.0,420.0,456.0,7.7,230.95,-40.8
+Meesho Ltd.,MEESHO,mainboard,Consumer Cyclical,Internet Retail,2025-12-10,105-111,111.0,162.5,170.09,46.4,228.35,105.7
+Acevector Ltd.,ACEVECTOR,mainboard,Consumer Cyclical,Internet Retail,2026-10-05,30-32,32.0,28.32,26.08,-11.5,26.18,-18.2
+Indegene Ltd.,INDGN,mainboard,Healthcare,Health Information Services,2024-05-13,430-452,452.0,655.0,570.9,44.9,596.9,32.1
+Sagility India Ltd.,SAGILITY,mainboard,Healthcare,Health Information Services,2024-11-12,28-30,30.0,31.06,29.32,3.5,45.55,51.8
+Inventurus Knowledge Solutions Ltd.,IKS,mainboard,Healthcare,Health Information Services,2024-12-19,1265-1329,1329.0,1900.0,1960.85,43.0,1729.6,30.1
+Fabtech Technologies Ltd.,FABTECH,mainboard,Healthcare,Health Information Services,2025-10-07,181-191,191.0,192.0,182.4,0.5,134.56,-29.5
+Pace Digitek Ltd.,PACEDIGITK,mainboard,Technology,Communication Equipment,2025-10-06,208-219,219.0,225.0,217.99,2.7,166.04,-24.2
+ideaForge Technology Ltd.,IDEAFORGE,mainboard,Technology,Computer Hardware,2023-07-07,638-672,672.0,1300.0,1294.95,93.5,746.25,11.0
+Netweb Technologies India Ltd.,NETWEB,mainboard,Technology,Computer Hardware,2023-07-27,475-500,500.0,947.0,910.4,89.4,5067.7,913.5
+GNG Electronics Ltd.,EBGNG,mainboard,Technology,Computer Hardware,2025-07-30,225-237,237.0,355.0,333.39,49.8,729.4,207.8
+LG Electronics India Ltd.,LGEINDIA,mainboard,Technology,Consumer Electronics,2025-10-14,1080-1140,1140.0,1710.1,1689.9,50.0,1741.0,52.7
+Syrma SGS Technology Ltd.,SYRMA,mainboard,Technology,Electronic Components,2022-08-26,209-220,220.0,260.0,310.5,18.2,1692.2,669.2
+Kaynes Technology India Ltd.,KAYNES,mainboard,Technology,Electronic Components,2022-11-22,559-587,587.0,778.0,689.95,32.5,3275.0,457.9
+Avalon Technologies Ltd.,AVALON,mainboard,Technology,Electronic Components,2023-04-18,415-436,436.0,436.0,398.0,0.0,2282.5,423.5
+IKIO Lighting Ltd.,IKIO,mainboard,Technology,Electronic Components,2023-06-16,270-285,285.0,392.5,403.85,37.7,185.53,-34.9
+KRN Heat Exchanger & Refrigeration Ltd.,KRN,mainboard,Technology,Electronic Components,2024-10-03,209-220,220.0,480.0,478.79,118.2,1357.3,517.0
+Rashi Peripherals Ltd.,RPTECH,mainboard,Technology,Electronics & Computer Distribution,2024-02-14,295-311,311.0,339.5,321.5,9.2,906.7,191.5
+Protean eGov Technologies Ltd.,PROTEAN,mainboard,Technology,Information Technology Services,2023-11-13,752-792,792.0,792.0,883.0,0.0,664.95,-16.0
+Tata Technologies Ltd.,TATATECH,mainboard,Technology,Information Technology Services,2023-11-30,475-500,500.0,1200.0,1313.0,140.0,745.55,49.1
+Orient Technologies Ltd.,ORIENTTECH,mainboard,Technology,Information Technology Services,2024-08-28,195-206,206.0,288.0,302.4,39.8,233.55,13.4
+Hexaware Technologies Ltd.,HEXT,mainboard,Technology,Information Technology Services,2025-02-19,674-708,708.0,745.5,762.55,5.3,570.35,-19.4
+Ivalue Infosolutions Ltd.,IVALUE,mainboard,Technology,Information Technology Services,2025-09-25,284-299,299.0,284.95,281.85,-4.7,230.96,-22.8
+CSM Technologies Ltd.,CSM,mainboard,Technology,Information Technology Services,2026-07-02,107-113,113.0,113.0,107.35,0.0,91.27,-19.2
+Xtranet Technologies Ltd.,XTRANET,mainboard,Technology,Information Technology Services,2026-07-30,120-127,127.0,136.0,129.2,7.1,313.85,147.1
+ESDS Software Solution Ltd.,ESDS,mainboard,Technology,Information Technology Services,2026-09-04,408-429,429.0,757.0,908.4,76.5,1675.3,290.5
+ArMee Infotech Ltd.,ARMEE,mainboard,Technology,Information Technology Services,2026-09-30,350-375,375.0,375.0,300.0,0.0,248.6,-33.7
+SRIT India Ltd.,SRIT,mainboard,Technology,Information Technology Services,2026-10-06,123-130,130.0,148.0,155.09,13.8,126.04,-3.0
+Rishabh Instruments Ltd.,RISHABH,mainboard,Technology,Scientific & Technical Instruments,2023-09-11,418-441,441.0,460.05,443.15,4.3,695.95,57.8
+Tempsens Instruments (India) Ltd.,TEMPSENS,mainboard,Technology,Scientific & Technical Instruments,2026-08-28,285-300,300.0,634.0,586.65,111.3,587.05,95.7
+Rategain Travel Technologies Ltd.,RATEGAIN,mainboard,Technology,Software - Application,2021-12-17,405-425,425.0,360.0,340.05,-15.3,864.15,103.3
+eMudhra Ltd.,EMUDHRA,mainboard,Technology,Software - Application,2022-06-01,243-256,256.0,270.0,257.9,5.5,549.8,114.8
+Tracxn Technologies Ltd.,TRACXN,mainboard,Technology,Software - Application,2022-10-20,75-80,80.0,84.5,93.25,5.6,31.92,-60.1
+KFin Technologies Ltd.,KFINTECH,mainboard,Technology,Software - Application,2022-12-29,347-366,366.0,367.0,363.85,0.3,879.5,140.3
+Unicommerce eSolutions Ltd.,UNIECOM,mainboard,Technology,Software - Application,2024-08-13,102-108,108.0,235.0,210.08,117.6,85.49,-20.8
+Zinka Logistics Solutions Ltd.,BLACKBUCK,mainboard,Technology,Software - Application,2024-11-22,259-273,273.0,279.05,260.2,2.2,598.65,119.3
+Urban Co.Ltd.,URBANCO,mainboard,Technology,Software - Application,2025-09-17,98-103,103.0,162.25,166.83,57.5,161.79,57.1
+Capillary Technologies India Ltd.,CAPILLARY,mainboard,Technology,Software - Application,2025-11-21,549-577,577.0,571.9,606.5,-0.9,553.55,-4.1
+Excelsoft Technologies Ltd.,EXCELSOFT,mainboard,Technology,Software - Application,2025-11-26,114-120,120.0,135.0,125.97,12.5,85.81,-28.5
+Amagi Media Labs Ltd.,AMAGI,mainboard,Technology,Software - Application,2026-01-21,343-361,361.0,318.0,348.25,-11.9,570.95,58.2
+Shiprocket Ltd.,SHIPROCKET,mainboard,Technology,Software - Application,2026-08-19,92-97,97.0,131.0,143.45,35.1,134.53,38.7
+Moneyview Ltd.,MONEYVIEW,mainboard,Technology,Software - Application,2026-10-01,32-34,34.0,55.0,53.88,61.8,62.45,83.7
+One 97 Communications Ltd.,PAYTM,mainboard,Technology,Software - Infrastructure,2021-11-18,2080-2150,2150.0,1950.0,1560.8,-9.3,1712.4,-20.4
+C.E.Info systems Ltd.,MAPMYINDIA,mainboard,Technology,Software - Infrastructure,2021-12-21,1000-1033,1033.0,1565.0,1393.65,51.5,924.5,-10.5
+AGS Transact Technologies Ltd.,AGSTRA,mainboard,Technology,Software - Infrastructure,2022-01-31,166-175,175.0,175.0,161.05,0.0,2.21,-98.7
+Zaggle Prepaid Ocean Services Ltd.,ZAGGLE,mainboard,Technology,Software - Infrastructure,2023-09-22,156-164,164.0,164.0,158.35,0.0,171.22,4.4
+One Mobikwik Systems Ltd.,MOBIKWIK,mainboard,Technology,Software - Infrastructure,2024-12-18,265-279,279.0,440.0,528.0,57.7,242.23,-13.2
+Seshaasai Technologies Ltd.,STYL,mainboard,Technology,Software - Infrastructure,2025-09-30,402-423,423.0,432.0,411.45,2.1,344.7,-18.5
+Pine Labs Ltd.,PINELABS,mainboard,Technology,Software - Infrastructure,2025-11-14,210-221,221.0,242.0,250.89,9.5,167.73,-24.1
+Fractal Analytics Ltd.,FRACTAL,mainboard,Technology,Software - Infrastructure,2026-02-16,857-900,900.0,876.0,847.15,-2.7,721.05,-19.9
+Manipal Payment & Identity Solutions Ltd.,MPIMANIPAL,mainboard,Technology,Software - Infrastructure,2026-09-17,322-339,339.0,330.0,345.15,-2.7,354.05,4.4
+Premier Energies Ltd.,PREMIERENE,mainboard,Technology,Solar,2024-09-03,427-450,450.0,990.0,839.9,120.0,923.0,105.1
+Waaree Energies Ltd.,WAAREEENER,mainboard,Technology,Solar,2024-10-28,1427-1503,1503.0,2500.0,2338.9,66.3,2516.0,67.4
+Vikram Solar Ltd.,VIKRAMSOLR,mainboard,Technology,Solar,2025-08-26,315-332,332.0,338.0,356.4,1.8,146.75,-55.8
+Solarworld Energy Solutions Ltd.,SOLARWORLD,mainboard,Technology,Solar,2025-09-30,333-351,351.0,388.5,323.5,10.7,127.82,-63.6
+Emmvee Photovoltaic Power Ltd.,EMMVEE,mainboard,Technology,Solar,2025-11-18,206-217,217.0,217.0,219.4,0.0,299.4,38.0
+Fujiyama Power Systems Ltd.,UTLSOLAR,mainboard,Technology,Solar,2025-11-20,216-228,228.0,220.0,208.44,-3.5,418.45,83.5
+Karamtara Engineering Ltd.,KARAMTARA,mainboard,Technology,Solar,2026-09-17,241-254,254.0,320.0,352.0,26.0,381.8,50.3

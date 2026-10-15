@@ -1,0 +1,450 @@
+company,symbol,board,sector,industry,listing_date,price_band,issue_price,listing_open,listing_close,listing_open_gain_pct,current_price,current_gain_pct
+Heranba Industries Ltd.,HERANBA,mainboard,Basic Materials,Agricultural Inputs,2021-03-05,626-627,627.0,900.0,627.0,43.5,166.65,-73.4
+India Pesticides Ltd.,IPL,mainboard,Basic Materials,Agricultural Inputs,2021-07-05,290-296,296.0,350.0,343.15,18.2,128.01,-56.8
+Paradeep Phosphates Ltd.,PARADEEP,mainboard,Basic Materials,Agricultural Inputs,2022-05-27,39-42,42.0,44.0,43.9,4.8,144.26,243.5
+Dharmaj Crop Guard Ltd.,DHARMAJ,mainboard,Basic Materials,Agricultural Inputs,2022-12-08,216-237,237.0,266.05,266.3,12.3,260.05,9.7
+Nova AgriTech Ltd.,NOVAAGRI,mainboard,Basic Materials,Agricultural Inputs,2024-01-31,39-41,41.0,55.0,57.75,34.1,21.6,-47.3
+Indogulf Cropsciences Ltd.,IGCL,mainboard,Basic Materials,Agricultural Inputs,2025-07-03,105-111,111.0,111.0,110.35,0.0,56.42,-49.2
+Advance Agrolife Ltd.,ADVANCE,mainboard,Basic Materials,Agricultural Inputs,2025-10-08,95-100,100.0,114.0,108.3,14.0,155.67,55.7
+GSP Crop Science Ltd.,GSPCROP,mainboard,Basic Materials,Agricultural Inputs,2026-03-24,304-320,320.0,328.0,356.25,2.5,467.0,45.9
+CMR Green Technologies Ltd.,CMRGREEN,mainboard,Basic Materials,Aluminum,2026-06-10,182-192,192.0,268.0,241.2,39.6,216.57,12.8
+Nuvoco Vistas Corp.Ltd.,NUVOCO,mainboard,Basic Materials,Building Materials,2021-08-23,560-570,570.0,485.0,531.7,-14.9,321.15,-43.7
+Global Surfaces Ltd.,GSLSU,mainboard,Basic Materials,Building Materials,2023-03-23,133-140,140.0,164.0,171.05,17.1,25.92,-81.5
+JSW Cement Ltd.,JSWCEMENT,mainboard,Basic Materials,Building Materials,2025-08-14,139-147,147.0,153.5,146.07,4.4,114.7,-22.0
+Euro Pratik Sales Ltd.,EUROPRATIK,mainboard,Basic Materials,Building Materials,2025-09-23,235-247,247.0,272.1,248.38,10.2,163.37,-33.9
+Midwest Ltd.,MIDWESTLTD,mainboard,Basic Materials,Building Materials,2025-10-24,1014-1065,1065.0,1165.0,1140.5,9.4,1000.15,-6.1
+Varmora Granito Ltd.,VARMORA,mainboard,Basic Materials,Building Materials,2026-09-29,140-148,148.0,155.0,152.19,4.7,133.11,-10.1
+Vishal Nirmiti Ltd.,VNL,mainboard,Basic Materials,Building Materials,2026-10-08,208-220,220.0,215.0,204.25,-2.3,166.38,-24.4
+Sanstar Ltd.,SANSTAR,mainboard,Basic Materials,Chemicals,2024-07-26,90-95,95.0,109.0,115.07,14.7,98.04,3.2
+Godavari Biorefineries Ltd.,GODAVARIB,mainboard,Basic Materials,Chemicals,2024-10-30,334-352,352.0,308.0,343.2,-12.5,228.62,-35.1
+Ellenbarrie Industrial Gases Ltd.,ELLEN,mainboard,Basic Materials,Chemicals,2025-07-01,380-400,400.0,486.0,534.6,21.5,345.85,-13.5
+Gem Aromatics Ltd.,GEMAROMA,mainboard,Basic Materials,Chemicals,2025-08-26,309-325,325.0,333.1,319.05,2.5,149.28,-54.1
+Bharat Coking Coal Ltd.,BHARATCOAL,mainboard,Basic Materials,Coking Coal,2026-01-19,21-23,23.0,45.0,40.58,95.7,32.75,42.4
+J.G.Chemicals Ltd.,JGCHEM,mainboard,Basic Materials,Other Industrial Metals & Mining,2024-03-13,210-221,221.0,209.0,184.8,-5.4,681.7,208.5
+Jain Resource Recycling Ltd.,JAINREC,mainboard,Basic Materials,Other Industrial Metals & Mining,2025-10-01,220-232,232.0,265.05,318.06,14.2,287.2,23.8
+Central Mine Planning & Design Institute Ltd.,CMPDI,mainboard,Basic Materials,Other Industrial Metals & Mining,2026-03-30,163-172,172.0,160.0,154.06,-7.0,206.8,20.2
+Indigo Paints Ltd.,INDIGOPNTS,mainboard,Basic Materials,Specialty Chemicals,2021-02-02,1488-1490,1490.0,2607.5,3117.15,75.0,1018.9,-31.6
+Anupam Rasayan India Ltd.,ANURAS,mainboard,Basic Materials,Specialty Chemicals,2021-03-24,553-555,555.0,520.0,526.8,-6.3,1187.0,113.9
+Laxmi Organic Industries Ltd.,LXCHEM,mainboard,Basic Materials,Specialty Chemicals,2021-03-25,129-130,130.0,155.5,164.45,19.6,183.57,41.2
+Clean Science & Technology Ltd.,CLEAN,mainboard,Basic Materials,Specialty Chemicals,2021-07-19,880-900,900.0,1755.0,1585.25,95.0,818.6,-9.0
+Tatva Chintan Pharma Chem Ltd.,TATVA,mainboard,Basic Materials,Specialty Chemicals,2021-07-29,1073-1083,1083.0,2111.85,2312.2,95.0,1940.6,79.2
+HP Adhesives Ltd.,HPAL,mainboard,Basic Materials,Specialty Chemicals,2021-12-27,262-274,274.0,315.0,330.75,15.0,34.05,-87.6
+Aether Industries Ltd.,AETHER,mainboard,Basic Materials,Specialty Chemicals,2022-06-03,610-642,642.0,704.0,774.4,9.7,1682.6,162.1
+Platinum Industries Ltd.,PLATIND,mainboard,Basic Materials,Specialty Chemicals,2024-03-05,162-171,171.0,225.0,221.2,31.6,203.28,18.9
+Kronox Lab Sciences Ltd.,KRONOX,mainboard,Basic Materials,Specialty Chemicals,2024-06-10,129-136,136.0,164.95,159.32,21.3,218.79,60.9
+Stallion India Fluorochemicals Ltd.,STALLION,mainboard,Basic Materials,Specialty Chemicals,2025-01-23,85-90,90.0,120.0,126.0,33.3,210.19,133.5
+Prasol Chemicals Ltd.,PRASOLCHEM,mainboard,Basic Materials,Specialty Chemicals,2026-09-16,643-676,676.0,610.0,671.0,-9.8,791.2,17.0
+Venus Pipes & Tubes Ltd.,VENUSPIPES,mainboard,Basic Materials,Steel,2022-05-24,310-326,326.0,337.5,354.35,3.5,1971.1,504.6
+Ratnaveer Precision Engineering Ltd.,RATNAVEER,mainboard,Basic Materials,Steel,2023-09-11,93-98,98.0,123.2,129.35,25.7,328.4,235.1
+Vibhor Steel Tubes Ltd.,VSTL,mainboard,Basic Materials,Steel,2024-02-20,141-151,151.0,425.0,446.25,181.5,103.54,-31.4
+Vraj Iron & Steel Ltd.,VRAJ,mainboard,Basic Materials,Steel,2024-07-03,195-207,207.0,240.0,252.0,15.9,121.26,-41.4
+Bansal Wire Industries Ltd.,BANSALWIRE,mainboard,Basic Materials,Steel,2024-07-10,243-256,256.0,356.0,350.35,39.1,314.0,22.7
+Scoda Tubes Ltd.,SCODATUBES,mainboard,Basic Materials,Steel,2025-06-04,130-140,140.0,140.0,147.0,0.0,121.57,-13.2
+Sambhv Steel Tubes Ltd.,SAMBHV,mainboard,Basic Materials,Steel,2025-07-02,77-82,82.0,110.0,97.59,34.1,163.85,99.8
+VMS TMT Ltd.,VMSTMT,mainboard,Basic Materials,Steel,2025-09-24,94-99,99.0,104.9,99.65,6.0,45.73,-53.8
+BMW Ventures Ltd.,BMWVENTLTD,mainboard,Basic Materials,Steel,2025-10-01,94-99,99.0,78.0,74.1,-21.2,65.48,-33.9
+Rajputana Stainless Ltd.,RSL,mainboard,Basic Materials,Steel,2026-03-19,116-122,122.0,122.0,113.03,0.0,172.68,41.5
+Behari Lal Engineering Ltd.,BLEL,mainboard,Basic Materials,Steel,2026-08-19,271-285,285.0,465.0,502.2,63.2,519.5,82.3
+Jindal Supreme (India) Ltd.,JSIPL,mainboard,Basic Materials,Steel,2026-09-23,88-93,93.0,120.0,126.0,29.0,169.98,82.8
+A-One Steels India Ltd.,AONESTEELS,mainboard,Basic Materials,Steel,2026-10-01,385-405,405.0,455.0,416.55,12.3,397.7,-1.8
+German Green Steel & Power Ltd.,GERMAN,mainboard,Basic Materials,Steel,2026-10-05,132-139,139.0,142.0,128.33,2.2,123.03,-11.5
+R K SWAMY Ltd.,RKSWAMY,mainboard,Communication Services,Advertising Agencies,2024-03-12,270-288,288.0,250.0,262.6,-13.2,87.64,-69.6
+Nazara Technologies Ltd.,NAZARA,mainboard,Communication Services,Electronic Gaming & Multimedia,2021-03-30,1100-1101,1101.0,1990.0,1592.0,80.7,405.2,-63.2
+Sunshine Pictures Ltd.,SUNSHINE,mainboard,Communication Services,Entertainment,2026-08-25,342-360,360.0,395.9,369.2,10.0,458.85,27.5
+RailTel Corp.of India Ltd.,RAILTEL,mainboard,Communication Services,Telecom Services,2021-02-26,93-94,94.0,109.0,121.35,16.0,254.4,170.6
+Bharti Hexacom Ltd.,BHARTIHEXA,mainboard,Communication Services,Telecom Services,2024-04-12,542-570,570.0,755.0,813.3,32.5,1570.3,175.5
+Vedant Fashions Ltd.,MANYAVAR,mainboard,Consumer Cyclical,Apparel Manufacturing,2022-02-16,824-866,866.0,935.0,933.55,8.0,513.45,-40.7
+Go Fashion (India) Ltd.,GOCOLORS,mainboard,Consumer Cyclical,Apparel Retail,2021-11-30,655-690,690.0,1310.0,1253.7,89.9,287.15,-58.4
+Metro Brands Ltd.,METROBRAND,mainboard,Consumer Cyclical,Apparel Retail,2021-12-22,485-500,500.0,437.0,493.35,-12.6,900.35,80.1
+Sai Silks (Kalamandir) Ltd.,KALAMANDIR,mainboard,Consumer Cyclical,Apparel Retail,2023-09-27,210-222,222.0,231.0,244.9,4.1,74.19,-66.6
+Credo Brands Marketing Ltd.,MUFTI,mainboard,Consumer Cyclical,Apparel Retail,2023-12-27,266-280,280.0,282.35,312.2,0.8,70.09,-75.0
+Saraswati Saree Depot Ltd.,SSDL,mainboard,Consumer Cyclical,Apparel Retail,2024-08-20,152-160,160.0,194.0,203.7,21.2,69.36,-56.6
+Purple Style Labs Ltd.,PERNIASPOP,mainboard,Consumer Cyclical,Apparel Retail,2026-09-07,546-575,575.0,535.0,568.55,-7.0,526.55,-8.4
+CarTrade Tech Ltd.,CARTRADE,mainboard,Consumer Cyclical,Auto & Truck Dealerships,2021-08-20,1585-1618,1618.0,1599.8,1501.05,-1.1,3151.5,94.8
+Landmark Cars Ltd.,LANDMARK,mainboard,Consumer Cyclical,Auto & Truck Dealerships,2022-12-23,481-506,506.0,471.0,458.4,-6.9,472.65,-6.6
+Popular Vehicles & Services Ltd.,PVSL,mainboard,Consumer Cyclical,Auto & Truck Dealerships,2024-03-19,280-295,295.0,289.2,276.15,-2.0,95.4,-67.7
+Ola Electric Mobility Ltd.,OLAELEC,mainboard,Consumer Cyclical,Auto Manufacturers,2024-08-09,72-76,76.0,76.0,91.2,0.0,35.81,-52.9
+Hyundai Motor India Ltd.,HYUNDAI,mainboard,Consumer Cyclical,Auto Manufacturers,2024-10-22,1865-1960,1960.0,1934.0,1819.6,-1.3,1965.6,0.3
+Craftsman Automation Ltd.,CRAFTSMAN,mainboard,Consumer Cyclical,Auto Parts,2021-03-25,1488-1490,1490.0,1359.0,1435.6,-8.8,10997.0,638.1
+Sona BLW Precision Forgings Ltd.,SONACOMS,mainboard,Consumer Cyclical,Auto Parts,2021-06-24,285-291,291.0,301.0,361.2,3.4,807.0,177.3
+Sansera Engineering Ltd.,SANSERA,mainboard,Consumer Cyclical,Auto Parts,2021-09-24,734-744,744.0,811.5,818.55,9.1,4198.8,464.4
+S.J.S.Enterprises Ltd.,SJS,mainboard,Consumer Cyclical,Auto Parts,2021-11-15,531-542,542.0,542.0,510.2,0.0,2012.8,271.4
+Divgi TorqTransfer Systems Ltd.,DIVGIITTS,mainboard,Consumer Cyclical,Auto Parts,2023-03-14,560-590,590.0,620.0,605.2,5.1,960.2,62.7
+ASK Automotive Ltd.,ASKAUTOLTD,mainboard,Consumer Cyclical,Auto Parts,2023-11-15,268-282,282.0,303.3,310.1,7.6,604.05,114.2
+Kross Ltd.,KROSS,mainboard,Consumer Cyclical,Auto Parts,2024-09-16,228-240,240.0,240.0,259.81,0.0,272.25,13.4
+Tolins Tyres Ltd.,TOLINS,mainboard,Consumer Cyclical,Auto Parts,2024-09-16,215-226,226.0,228.0,239.4,0.9,90.06,-60.2
+Carraro India Ltd.,CARRARO,mainboard,Consumer Cyclical,Auto Parts,2024-12-30,668-704,704.0,651.0,636.2,-7.5,512.9,-27.1
+Belrise Industries Ltd.,BELRISE,mainboard,Consumer Cyclical,Auto Parts,2025-05-28,85-90,90.0,100.0,97.41,11.1,231.91,157.7
+Studds Accessories Ltd.,STUDDS,mainboard,Consumer Cyclical,Auto Parts,2025-11-07,557-585,585.0,565.0,560.3,-3.4,411.6,-29.6
+Tenneco Clean Air India Ltd.,TENNIND,mainboard,Consumer Cyclical,Auto Parts,2025-11-19,378-397,397.0,505.0,490.8,27.2,470.05,18.4
+SEDEMAC Mechatronics Ltd.,SEDEMAC,mainboard,Consumer Cyclical,Auto Parts,2026-03-11,1287-1352,1352.0,1535.0,1451.1,13.5,3204.9,137.0
+Dhoot Transmission Ltd.,DHOOTTRANS,mainboard,Consumer Cyclical,Auto Parts,2026-08-17,829-871,871.0,1200.0,1187.05,37.8,1471.7,69.0
+Hero Motors Ltd.,HEROMOTORS,mainboard,Consumer Cyclical,Auto Parts,2026-09-23,79-84,84.0,82.0,98.4,-2.4,159.29,89.6
+Adroit Industries (India) Ltd.,ADROITIND,mainboard,Consumer Cyclical,Auto Parts,2026-09-30,126-134,134.0,235.0,248.39,75.4,193.02,44.0
+Vishal Mega Mart Ltd.,VMM,mainboard,Consumer Cyclical,Department Stores,2024-12-18,74-78,78.0,104.0,111.93,33.3,96.0,23.1
+Patel Retail Ltd.,PATELRMART,mainboard,Consumer Cyclical,Department Stores,2025-08-26,237-255,255.0,300.0,287.7,17.6,241.61,-5.3
+Campus Activewear Ltd.,CAMPUS,mainboard,Consumer Cyclical,Footwear & Accessories,2022-05-09,278-292,292.0,360.0,378.9,23.3,197.04,-32.5
+Stove Kraft Ltd.,STOVEKRAFT,mainboard,Consumer Cyclical,"Furnishings, Fixtures & Appliances",2021-02-05,384-385,385.0,498.0,445.95,29.4,850.8,121.0
+Cello World Ltd.,CELLO,mainboard,Consumer Cyclical,"Furnishings, Fixtures & Appliances",2023-11-06,617-648,648.0,829.0,791.7,27.9,373.4,-42.4
+EPACK Durable Ltd.,EPACK,mainboard,Consumer Cyclical,"Furnishings, Fixtures & Appliances",2024-01-30,218-230,230.0,221.0,207.6,-3.9,177.69,-22.7
+Stanley Lifestyles Ltd.,STANLEY,mainboard,Consumer Cyclical,"Furnishings, Fixtures & Appliances",2024-06-28,351-369,369.0,494.95,474.75,34.1,127.78,-65.4
+Wakefit Innovations Ltd.,WAKEFIT,mainboard,Consumer Cyclical,"Furnishings, Fixtures & Appliances",2025-12-15,185-195,195.0,195.0,192.29,0.0,134.17,-31.2
+FSN E-Commerce Ventures Ltd.,NYKAA,mainboard,Consumer Cyclical,Internet Retail,2021-11-10,1085-1125,1125.0,2018.0,2205.8,79.4,336.5,-70.1
+Brainbees Solutions Ltd.,FIRSTCRY,mainboard,Consumer Cyclical,Internet Retail,2024-08-13,440-465,465.0,651.0,679.1,40.0,181.65,-60.9
+Swiggy Ltd.,SWIGGY,mainboard,Consumer Cyclical,Internet Retail,2024-11-13,371-390,390.0,420.0,456.0,7.7,230.95,-40.8
+Meesho Ltd.,MEESHO,mainboard,Consumer Cyclical,Internet Retail,2025-12-10,105-111,111.0,162.5,170.09,46.4,228.35,105.7
+Acevector Ltd.,ACEVECTOR,mainboard,Consumer Cyclical,Internet Retail,2026-10-05,30-32,32.0,28.32,26.08,-11.5,26.18,-18.2
+SAMHI Hotels Ltd.,SAMHI,mainboard,Consumer Cyclical,Lodging,2023-09-22,119-126,126.0,134.5,143.4,6.7,144.18,14.4
+Apeejay Surrendra Park Hotels Ltd.,PARKHOTELS,mainboard,Consumer Cyclical,Lodging,2024-02-12,147-155,155.0,186.0,203.55,20.0,103.56,-33.2
+Juniper Hotels Ltd.,JUNIPER,mainboard,Consumer Cyclical,Lodging,2024-02-28,342-360,360.0,365.0,401.5,1.4,213.89,-40.6
+Ventive Hospitality Ltd.,VENTIVE,mainboard,Consumer Cyclical,Lodging,2024-12-30,610-643,643.0,716.0,704.35,11.4,552.2,-14.1
+Schloss Bangalore Ltd.,THELEELA,mainboard,Consumer Cyclical,Lodging,2025-06-02,413-435,435.0,406.0,435.55,-6.7,591.3,35.9
+Brigade Hotel Ventures Ltd.,BRIGHOTEL,mainboard,Consumer Cyclical,Lodging,2025-07-31,85-90,90.0,81.1,85.32,-9.9,55.6,-38.2
+Elevate Campuses Ltd.,ELEVATE,mainboard,Consumer Cyclical,Lodging,2026-09-30,343-362,362.0,355.1,322.95,-1.9,318.8,-11.9
+Ethos Ltd.,ETHOSLTD,mainboard,Consumer Cyclical,Luxury Goods,2022-05-30,836-878,878.0,825.0,803.1,-6.0,2563.2,191.9
+Senco Gold Ltd.,SENCO,mainboard,Consumer Cyclical,Luxury Goods,2023-07-14,301-317,317.0,430.0,405.3,35.6,331.15,4.5
+Manoj Vaibhav Gems 'N' Jewellers Ltd.,MVGJL,mainboard,Consumer Cyclical,Luxury Goods,2023-10-03,204-215,215.0,215.0,215.5,0.0,215.79,0.4
+Motisons Jewellers Ltd.,MOTISONS,mainboard,Consumer Cyclical,Luxury Goods,2023-12-26,52-55,55.0,109.0,103.55,98.2,17.95,-67.4
+RBZ Jewellers Ltd.,RBZJEWEL,mainboard,Consumer Cyclical,Luxury Goods,2023-12-27,95-100,100.0,100.0,105.0,0.0,193.15,93.2
+P N Gadgil Jewellers Ltd.,PNGJL,mainboard,Consumer Cyclical,Luxury Goods,2024-09-17,456-480,480.0,830.0,793.3,72.9,598.8,24.7
+Shanti Gold International Ltd.,SHANTIGOLD,mainboard,Consumer Cyclical,Luxury Goods,2025-08-01,189-199,199.0,227.55,229.38,14.3,387.9,94.9
+BlueStone Jewellery & Lifestyle Ltd.,BLUESTONE,mainboard,Consumer Cyclical,Luxury Goods,2025-08-19,492-517,517.0,510.0,546.0,-1.4,777.75,50.4
+Shringar House of Mangalsutra Ltd.,SHRINGARMS,mainboard,Consumer Cyclical,Luxury Goods,2025-09-17,155-165,165.0,188.5,184.88,14.2,317.74,92.6
+PNGS Reva Diamond Jewellery Ltd.,PNGSREVA,mainboard,Consumer Cyclical,Luxury Goods,2026-03-04,367-386,386.0,375.0,411.7,-2.8,672.25,74.2
+Advit Jewels Ltd.,RAMBHAJO,mainboard,Consumer Cyclical,Luxury Goods,2026-07-01,130-138,138.0,188.9,179.46,36.9,383.85,178.2
+Lalithaa Jewellery Mart Ltd.,LALITHAA,mainboard,Consumer Cyclical,Luxury Goods,2026-08-24,190-201,201.0,265.0,248.44,31.8,363.3,80.7
+Shankesh Jewellers Ltd.,SHANKESH,mainboard,Consumer Cyclical,Luxury Goods,2026-08-25,88-93,93.0,103.3,94.82,11.1,97.29,4.6
+Augmont Enterprises Ltd.,AUGMONT,mainboard,Consumer Cyclical,Luxury Goods,2026-08-31,750-788,788.0,961.0,908.15,22.0,1358.9,72.4
+Priority Jewels Ltd.,PRIORITY,mainboard,Consumer Cyclical,Luxury Goods,2026-09-04,190-200,200.0,230.0,241.5,15.0,352.65,76.3
+Deepa Jewellers Ltd.,DEEPA,mainboard,Consumer Cyclical,Luxury Goods,2026-09-08,168-177,177.0,221.0,194.37,24.9,248.62,40.5
+Nityas Gems & Jewellery Ltd.,NITYAS,mainboard,Consumer Cyclical,Luxury Goods,2026-10-08,70-75,75.0,80.0,83.99,6.7,76.89,2.5
+Pyramid Technoplast Ltd.,PYRAMID,mainboard,Consumer Cyclical,Packaging & Containers,2023-08-29,151-166,166.0,187.0,177.65,12.7,154.2,-7.1
+Knack Packaging Ltd.,KNACK,mainboard,Consumer Cyclical,Packaging & Containers,2026-07-08,161-170,170.0,188.0,182.98,10.6,213.34,25.5
+Manika Plastech Ltd.,MANIKA,mainboard,Consumer Cyclical,Packaging & Containers,2026-09-21,40-43,43.0,43.0,43.14,0.0,53.15,23.6
+Devyani International Ltd.,DEVYANI,mainboard,Consumer Cyclical,Restaurants,2021-08-16,86-90,90.0,140.9,123.5,56.6,122.74,36.4
+Sapphire Foods India Ltd.,SAPPHIRE,mainboard,Consumer Cyclical,Restaurants,2021-11-18,1120-1180,1180.0,1350.0,1211.55,14.4,200.76,-83.0
+Travel Food Services Ltd.,TRAVELFOOD,mainboard,Consumer Cyclical,Restaurants,2025-07-14,1045-1100,1100.0,1125.0,1074.8,2.3,1223.4,11.2
+Electronics Mart India Ltd.,EMIL,mainboard,Consumer Cyclical,Specialty Retail,2022-10-17,56-59,59.0,90.0,84.5,52.5,186.22,215.6
+SS Retail Ltd.,SSRETAIL,mainboard,Consumer Cyclical,Specialty Retail,2026-09-23,403-424,424.0,624.0,748.8,47.2,767.25,81.0
+Sanathan Textiles Ltd.,SANATHAN,mainboard,Consumer Cyclical,Textile Manufacturing,2024-12-27,305-321,321.0,422.3,388.35,31.6,548.15,70.8
+Borana Weaves Ltd.,BORANA,mainboard,Consumer Cyclical,Textile Manufacturing,2025-05-27,205-216,216.0,243.0,255.15,12.5,268.3,24.2
+Shree Ram Twistex Ltd.,SRTL,mainboard,Consumer Cyclical,Textile Manufacturing,2026-03-02,95-104,104.0,68.0,71.4,-34.6,37.1,-64.3
+Aastha Spintex Ltd.,AASTHA,mainboard,Consumer Cyclical,Textile Manufacturing,2026-07-06,125-136,136.0,130.0,136.49,-4.4,28.25,-79.2
+Kusumgar Ltd.,KUSUMGAR,mainboard,Consumer Cyclical,Textile Manufacturing,2026-07-15,398-419,419.0,569.0,602.8,35.8,599.0,43.0
+Alpine Texworld Ltd.,ALPINETEX,mainboard,Consumer Cyclical,Textile Manufacturing,2026-07-21,100-105,105.0,105.0,99.75,0.0,43.2,-58.9
+Sonaselection India Ltd.,SONA,mainboard,Consumer Cyclical,Textile Manufacturing,2026-09-24,94-99,99.0,102.31,107.42,3.3,100.57,1.6
+Easy Trip Planners Ltd.,EASEMYTRIP,mainboard,Consumer Cyclical,Travel Services,2021-03-19,186-187,187.0,212.25,208.45,13.5,5.78,-96.9
+Yatra Online Ltd.,YATRA,mainboard,Consumer Cyclical,Travel Services,2023-09-28,135-142,142.0,127.5,135.9,-10.2,96.5,-32.0
+TBO Tek Ltd.,TBOTEK,mainboard,Consumer Cyclical,Travel Services,2024-05-15,875-920,920.0,1426.0,1406.3,55.0,1668.0,81.3
+Le Travenues Technology Ltd.,IXIGO,mainboard,Consumer Cyclical,Travel Services,2024-06-18,88-93,93.0,138.1,165.72,48.5,138.46,48.9
+Sula Vineyards Ltd.,SULA,mainboard,Consumer Defensive,Beverages - Wineries & Distilleries,2022-12-22,340-357,357.0,358.0,331.15,0.3,136.38,-61.8
+Allied Blenders & Distillers Ltd.,ABDL,mainboard,Consumer Defensive,Beverages - Wineries & Distilleries,2024-07-02,267-281,281.0,320.0,317.9,13.9,743.45,164.6
+Veranda Learning Solutions Ltd.,VERANDA,mainboard,Consumer Defensive,Education & Training Services,2022-04-11,130-137,137.0,125.0,131.25,-8.8,39.78,-71.0
+Crizac Ltd.,CRIZAC,mainboard,Consumer Defensive,Education & Training Services,2025-07-09,233-245,245.0,281.05,307.63,14.7,156.27,-36.2
+Uma Exports Ltd.,UMAEXPORTS,mainboard,Consumer Defensive,Farm Products,2022-04-07,65-68,68.0,76.0,79.8,11.8,20.89,-69.3
+Dodla Dairy Ltd.,DODLA,mainboard,Consumer Defensive,Food Distribution,2021-06-28,421-428,428.0,550.0,609.9,28.5,1007.0,135.3
+Honasa Consumer Ltd.,HONASA,mainboard,Consumer Defensive,Household & Personal Products,2023-11-07,308-324,324.0,330.0,337.1,1.9,456.55,40.9
+All Time Plastics Ltd.,ALLTIME,mainboard,Consumer Defensive,Household & Personal Products,2025-08-14,260-275,275.0,311.3,283.3,13.2,197.03,-28.4
+Adani Wilmar Ltd.,AWL,mainboard,Consumer Defensive,Packaged Foods,2022-02-08,218-230,230.0,227.0,268.25,-1.3,188.21,-18.2
+Bikaji Foods International Ltd.,BIKAJI,mainboard,Consumer Defensive,Packaged Foods,2022-11-16,285-300,300.0,322.8,317.45,7.6,473.55,57.9
+Mukka Proteins Ltd.,MUKKA,mainboard,Consumer Defensive,Packaged Foods,2024-03-07,26-28,28.0,40.0,42.25,42.9,28.81,2.9
+Regaal Resources Ltd.,REGAAL,mainboard,Consumer Defensive,Packaged Foods,2025-08-20,96-102,102.0,141.0,131.58,38.2,89.3,-12.5
+Ganesh Consumer Products Ltd.,GANESHCP,mainboard,Consumer Defensive,Packaged Foods,2025-09-29,306-322,322.0,296.05,294.3,-8.1,163.82,-49.1
+Orkla India Ltd.,ORKLAINDIA,mainboard,Consumer Defensive,Packaged Foods,2025-11-06,695-730,730.0,750.1,713.65,2.8,547.35,-25.0
+Hexagon Nutrition Ltd.,HEXAGON,mainboard,Consumer Defensive,Packaged Foods,2026-06-12,42-45,45.0,53.19,53.19,18.2,71.12,58.0
+Milky Mist Dairy Food Ltd.,MILKYMIST,mainboard,Consumer Defensive,Packaged Foods,2026-08-18,133-140,140.0,165.0,181.5,17.9,301.05,115.0
+Aegis Vopak Terminals Ltd.,AEGISVOPAK,mainboard,Energy,Oil & Gas Equipment & Services,2025-06-02,223-235,235.0,220.0,242.0,-6.4,282.4,20.2
+Gandhar Oil Refinery (India) Ltd.,GANDHAR,mainboard,Energy,Oil & Gas Refining & Marketing,2023-11-30,160-169,169.0,298.0,301.4,76.3,310.95,84.0
+Trualt Bioenergy Ltd.,TRUALT,mainboard,Energy,Oil & Gas Refining & Marketing,2025-10-03,472-496,496.0,545.4,530.95,10.0,444.45,-10.4
+Caliber Mining & Logistics Ltd.,CMLL,mainboard,Energy,Thermal Coal,2026-07-24,402-424,424.0,500.25,528.2,18.0,590.85,39.4
+Aditya Birla Sun Life AMC Ltd.,ABSLAMC,mainboard,Financial Services,Asset Management,2021-10-11,695-712,712.0,715.0,699.45,0.4,970.5,36.3
+Prudent Corporate Advisory Services Ltd.,PRUDENT,mainboard,Financial Services,Asset Management,2022-05-20,595-630,630.0,650.0,561.75,3.2,3148.3,399.7
+Canara Robeco Asset Management Co.Ltd.,CRAMC,mainboard,Financial Services,Asset Management,2025-10-16,253-266,266.0,280.25,300.45,5.4,224.91,-15.4
+ICICI Prudential Asset Management Co.Ltd.,ICICIAMC,mainboard,Financial Services,Asset Management,2025-12-19,2061-2165,2165.0,2600.0,2585.9,20.1,2915.2,34.7
+SBI Funds Management Ltd.,SBIFUNDS,mainboard,Financial Services,Asset Management,2026-07-21,545-574,574.0,613.3,609.75,6.8,519.6,-9.5
+Gaja Alternative Asset Management Ltd.,GAJA,mainboard,Financial Services,Asset Management,2026-08-26,152-160,160.0,185.0,168.67,15.6,145.76,-8.9
+Asset Reconstruction Co.(India) Ltd.,ARCIL,mainboard,Financial Services,Asset Management,2026-09-17,132-139,139.0,139.0,137.02,0.0,142.47,2.5
+Suryoday Small Finance Bank Ltd.,SURYODAY,mainboard,Financial Services,Banks - Regional,2021-03-26,303-305,305.0,292.0,277.8,-4.3,148.29,-51.4
+Tamilnad Mercantile Bank Ltd.,TMB,mainboard,Financial Services,Banks - Regional,2022-09-15,500-525,510.0,495.0,509.65,-2.9,863.8,69.4
+Utkarsh Small Finance Bank Ltd.,UTKARSHBNK,mainboard,Financial Services,Banks - Regional,2023-07-21,23-25,25.0,40.0,48.0,60.0,13.71,-45.2
+ESAF Small Finance Bank Ltd.,ESAFSFB,mainboard,Financial Services,Banks - Regional,2023-11-10,57-60,60.0,71.0,69.05,18.3,44.39,-26.0
+Capital Small Finance Bank Ltd.,CAPITALSFB,mainboard,Financial Services,Banks - Regional,2024-02-14,445-468,468.0,430.25,435.0,-8.1,272.0,-41.9
+Jana Small Finance Bank Ltd.,JSFB,mainboard,Financial Services,Banks - Regional,2024-02-14,393-414,414.0,396.0,368.15,-4.3,504.2,21.8
+DAM Capital Advisors Ltd.,DAMCAPITAL,mainboard,Financial Services,Capital Markets,2024-12-27,269-283,283.0,393.0,415.1,38.9,142.67,-49.6
+Billionbrains Garage Ventures Ltd.,GROWW,mainboard,Financial Services,Capital Markets,2025-11-12,95-100,100.0,112.0,131.33,12.0,192.52,92.5
+Shah Investor's Home Ltd.,SHAHINVEST,mainboard,Financial Services,Capital Markets,2026-10-06,159-167,167.0,171.0,173.79,2.4,141.4,-15.3
+Indian Railway Finance Corp.Ltd.,IRFC,mainboard,Financial Services,Credit Services,2021-01-29,25-26,26.0,24.9,24.8,-4.2,79.75,206.7
+Fusion Micro Finance Ltd.,FUSION,mainboard,Financial Services,Credit Services,2022-11-15,350-368,368.0,359.5,324.8,-2.3,164.68,-55.2
+Five-Star Business Finance Ltd.,FIVESTAR,mainboard,Financial Services,Credit Services,2022-11-21,450-474,474.0,468.8,490.0,-1.1,512.3,8.1
+SBFC Finance Ltd.,SBFC,mainboard,Financial Services,Credit Services,2023-08-16,54-57,57.0,82.0,92.2,43.9,88.99,56.1
+Indian Renewable Energy Development Agency Ltd.,IREDA,mainboard,Financial Services,Credit Services,2023-11-29,30-32,32.0,50.0,60.0,56.2,108.47,239.0
+Fedbank Financial Services Ltd.,FEDFINA,mainboard,Financial Services,Credit Services,2023-11-30,133-140,140.0,138.0,140.25,-1.4,159.94,14.2
+Akme Fintrade (India) Ltd.,AFIL,mainboard,Financial Services,Credit Services,2024-06-26,114-120,120.0,127.0,133.35,5.8,8.11,-93.2
+Northern Arc Capital Ltd.,NORTHARC,mainboard,Financial Services,Credit Services,2024-09-24,249-263,263.0,350.0,323.4,33.1,289.55,10.1
+Manba Finance Ltd.,MANBA,mainboard,Financial Services,Credit Services,2024-09-30,114-120,120.0,150.0,157.45,25.0,140.06,16.7
+HDB Financial Services Ltd.,HDBFS,mainboard,Financial Services,Credit Services,2025-07-02,700-740,740.0,835.0,840.95,12.8,583.75,-21.1
+Laxmi India Finance Ltd.,LAXMIINDIA,mainboard,Financial Services,Credit Services,2025-08-05,150-158,158.0,137.52,134.11,-13.0,108.9,-31.1
+Tata Capital Ltd.,TATACAP,mainboard,Financial Services,Credit Services,2025-10-13,310-326,326.0,330.0,330.5,1.2,316.95,-2.8
+Aye Finance Ltd.,AYE,mainboard,Financial Services,Credit Services,2026-02-16,122-129,129.0,129.0,128.91,0.0,160.07,24.1
+OnEMI Technology Solutions Ltd.,KISSHT,mainboard,Financial Services,Credit Services,2026-05-08,162-171,171.0,190.0,208.63,11.1,369.7,116.2
+Anand Rathi Share & Stock Brokers Ltd.,ARSSBL,mainboard,Financial Services,Financial Conglomerates,2025-09-30,393-414,414.0,432.0,445.55,4.3,515.6,24.5
+Star Health & Allied Insurance Co.Ltd.,STARHEALTH,mainboard,Financial Services,Insurance - Life,2021-12-10,870-900,900.0,845.0,906.85,-6.1,554.05,-38.4
+Life Insurance Corp.of India,LICI,mainboard,Financial Services,Insurance - Life,2022-05-17,902-949,949.0,872.0,875.25,-8.1,394.0,-58.5
+Niva Bupa Health Insurance Co.Ltd.,NIVABUPA,mainboard,Financial Services,Insurance - Life,2024-11-14,70-74,74.0,78.5,74.0,6.1,78.59,6.2
+Canara HSBC Life Insurance Co.Ltd.,CANHLIFE,mainboard,Financial Services,Insurance - Life,2025-10-17,100-106,106.0,106.0,111.42,0.0,135.36,27.7
+Go Digit General Insurance Ltd.,GODIGIT,mainboard,Financial Services,Insurance - Property & Casualty,2024-05-23,258-272,272.0,286.0,306.0,5.1,284.0,4.4
+PB Fintech Ltd.,POLICYBZR,mainboard,Financial Services,Insurance Brokers,2021-11-15,940-980,980.0,1150.0,1202.3,17.3,1060.0,8.2
+Turtlemint Fintech Solutions Ltd.,TURTLEMINT,mainboard,Financial Services,Insurance Brokers,2026-06-29,144-152,152.0,134.9,135.37,-11.2,69.18,-54.5
+Home First Finance Co.India Ltd.,HOMEFIRST,mainboard,Financial Services,Mortgage Finance,2021-02-03,517-518,518.0,618.8,527.55,19.5,1104.3,113.2
+Aptus Value Housing Finance India Ltd.,APTUS,mainboard,Financial Services,Mortgage Finance,2021-08-24,346-353,353.0,333.0,346.9,-5.7,221.4,-37.3
+India Shelter Finance Corp.Ltd.,INDIASHLTR,mainboard,Financial Services,Mortgage Finance,2023-12-20,469-493,493.0,620.0,544.7,25.8,628.2,27.4
+Aadhar Housing Finance Ltd.,AADHARHFC,mainboard,Financial Services,Mortgage Finance,2024-05-15,300-315,315.0,315.0,329.45,0.0,441.75,40.2
+Bajaj Housing Finance Ltd.,BAJAJHFL,mainboard,Financial Services,Mortgage Finance,2024-09-16,66-70,70.0,150.0,165.0,114.3,84.55,20.8
+Supriya Lifescience Ltd.,SUPRIYA,mainboard,Healthcare,Biotechnology,2021-12-28,265-274,274.0,421.0,390.85,53.6,874.55,219.2
+Concord Biotech Ltd.,CONCORDBIO,mainboard,Healthcare,Biotechnology,2023-08-18,705-741,741.0,900.05,942.8,21.5,1382.1,86.5
+Blue Jet Healthcare Ltd.,BLUEJET,mainboard,Healthcare,Biotechnology,2023-11-01,329-346,346.0,380.0,413.4,9.8,522.45,51.0
+Anthem Biosciences Ltd.,ANTHEM,mainboard,Healthcare,Biotechnology,2025-07-21,540-570,570.0,723.05,730.35,26.9,847.75,48.7
+Krsnaa Diagnostics Ltd.,KRSNAA,mainboard,Healthcare,Diagnostics & Research,2021-08-16,933-954,954.0,1005.55,987.0,5.4,526.35,-44.8
+Vijaya Diagnostic Centre Ltd.,VIJAYA,mainboard,Healthcare,Diagnostics & Research,2021-09-14,522-531,531.0,540.0,620.1,1.7,1402.2,164.1
+Suraksha Diagnostic Ltd.,SURAKSHA,mainboard,Healthcare,Diagnostics & Research,2024-12-06,420-441,441.0,438.0,441.0,-0.7,318.3,-27.8
+Sai Life Sciences Ltd.,SAILIFE,mainboard,Healthcare,Diagnostics & Research,2024-12-18,522-549,549.0,650.0,764.65,18.4,1432.1,160.9
+Senores Pharmaceuticals Ltd.,SENORES,mainboard,Healthcare,Drug Manufacturers - General,2024-12-30,372-391,391.0,593.7,557.8,51.8,1281.5,227.7
+Rubicon Research Ltd.,RUBICON,mainboard,Healthcare,Drug Manufacturers - General,2025-10-16,461-485,485.0,620.0,628.2,27.8,1524.7,214.4
+Corona Remedies Ltd.,CORONA,mainboard,Healthcare,Drug Manufacturers - General,2025-12-15,1008-1062,1062.0,1470.0,1438.4,38.4,2059.6,93.9
+Sai Parenteral's Ltd.,SAIPARENT,mainboard,Healthcare,Drug Manufacturers - General,2026-04-02,372-392,392.0,400.0,405.7,2.0,495.55,26.4
+Symbiotec Pharmalab Ltd.,SYMBIOTEC,mainboard,Healthcare,Drug Manufacturers - General,2026-09-01,938-988,988.0,988.0,1097.7,0.0,1253.2,26.8
+Windlas Biotech Ltd.,WINDLAS,mainboard,Healthcare,Drug Manufacturers - Specialty & Generic,2021-08-16,448-460,460.0,437.0,407.15,-5.0,917.3,99.4
+Sigachi Industries Ltd.,SIGACHI,mainboard,Healthcare,Drug Manufacturers - Specialty & Generic,2021-11-15,161-163,163.0,570.0,598.5,249.7,28.24,-82.7
+Mankind Pharma Ltd.,MANKIND,mainboard,Healthcare,Drug Manufacturers - Specialty & Generic,2023-05-09,1026-1080,1080.0,1300.0,1080.0,20.4,2335.0,116.2
+Valiant Laboratories Ltd.,VALIANTLAB,mainboard,Healthcare,Drug Manufacturers - Specialty & Generic,2023-10-06,133-140,140.0,162.15,170.25,15.8,122.44,-12.5
+Innova Captab Ltd.,INNOVACAP,mainboard,Healthcare,Drug Manufacturers - Specialty & Generic,2023-12-29,426-448,448.0,452.1,541.4,0.9,1053.4,135.1
+Emcure Pharmaceuticals Ltd.,EMCURE,mainboard,Healthcare,Drug Manufacturers - Specialty & Generic,2024-07-10,960-1008,1008.0,1325.05,1359.15,31.5,1866.2,85.1
+Akums Drugs & Pharmaceuticals Ltd.,AKUMS,mainboard,Healthcare,Drug Manufacturers - Specialty & Generic,2024-08-06,646-679,679.0,725.0,796.25,6.8,769.95,13.4
+Anlon Healthcare Ltd.,AHCL,mainboard,Healthcare,Drug Manufacturers - Specialty & Generic,2025-09-03,86-91,91.0,92.0,91.73,1.1,29.04,-68.1
+Amanta Healthcare Ltd.,AMANTA,mainboard,Healthcare,Drug Manufacturers - Specialty & Generic,2025-09-09,120-126,126.0,135.0,141.75,7.1,184.27,46.2
+Sudeep Pharma Ltd.,SUDEEPPHRM,mainboard,Healthcare,Drug Manufacturers - Specialty & Generic,2025-11-28,563-593,593.0,730.0,774.15,23.1,1055.2,77.9
+Indegene Ltd.,INDGN,mainboard,Healthcare,Health Information Services,2024-05-13,430-452,452.0,655.0,570.9,44.9,596.9,32.1
+Sagility India Ltd.,SAGILITY,mainboard,Healthcare,Health Information Services,2024-11-12,28-30,30.0,31.06,29.32,3.5,45.55,51.8
+Inventurus Knowledge Solutions Ltd.,IKS,mainboard,Healthcare,Health Information Services,2024-12-19,1265-1329,1329.0,1900.0,1960.85,43.0,1729.6,30.1
+Fabtech Technologies Ltd.,FABTECH,mainboard,Healthcare,Health Information Services,2025-10-07,181-191,191.0,192.0,182.4,0.5,134.56,-29.5
+Medi Assist Healthcare Services Ltd.,MEDIASSIST,mainboard,Healthcare,Healthcare Plans,2024-01-23,397-418,418.0,460.0,464.1,10.0,303.15,-27.5
+Krishna Institute of Medical Sciences Ltd.,KIMS,mainboard,Healthcare,Medical Care Facilities,2021-06-28,815-825,825.0,1009.0,996.95,22.3,692.95,-16.0
+Rainbow Children's Medicare Ltd.,RAINBOW,mainboard,Healthcare,Medical Care Facilities,2022-05-10,516-542,542.0,510.0,450.2,-5.9,1246.7,130.0
+Global Health Ltd.,MEDANTA,mainboard,Healthcare,Medical Care Facilities,2022-11-16,319-336,336.0,401.0,415.3,19.3,1280.0,281.0
+Yatharth Hospital & Trauma Care Services Ltd.,YATHARTH,mainboard,Healthcare,Medical Care Facilities,2023-08-07,285-300,300.0,306.1,333.85,2.0,983.9,228.0
+Jupiter Life Line Hospitals Ltd.,JLHL,mainboard,Healthcare,Medical Care Facilities,2023-09-18,695-735,735.0,973.0,1075.75,32.4,242.0,-67.1
+GPT Healthcare Ltd.,GPTHEALTH,mainboard,Healthcare,Medical Care Facilities,2024-02-29,177-186,186.0,215.0,200.7,15.6,141.16,-24.1
+Nephrocare Health Services Ltd.,NEPHROPLUS,mainboard,Healthcare,Medical Care Facilities,2025-12-17,438-460,460.0,490.0,471.25,6.5,617.15,34.2
+Park Medi World Ltd.,PARKHOSPS,mainboard,Healthcare,Medical Care Facilities,2025-12-17,154-162,162.0,158.8,147.95,-2.0,241.25,48.9
+Gujarat Kidney & Super Speciality Ltd.,GKSL,mainboard,Healthcare,Medical Care Facilities,2025-12-30,108-114,114.0,120.0,104.54,5.3,194.69,70.8
+Gaudium IVF & Women Health Ltd.,GAUDIUMIVF,mainboard,Healthcare,Medical Care Facilities,2026-02-27,75-79,79.0,83.0,80.26,5.1,105.54,33.6
+Manipal Health Enterprises Ltd.,MANIPALHOS,mainboard,Healthcare,Medical Care Facilities,2026-08-05,560-590,590.0,652.0,666.95,10.5,650.05,10.2
+Rays of Belief Ltd.,MOMSBELIEF,mainboard,Healthcare,Medical Care Facilities,2026-09-08,227-239,239.0,239.0,228.34,0.0,209.17,-12.5
+Nureca Ltd.,NURECA,mainboard,Healthcare,Medical Devices,2021-02-25,396-400,400.0,615.0,645.75,53.8,323.35,-19.2
+Molbio Diagnostics Ltd.,MOLBIO,mainboard,Healthcare,Medical Devices,2026-08-17,768-807,807.0,980.0,1041.7,21.4,1461.2,81.1
+Entero Healthcare Solutions Ltd.,ENTERO,mainboard,Healthcare,Medical Distribution,2024-02-16,1195-1258,1258.0,1228.7,1149.55,-2.3,1591.7,26.5
+Tarsons Products Ltd.,TARSONS,mainboard,Healthcare,Medical Instruments & Supplies,2021-11-26,635-662,662.0,682.0,818.4,3.0,338.05,-48.9
+Laxmi Dental Ltd.,LAXMIDENTL,mainboard,Healthcare,Medical Instruments & Supplies,2025-01-20,407-428,428.0,542.0,550.55,26.6,197.66,-53.8
+Dr.Agarwal's Health Care Ltd.,AGARWALEYE,mainboard,Healthcare,Medical Instruments & Supplies,2025-02-04,382-402,402.0,402.0,401.65,0.0,467.9,16.4
+Lenskart Solutions Ltd.,LENSKART,mainboard,Healthcare,Medical Instruments & Supplies,2025-11-10,382-402,402.0,395.0,403.1,-1.7,656.95,63.4
+Medplus Health Services Ltd.,MEDPLUS,mainboard,Healthcare,Pharmaceutical Retailers,2021-12-23,780-796,796.0,1040.0,1121.15,30.7,613.25,-23.0
+Data Patterns (India) Ltd.,DATAPATTNS,mainboard,Industrials,Aerospace & Defense,2021-12-24,555-585,585.0,856.05,755.0,46.3,4137.8,607.3
+Cyient DLM Ltd.,CYIENTDLM,mainboard,Industrials,Aerospace & Defense,2023-07-10,250-265,265.0,403.0,420.6,52.1,1038.55,291.9
+Unimech Aerospace & Manufacturing Ltd.,UNIMECH,mainboard,Industrials,Aerospace & Defense,2024-12-31,745-785,785.0,1460.0,1376.25,86.0,1800.2,129.3
+Aequs Ltd.,AEQUS,mainboard,Industrials,Aerospace & Defense,2025-12-10,118-124,124.0,140.0,151.29,12.9,263.85,112.8
+Dreamfolks Services Ltd.,DREAMFOLKS,mainboard,Industrials,Airports & Air Services,2022-09-06,308-326,326.0,508.7,462.4,56.0,61.22,-81.2
+Exxaro Tiles Ltd.,EXXARO,mainboard,Industrials,Building Products & Equipment,2021-08-16,118-120,120.0,126.0,132.3,5.0,6.1,-94.9
+Aditya Infotech Ltd.,CPPLUS,mainboard,Industrials,Building Products & Equipment,2025-08-05,640-675,675.0,1015.0,1082.65,50.4,4440.3,557.8
+Flair Writing Industries Ltd.,FLAIR,mainboard,Industrials,Business Equipment & Supplies,2023-12-01,288-304,304.0,501.0,450.9,64.8,236.02,-22.4
+DOMS Industries Ltd.,DOMS,mainboard,Industrials,Business Equipment & Supplies,2023-12-20,750-790,790.0,1400.0,1326.05,77.2,2089.5,164.5
+Latent View Analytics Ltd.,LATENTVIEW,mainboard,Industrials,Consulting Services,2021-11-23,190-197,197.0,512.2,488.75,160.0,243.5,23.6
+Elin Electronics Ltd.,ELIN,mainboard,Industrials,Electrical Equipment & Parts,2022-12-30,234-247,247.0,244.0,227.65,-1.2,78.74,-68.1
+R R Kabel Ltd.,RRKABEL,mainboard,Industrials,Electrical Equipment & Parts,2023-09-20,983-1035,1035.0,1180.0,1198.05,14.0,2664.1,157.4
+Plaza Wires Ltd.,PLAZACABLE,mainboard,Industrials,Electrical Equipment & Parts,2023-10-12,51-54,54.0,76.0,80.2,40.7,55.38,2.6
+Exicom Tele-Systems Ltd.,EXICOM,mainboard,Industrials,Electrical Equipment & Parts,2024-03-05,135-142,142.0,265.0,224.95,86.6,148.46,4.5
+Quality Power Electrical Equipments Ltd.,QPOWER,mainboard,Industrials,Electrical Equipment & Parts,2025-02-24,401-425,425.0,430.0,387.9,1.2,1511.1,255.6
+Prostarm Info Systems Ltd.,PROSTARM,mainboard,Industrials,Electrical Equipment & Parts,2025-06-03,95-105,105.0,120.0,126.0,14.3,133.22,26.9
+Oswal Pumps Ltd.,OSWALPUMPS,mainboard,Industrials,Electrical Equipment & Parts,2025-06-20,584-614,614.0,634.0,625.35,3.3,258.85,-57.8
+Mangal Electrical Industries Ltd.,MEIL,mainboard,Industrials,Electrical Equipment & Parts,2025-08-28,533-561,561.0,556.0,535.35,-0.9,283.6,-49.4
+Atlanta Electricals Ltd.,ATLANTAELE,mainboard,Industrials,Electrical Equipment & Parts,2025-09-29,718-754,754.0,857.0,823.35,13.7,1802.2,139.0
+Vidya Wires Ltd.,VIDYAWIRES,mainboard,Industrials,Electrical Equipment & Parts,2025-12-10,48-52,52.0,52.0,53.17,0.0,93.51,79.8
+KSH International Ltd.,KSHINTL,mainboard,Industrials,Electrical Equipment & Parts,2025-12-23,365-384,384.0,370.0,355.0,-3.6,1023.1,166.4
+Laser Power & Infra Ltd.,LASERPOWER,mainboard,Industrials,Electrical Equipment & Parts,2026-07-16,203-214,214.0,250.0,262.42,16.8,255.7,19.5
+MV Electrosystems Ltd.,MVELECTRO,mainboard,Industrials,Electrical Equipment & Parts,2026-08-06,400-425,425.0,520.0,624.0,22.4,977.6,130.0
+Lumino Industries Ltd.,LUMINO,mainboard,Industrials,Electrical Equipment & Parts,2026-09-03,78-82,82.0,110.0,110.32,34.1,104.64,27.6
+Kanohar Electricals Ltd.,KANOHAR,mainboard,Industrials,Electrical Equipment & Parts,2026-09-16,601-632,632.0,685.5,751.5,8.5,1053.3,66.7
+Orient Cables (India) Ltd.,ORIENTCABL,mainboard,Industrials,Electrical Equipment & Parts,2026-10-05,258-272,272.0,450.0,405.0,65.4,418.6,53.9
+G R Infraprojects Ltd.,GRINFRA,mainboard,Industrials,Engineering & Construction,2021-07-19,828-837,837.0,1715.85,1747.1,105.0,785.8,-6.1
+Udayshivakumar Infra Ltd.,USK,mainboard,Industrials,Engineering & Construction,2023-04-03,33-35,35.0,0.0,31.5,,20.44,-41.6
+Vishnu Prakash R.Punglia Ltd.,VPRPL,mainboard,Industrials,Engineering & Construction,2023-09-05,94-99,99.0,165.0,145.7,66.7,27.79,-71.9
+EMS Ltd.,EMSLIMITED,mainboard,Industrials,Engineering & Construction,2023-09-21,200-211,211.0,282.05,279.9,33.7,325.2,54.1
+SRM Contractors Ltd.,SRM,mainboard,Industrials,Engineering & Construction,2024-04-03,200-210,210.0,215.25,226.0,2.5,401.6,91.2
+Ceigall India Ltd.,CEIGALL,mainboard,Industrials,Engineering & Construction,2024-08-08,380-401,401.0,419.0,386.75,4.5,388.35,-3.2
+Interarch Building Products Ltd.,INTERARCH,mainboard,Industrials,Engineering & Construction,2024-08-26,850-900,900.0,1220.0,1196.45,35.6,1607.0,78.6
+Garuda Construction & Engineering Ltd.,GARUDA,mainboard,Industrials,Engineering & Construction,2024-10-15,90-95,95.0,105.0,106.36,10.5,167.35,76.2
+Deepak Builders & Engineers India Ltd.,DBEIL,mainboard,Industrials,Engineering & Construction,2024-10-28,192-203,203.0,200.0,161.95,-1.5,6.31,-96.9
+Afcons Infrastructure Ltd.,AFCONS,mainboard,Industrials,Engineering & Construction,2024-11-04,440-463,463.0,426.0,474.2,-8.0,243.43,-47.4
+Enviro Infra Engineers Ltd.,EIEL,mainboard,Industrials,Engineering & Construction,2024-11-29,140-148,148.0,220.0,207.07,48.6,184.98,25.0
+Transrail Lighting Ltd.,TRANSRAILL,mainboard,Industrials,Engineering & Construction,2024-12-27,410-432,432.0,590.0,553.55,36.6,481.7,11.5
+Denta Water & Infra Solutions Ltd.,DENTA,mainboard,Industrials,Engineering & Construction,2025-01-29,279-294,294.0,325.0,341.25,10.5,263.45,-10.4
+Globe Civil Projects Ltd.,GLOBECIVIL,mainboard,Industrials,Engineering & Construction,2025-07-01,67-71,71.0,90.0,94.46,26.8,41.29,-41.8
+Sri Lotus Developers & Realty Ltd.,LOTUSDEV,mainboard,Industrials,Engineering & Construction,2025-08-06,140-150,150.0,178.0,195.67,18.7,238.42,58.9
+M&B Engineering Ltd.,MBEL,mainboard,Industrials,Engineering & Construction,2025-08-06,366-385,385.0,385.0,408.65,0.0,272.25,-29.3
+Vikran Engineering Ltd.,VIKRAN,mainboard,Industrials,Engineering & Construction,2025-09-03,92-97,97.0,99.0,95.71,2.1,60.36,-37.8
+Epack Prefab Technologies Ltd.,EPACKPEB,mainboard,Industrials,Engineering & Construction,2025-10-01,194-204,204.0,183.85,190.66,-9.9,252.51,23.8
+Om Power Transmission Ltd.,OMPOWER,mainboard,Industrials,Engineering & Construction,2026-04-17,166-175,175.0,186.0,193.38,6.3,162.5,-7.1
+Glass Wall Systems (India) Ltd.,GLASSWALL,mainboard,Industrials,Engineering & Construction,2026-09-16,172-182,182.0,194.0,214.85,6.6,249.75,37.2
+Swastika Infra Ltd.,SWASTIKAIN,mainboard,Industrials,Engineering & Construction,2026-09-30,175-185,185.0,200.0,210.0,8.1,214.52,16.0
+Uniparts India Ltd.,UNIPARTS,mainboard,Industrials,Farm & Heavy Construction Machinery,2022-12-12,548-577,577.0,575.0,539.65,-0.3,742.35,28.7
+Indo Farm Equipment Ltd.,INDOFARM,mainboard,Industrials,Farm & Heavy Construction Machinery,2025-01-07,204-215,215.0,256.0,273.69,19.1,130.4,-39.3
+Ajax Engineering Ltd.,AJAXENGG,mainboard,Industrials,Farm & Heavy Construction Machinery,2025-02-17,599-629,629.0,576.0,595.4,-8.4,567.7,-9.7
+Jinkushal Industries Ltd.,JKIPL,mainboard,Industrials,Industrial Distribution,2025-10-03,115-121,121.0,125.0,121.66,3.3,118.1,-2.4
+Highway Infrastructure Ltd.,HILINFRA,mainboard,Industrials,Infrastructure Operations,2025-08-12,65-70,70.0,115.0,120.75,64.3,55.64,-20.5
+Technocraft Ventures Ltd.,TECHNOCRAF,mainboard,Industrials,Infrastructure Operations,2026-08-14,200-212,212.0,284.0,311.15,34.0,502.3,136.9
+Annu Projects Ltd.,ANNU,mainboard,Industrials,Infrastructure Operations,2026-09-02,94-99,99.0,72.0,75.6,-27.3,45.86,-53.7
+LCC Projects Ltd.,LCCPROJECT,mainboard,Industrials,Infrastructure Operations,2026-09-17,139-146,146.0,189.0,170.1,29.5,137.49,-5.8
+Delhivery Ltd.,DELHIVERY,mainboard,Industrials,Integrated Freight & Logistics,2022-05-24,462-487,487.0,495.2,536.35,1.7,409.15,-16.0
+TVS Supply Chain Solutions Ltd.,TVSSCS,mainboard,Industrials,Integrated Freight & Logistics,2023-08-23,187-197,197.0,207.05,201.0,5.1,125.93,-36.1
+Western Carriers (India) Ltd.,WCIL,mainboard,Industrials,Integrated Freight & Logistics,2024-09-24,163-172,172.0,171.0,159.44,-0.6,97.02,-43.6
+Glottis Ltd.,GLOTTIS,mainboard,Industrials,Integrated Freight & Logistics,2025-10-07,120-129,129.0,84.0,83.7,-34.9,57.06,-55.8
+Om Freight Forwarders Ltd.,OMFREIGHT,mainboard,Industrials,Integrated Freight & Logistics,2025-10-08,128-135,135.0,81.5,85.57,-39.6,107.97,-20.0
+Shadowfax Technologies Ltd.,SHADOWFAX,mainboard,Industrials,Integrated Freight & Logistics,2026-01-28,118-124,124.0,112.6,109.98,-9.2,297.75,140.1
+Skyways Air Services Ltd.,SKYWAYS,mainboard,Industrials,Integrated Freight & Logistics,2026-09-01,131-138,138.0,124.0,125.56,-10.1,108.08,-21.7
+JSW Infrastructure Ltd.,JSWINFRA,mainboard,Industrials,Marine Shipping,2023-10-03,113-119,119.0,143.0,157.3,20.2,341.8,187.2
+Shreeji Shipping Global Ltd.,SHREEJISPG,mainboard,Industrials,Marine Shipping,2025-08-26,240-252,252.0,270.0,255.1,7.1,826.45,228.0
+Waterways Leisure Tourism Ltd.,CORDELIA,mainboard,Industrials,Marine Shipping,2026-07-01,769-808,808.0,681.0,668.1,-15.7,99.77,-87.7
+Aeroflex Industries Ltd.,AEROFLEX,mainboard,Industrials,Metal Fabrication,2023-08-31,102-108,108.0,190.0,163.25,75.9,568.7,426.6
+Happy Forgings Ltd.,HAPPYFORGE,mainboard,Industrials,Metal Fabrication,2023-12-27,808-850,850.0,1000.0,1030.8,17.6,1917.7,125.6
+DEE Development Engineers Ltd.,DEEDEV,mainboard,Industrials,Metal Fabrication,2024-06-26,193-203,203.0,339.0,335.32,67.0,613.3,202.1
+Indo-MIM Ltd.,INDOMIM,mainboard,Industrials,Metal Fabrication,2026-07-30,461-485,485.0,700.0,741.75,44.3,1221.1,151.8
+Ardee Industries Ltd.,ARDEE,mainboard,Industrials,Metal Fabrication,2026-08-12,50-53,53.0,72.0,67.12,35.8,48.21,-9.0
+Quadrant Future Tek Ltd.,QUADFUTURE,mainboard,Industrials,Railroads,2025-01-14,275-290,290.0,370.0,444.0,27.6,479.15,65.2
+Awfis Space Solutions Ltd.,AWFIS,mainboard,Industrials,Rental & Leasing Services,2024-05-30,364-383,383.0,435.0,421.75,13.6,252.18,-34.2
+ECOS (India) Mobility & Hospitality Ltd.,ECOSMOBLTY,mainboard,Industrials,Rental & Leasing Services,2024-09-04,318-334,334.0,390.0,443.15,16.8,107.82,-67.7
+Rentomojo Ltd.,RENTOMOJO,mainboard,Industrials,Rental & Leasing Services,2026-09-17,384-404,404.0,482.45,534.25,19.4,568.75,40.8
+CMS Info Systems Ltd.,CMSINFO,mainboard,Industrials,Specialty Business Services,2021-12-31,205-216,216.0,220.2,238.2,1.9,217.73,0.8
+Radiant Cash Management Services Ltd.,RADIANTCMS,mainboard,Industrials,Specialty Business Services,2023-01-04,94-99,94.0,103.0,104.9,9.6,35.64,-62.1
+Updater Services Ltd.,UDS,mainboard,Industrials,Specialty Business Services,2023-10-04,280-300,300.0,285.0,283.9,-5.0,215.39,-28.2
+BLS E-Services Ltd.,BLSE,mainboard,Industrials,Specialty Business Services,2024-02-06,129-135,135.0,305.0,366.0,125.9,152.65,13.1
+Krystal Integrated Services Ltd.,KRYSTAL,mainboard,Industrials,Specialty Business Services,2024-03-21,680-715,715.0,785.0,712.85,9.8,635.6,-11.1
+Tega Industries Ltd.,TEGA,mainboard,Industrials,Specialty Industrial Machinery,2021-12-13,443-453,453.0,760.0,726.05,67.8,1968.5,334.5
+Inox India Ltd.,INOXINDIA,mainboard,Industrials,Specialty Industrial Machinery,2023-12-21,627-660,660.0,949.65,939.95,43.9,2066.5,213.1
+Azad Engineering Ltd.,AZAD,mainboard,Industrials,Specialty Industrial Machinery,2023-12-28,499-524,524.0,720.0,677.5,37.4,2871.1,447.9
+Jyoti CNC Automation Ltd.,JYOTICNC,mainboard,Industrials,Specialty Industrial Machinery,2024-01-16,315-331,331.0,370.0,434.2,11.8,1014.3,206.4
+JNK India Ltd.,JNKINDIA,mainboard,Industrials,Specialty Industrial Machinery,2024-04-30,395-415,415.0,621.0,694.55,49.6,423.9,2.1
+Gala Precision Engineering Ltd.,GALAPREC,mainboard,Industrials,Specialty Industrial Machinery,2024-09-09,503-529,529.0,721.1,757.15,36.3,1066.4,101.6
+Diffusion Engineers Ltd.,DIFFNKG,mainboard,Industrials,Specialty Industrial Machinery,2024-10-04,159-168,168.0,193.5,203.17,15.2,425.45,153.2
+Mamata Machinery Ltd.,MAMATA,mainboard,Industrials,Specialty Industrial Machinery,2024-12-27,230-243,243.0,600.0,630.0,146.9,391.5,61.1
+Omnitech Engineering Ltd.,OMNI,mainboard,Industrials,Specialty Industrial Machinery,2026-03-05,216-227,227.0,202.0,204.93,-11.0,644.95,184.1
+Powerica Ltd.,POWERICA,mainboard,Industrials,Specialty Industrial Machinery,2026-04-02,375-395,395.0,366.0,390.0,-7.3,591.05,49.6
+Lohia Corp Ltd.,LCL,mainboard,Industrials,Specialty Industrial Machinery,2026-07-30,404-425,425.0,461.0,494.6,8.5,623.7,46.8
+Hy-Tech Engineers Ltd.,HTEL,mainboard,Industrials,Specialty Industrial Machinery,2026-09-01,50-53,53.0,75.0,78.75,41.5,92.93,75.3
+Innovision Ltd.,INNOVISION,mainboard,Industrials,Staffing & Employment Services,2026-03-23,494-519,519.0,467.7,374.2,-9.9,251.7,-51.5
+Harsha Engineers International Ltd.,HARSHA,mainboard,Industrials,Tools & Accessories,2022-09-26,314-330,330.0,450.0,486.5,36.4,450.4,36.5
+Macrotech Developers Ltd.,LODHA,mainboard,Real Estate,Real Estate - Development,2021-04-19,483-486,486.0,436.0,465.25,-10.3,1059.6,118.0
+Shriram Properties Ltd.,SHRIRAMPPS,mainboard,Real Estate,Real Estate - Development,2021-12-20,113-118,118.0,90.0,99.6,-23.7,68.56,-41.9
+Keystone Realtors Ltd.,RUSTOMJEE,mainboard,Real Estate,Real Estate - Development,2022-11-24,514-541,541.0,555.0,556.85,2.6,353.5,-34.7
+Signatureglobal (India) Ltd.,SIGNATURE,mainboard,Real Estate,Real Estate - Development,2023-09-27,366-385,385.0,444.0,458.55,15.3,705.4,83.2
+Suraj Estate Developers Ltd.,SURAJEST,mainboard,Real Estate,Real Estate - Development,2023-12-26,340-360,360.0,340.0,334.5,-5.6,205.03,-43.0
+Arkade Developers Ltd.,ARKADE,mainboard,Real Estate,Real Estate - Development,2024-09-24,121-128,128.0,175.0,165.86,36.7,120.27,-6.0
+Kalpataru Ltd.,KALPATARU,mainboard,Real Estate,Real Estate - Development,2025-07-01,387-414,414.0,414.0,432.95,0.0,266.45,-35.6
+Horizon Industrial Parks Ltd.,HORIZONIND,mainboard,Real Estate,Real Estate - Development,2026-08-24,57-60,60.0,60.25,58.16,0.4,48.96,-18.4
+Pranav Constructions Ltd.,PRANAV,mainboard,Real Estate,Real Estate - Development,2026-09-15,118-124,124.0,165.0,132.0,33.1,94.47,-23.8
+Runwal Enterprises Ltd.,RUNWALENTR,mainboard,Real Estate,Real Estate - Development,2026-10-05,290-305,305.0,305.0,301.45,0.0,267.8,-12.2
+Veegaland Developers Ltd.,VEEGALAND,mainboard,Real Estate,Real Estate - Diversified,2026-09-18,130-140,140.0,154.0,146.3,10.0,128.33,-8.3
+Smartworks Coworking Spaces Ltd.,SMARTWORKS,mainboard,Real Estate,Real Estate Services,2025-07-17,387-407,407.0,435.0,445.05,6.9,471.35,15.8
+Indiqube Spaces Ltd.,INDIQUBE,mainboard,Real Estate,Real Estate Services,2025-07-30,225-237,237.0,216.0,217.97,-8.9,184.11,-22.3
+Dev Accelerator Ltd.,DEVX,mainboard,Real Estate,Real Estate Services,2025-09-17,56-61,61.0,61.0,64.05,0.0,42.41,-30.5
+WeWork India Management Ltd.,WEWORK,mainboard,Real Estate,Real Estate Services,2025-10-10,615-648,648.0,650.0,628.65,0.3,675.35,4.2
+Pace Digitek Ltd.,PACEDIGITK,mainboard,Technology,Communication Equipment,2025-10-06,208-219,219.0,225.0,217.99,2.7,166.04,-24.2
+ideaForge Technology Ltd.,IDEAFORGE,mainboard,Technology,Computer Hardware,2023-07-07,638-672,672.0,1300.0,1294.95,93.5,746.25,11.0
+Netweb Technologies India Ltd.,NETWEB,mainboard,Technology,Computer Hardware,2023-07-27,475-500,500.0,947.0,910.4,89.4,5067.7,913.5
+GNG Electronics Ltd.,EBGNG,mainboard,Technology,Computer Hardware,2025-07-30,225-237,237.0,355.0,333.39,49.8,729.4,207.8
+LG Electronics India Ltd.,LGEINDIA,mainboard,Technology,Consumer Electronics,2025-10-14,1080-1140,1140.0,1710.1,1689.9,50.0,1741.0,52.7
+Syrma SGS Technology Ltd.,SYRMA,mainboard,Technology,Electronic Components,2022-08-26,209-220,220.0,260.0,310.5,18.2,1692.2,669.2
+Kaynes Technology India Ltd.,KAYNES,mainboard,Technology,Electronic Components,2022-11-22,559-587,587.0,778.0,689.95,32.5,3275.0,457.9
+Avalon Technologies Ltd.,AVALON,mainboard,Technology,Electronic Components,2023-04-18,415-436,436.0,436.0,398.0,0.0,2282.5,423.5
+IKIO Lighting Ltd.,IKIO,mainboard,Technology,Electronic Components,2023-06-16,270-285,285.0,392.5,403.85,37.7,185.53,-34.9
+KRN Heat Exchanger & Refrigeration Ltd.,KRN,mainboard,Technology,Electronic Components,2024-10-03,209-220,220.0,480.0,478.79,118.2,1357.3,517.0
+Rashi Peripherals Ltd.,RPTECH,mainboard,Technology,Electronics & Computer Distribution,2024-02-14,295-311,311.0,339.5,321.5,9.2,906.7,191.5
+Protean eGov Technologies Ltd.,PROTEAN,mainboard,Technology,Information Technology Services,2023-11-13,752-792,792.0,792.0,883.0,0.0,664.95,-16.0
+Tata Technologies Ltd.,TATATECH,mainboard,Technology,Information Technology Services,2023-11-30,475-500,500.0,1200.0,1313.0,140.0,745.55,49.1
+Orient Technologies Ltd.,ORIENTTECH,mainboard,Technology,Information Technology Services,2024-08-28,195-206,206.0,288.0,302.4,39.8,233.55,13.4
+Hexaware Technologies Ltd.,HEXT,mainboard,Technology,Information Technology Services,2025-02-19,674-708,708.0,745.5,762.55,5.3,570.35,-19.4
+Ivalue Infosolutions Ltd.,IVALUE,mainboard,Technology,Information Technology Services,2025-09-25,284-299,299.0,284.95,281.85,-4.7,230.96,-22.8
+CSM Technologies Ltd.,CSM,mainboard,Technology,Information Technology Services,2026-07-02,107-113,113.0,113.0,107.35,0.0,91.27,-19.2
+Xtranet Technologies Ltd.,XTRANET,mainboard,Technology,Information Technology Services,2026-07-30,120-127,127.0,136.0,129.2,7.1,313.85,147.1
+ESDS Software Solution Ltd.,ESDS,mainboard,Technology,Information Technology Services,2026-09-04,408-429,429.0,757.0,908.4,76.5,1675.3,290.5
+ArMee Infotech Ltd.,ARMEE,mainboard,Technology,Information Technology Services,2026-09-30,350-375,375.0,375.0,300.0,0.0,248.6,-33.7
+SRIT India Ltd.,SRIT,mainboard,Technology,Information Technology Services,2026-10-06,123-130,130.0,148.0,155.09,13.8,126.04,-3.0
+Rishabh Instruments Ltd.,RISHABH,mainboard,Technology,Scientific & Technical Instruments,2023-09-11,418-441,441.0,460.05,443.15,4.3,695.95,57.8
+Tempsens Instruments (India) Ltd.,TEMPSENS,mainboard,Technology,Scientific & Technical Instruments,2026-08-28,285-300,300.0,634.0,586.65,111.3,587.05,95.7
+Rategain Travel Technologies Ltd.,RATEGAIN,mainboard,Technology,Software - Application,2021-12-17,405-425,425.0,360.0,340.05,-15.3,864.15,103.3
+eMudhra Ltd.,EMUDHRA,mainboard,Technology,Software - Application,2022-06-01,243-256,256.0,270.0,257.9,5.5,549.8,114.8
+Tracxn Technologies Ltd.,TRACXN,mainboard,Technology,Software - Application,2022-10-20,75-80,80.0,84.5,93.25,5.6,31.92,-60.1
+KFin Technologies Ltd.,KFINTECH,mainboard,Technology,Software - Application,2022-12-29,347-366,366.0,367.0,363.85,0.3,879.5,140.3
+Unicommerce eSolutions Ltd.,UNIECOM,mainboard,Technology,Software - Application,2024-08-13,102-108,108.0,235.0,210.08,117.6,85.49,-20.8
+Zinka Logistics Solutions Ltd.,BLACKBUCK,mainboard,Technology,Software - Application,2024-11-22,259-273,273.0,279.05,260.2,2.2,598.65,119.3
+Urban Co.Ltd.,URBANCO,mainboard,Technology,Software - Application,2025-09-17,98-103,103.0,162.25,166.83,57.5,161.79,57.1
+Capillary Technologies India Ltd.,CAPILLARY,mainboard,Technology,Software - Application,2025-11-21,549-577,577.0,571.9,606.5,-0.9,553.55,-4.1
+Excelsoft Technologies Ltd.,EXCELSOFT,mainboard,Technology,Software - Application,2025-11-26,114-120,120.0,135.0,125.97,12.5,85.81,-28.5
+Amagi Media Labs Ltd.,AMAGI,mainboard,Technology,Software - Application,2026-01-21,343-361,361.0,318.0,348.25,-11.9,570.95,58.2
+Shiprocket Ltd.,SHIPROCKET,mainboard,Technology,Software - Application,2026-08-19,92-97,97.0,131.0,143.45,35.1,134.53,38.7
+Moneyview Ltd.,MONEYVIEW,mainboard,Technology,Software - Application,2026-10-01,32-34,34.0,55.0,53.88,61.8,62.45,83.7
+One 97 Communications Ltd.,PAYTM,mainboard,Technology,Software - Infrastructure,2021-11-18,2080-2150,2150.0,1950.0,1560.8,-9.3,1712.4,-20.4
+C.E.Info systems Ltd.,MAPMYINDIA,mainboard,Technology,Software - Infrastructure,2021-12-21,1000-1033,1033.0,1565.0,1393.65,51.5,924.5,-10.5
+AGS Transact Technologies Ltd.,AGSTRA,mainboard,Technology,Software - Infrastructure,2022-01-31,166-175,175.0,175.0,161.05,0.0,2.21,-98.7
+Zaggle Prepaid Ocean Services Ltd.,ZAGGLE,mainboard,Technology,Software - Infrastructure,2023-09-22,156-164,164.0,164.0,158.35,0.0,171.22,4.4
+One Mobikwik Systems Ltd.,MOBIKWIK,mainboard,Technology,Software - Infrastructure,2024-12-18,265-279,279.0,440.0,528.0,57.7,242.23,-13.2
+Seshaasai Technologies Ltd.,STYL,mainboard,Technology,Software - Infrastructure,2025-09-30,402-423,423.0,432.0,411.45,2.1,344.7,-18.5
+Pine Labs Ltd.,PINELABS,mainboard,Technology,Software - Infrastructure,2025-11-14,210-221,221.0,242.0,250.89,9.5,167.73,-24.1
+Fractal Analytics Ltd.,FRACTAL,mainboard,Technology,Software - Infrastructure,2026-02-16,857-900,900.0,876.0,847.15,-2.7,721.05,-19.9
+Manipal Payment & Identity Solutions Ltd.,MPIMANIPAL,mainboard,Technology,Software - Infrastructure,2026-09-17,322-339,339.0,330.0,345.15,-2.7,354.05,4.4
+Premier Energies Ltd.,PREMIERENE,mainboard,Technology,Solar,2024-09-03,427-450,450.0,990.0,839.9,120.0,923.0,105.1
+Waaree Energies Ltd.,WAAREEENER,mainboard,Technology,Solar,2024-10-28,1427-1503,1503.0,2500.0,2338.9,66.3,2516.0,67.4
+Vikram Solar Ltd.,VIKRAMSOLR,mainboard,Technology,Solar,2025-08-26,315-332,332.0,338.0,356.4,1.8,146.75,-55.8
+Solarworld Energy Solutions Ltd.,SOLARWORLD,mainboard,Technology,Solar,2025-09-30,333-351,351.0,388.5,323.5,10.7,127.82,-63.6
+Emmvee Photovoltaic Power Ltd.,EMMVEE,mainboard,Technology,Solar,2025-11-18,206-217,217.0,217.0,219.4,0.0,299.4,38.0
+Fujiyama Power Systems Ltd.,UTLSOLAR,mainboard,Technology,Solar,2025-11-20,216-228,228.0,220.0,208.44,-3.5,418.45,83.5
+Karamtara Engineering Ltd.,KARAMTARA,mainboard,Technology,Solar,2026-09-17,241-254,254.0,320.0,352.0,26.0,381.8,50.3
+Antony Waste Handling Cell Ltd.,ANTONY,mainboard,Unclassified,Unclassified,2021-01-01,313-315,315.0,436.1,407.35,38.4,335.2,6.4
+MTAR Technologies Ltd.,MTAR,mainboard,Unclassified,Unclassified,2021-03-15,574-575,575.0,1050.0,1082.5,82.6,7672.0,1234.3
+Kalyan Jewellers India Ltd.,KALYAN,mainboard,Unclassified,Unclassified,2021-03-26,86-87,87.0,73.95,75.2,-15.0,564.0,548.3
+Barbeque-Nation Hospitality Ltd.,BARBEQUE,mainboard,Unclassified,Unclassified,2021-04-07,498-500,500.0,489.85,587.8,-2.0,684.95,37.0
+Shyam Metalics & Energy Ltd.,SHYMMETAL,mainboard,Unclassified,Unclassified,2021-06-24,303-306,306.0,380.0,376.15,24.2,1141.6,273.1
+Zomato Ltd.,ZOMATO,mainboard,Unclassified,Unclassified,2021-07-23,72-76,76.0,115.0,125.85,51.3,316.0,315.8
+Glenmark Life Sciences Ltd.,GLS,mainboard,Unclassified,Unclassified,2021-08-06,695-720,720.0,750.0,748.5,4.2,1348.0,87.2
+Rolex Rings Ltd.,ROLEX,mainboard,Unclassified,Unclassified,2021-08-09,880-900,900.0,1250.0,1167.0,38.9,173.43,-80.7
+Chemplast Sanmar Ltd.,CHEMPLAST,mainboard,Unclassified,Unclassified,2021-08-24,530-541,541.0,550.0,535.6,1.7,207.58,-61.6
+Ami Organics Ltd.,AMIORG,mainboard,Unclassified,Unclassified,2021-09-14,603-610,610.0,910.0,935.0,49.2,3160.5,418.1
+Paras Defence & Space Technologies Ltd.,PDSTL,mainboard,Unclassified,Unclassified,2021-10-01,165-175,175.0,469.0,492.45,168.0,1282.0,632.6
+Fino Payments Bank Ltd.,FINO,mainboard,Unclassified,Unclassified,2021-11-12,560-577,577.0,544.35,543.9,-5.7,135.48,-76.5
+Anand Rathi Wealth Ltd.,ARWL,mainboard,Unclassified,Unclassified,2021-12-14,530-550,550.0,600.0,583.55,9.1,2117.2,284.9
+Hariom Pipe Industries Ltd.,HARIOM,mainboard,Unclassified,Unclassified,2022-04-13,144-153,153.0,220.0,231.0,43.8,338.6,121.3
+DCX Systems Ltd.,DCX,mainboard,Unclassified,Unclassified,2022-11-11,197-207,207.0,286.25,308.8,38.3,155.49,-24.9
+Archean Chemical Industries Ltd.,ARCHEAN,mainboard,Unclassified,Unclassified,2022-11-21,386-407,407.0,450.0,458.15,10.6,470.1,15.5
+Abans Holdings Ltd.,AHL,mainboard,Unclassified,Unclassified,2022-12-23,256-270,270.0,273.0,218.4,1.1,201.01,-25.6
+Sah Polymers Ltd.,SAH,mainboard,Unclassified,Unclassified,2023-01-12,61-65,65.0,85.0,89.25,30.8,69.72,7.3
+HMA Agro Industries Ltd.,HMA,mainboard,Unclassified,Unclassified,2023-07-04,555-585,585.0,625.0,585.65,6.8,25.92,-95.6
+Muthoot Microfin Ltd.,MML,mainboard,Unclassified,Unclassified,2023-12-26,277-291,291.0,275.3,266.15,-5.4,174.55,-40.0
+Gopal Snacks Ltd.,GOPALSNACK,mainboard,Unclassified,Unclassified,2024-03-14,381-401,401.0,351.0,362.7,-12.5,250.45,-37.5
+Baazar Style Retail Ltd.,BZRSTYL,mainboard,Unclassified,Unclassified,2024-09-06,370-389,389.0,389.0,400.0,0.0,394.3,1.4
+Shree Tirupati Balajee Agro Trading Co.Ltd.,STBAL,mainboard,Unclassified,Unclassified,2024-09-12,78-83,83.0,90.0,94.5,8.4,22.59,-72.8
+International Gemmological Institute (India) Ltd.,IGIIL,mainboard,Unclassified,Unclassified,2024-12-20,397-417,417.0,510.0,471.15,22.3,315.9,-24.2
+Standard Glass Lining Technology Ltd.,SGLTL,mainboard,Unclassified,Unclassified,2025-01-13,133-140,140.0,176.0,163.35,25.7,370.25,164.5
+Ather Energy Ltd.,ATHER,mainboard,Unclassified,Unclassified,2025-05-06,304-321,321.0,328.0,302.3,2.2,1467.0,357.0
+Arisinfra Solutions Ltd.,ARISINFRA,mainboard,Unclassified,Unclassified,2025-06-25,210-222,222.0,205.0,174.38,-7.7,143.0,-35.6
+National Securities Depository Ltd.,NSDL,mainboard,Unclassified,Unclassified,2025-08-06,760-800,800.0,880.0,936.0,10.0,753.4,-5.8
+Saatvik Green Energy Ltd.,SAATVIK,mainboard,Unclassified,Unclassified,2025-09-26,442-465,465.0,465.0,440.7,0.0,403.45,-13.2
+PhysicsWallah Ltd.,PHYSICS,mainboard,Unclassified,Unclassified,2025-11-18,103-109,109.0,145.0,155.24,33.0,140.91,29.3
+Amir Chand Jagdish Kumar (Exports) Ltd.,AMIRCHAND,mainboard,Unclassified,Unclassified,2026-04-02,201-212,212.0,200.0,180.0,-5.7,219.35,3.5
+LEAP India Ltd.,LEAP,mainboard,Unclassified,Unclassified,2026-08-14,151-159,159.0,165.9,144.93,4.3,138.92,-12.6
+National Stock Exchange of India Ltd.,NSE,mainboard,Unclassified,Unclassified,2026-09-24,1700-1785,1785.0,1800.0,1818.0,0.8,1762.65,-1.3
+IRM Energy Ltd.,IRMENERGY,mainboard,Utilities,Utilities - Regulated Gas,2023-10-26,480-505,505.0,477.25,473.15,-5.5,258.7,-48.8
+Steamhouse India Ltd.,STEAMHOUSE,mainboard,Utilities,Utilities - Regulated Gas,2026-09-17,77-81,81.0,94.5,102.55,16.7,126.09,55.7
+Inox Green Energy Services Ltd.,INOXGREEN,mainboard,Utilities,Utilities - Renewable,2022-11-23,61-65,65.0,60.0,59.1,-7.7,124.39,91.4
+ACME Solar Holdings Ltd.,ACMESOLAR,mainboard,Utilities,Utilities - Renewable,2024-11-13,275-289,289.0,251.0,253.15,-13.1,419.75,45.2
+NTPC Green Energy Ltd.,NTPCGREEN,mainboard,Utilities,Utilities - Renewable,2024-11-27,102-108,108.0,111.5,121.65,3.2,91.72,-15.1
+GK Energy Ltd.,GKENERGY,mainboard,Utilities,Utilities - Renewable,2025-09-26,145-153,153.0,171.0,167.74,11.8,108.71,-28.9
+Clean Max Enviro Energy Solutions Ltd.,CLEANMAX,mainboard,Utilities,Utilities - Renewable,2026-03-02,1000-1053,1053.0,960.0,867.5,-8.8,1298.6,23.3
+Juniper Green Energy Ltd.,JNPR,mainboard,Utilities,Utilities - Renewable,2026-08-06,214-225,225.0,245.0,259.71,8.9,278.4,23.7

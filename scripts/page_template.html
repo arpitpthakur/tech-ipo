@@ -59,6 +59,9 @@ td.name small{display:block;color:var(--muted);font:400 11px var(--mono)}
 .tag.Startup{background:var(--accent-soft);color:var(--accent);border-color:transparent;font-weight:500}
 .tools{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin-bottom:12px}
 .tools input[type=search]{flex:1 1 200px;min-width:0;background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:7px 10px;font:inherit}
+#sel-sec{background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:6px 8px;font:inherit}
+.typ{font-size:11px;padding:1px 7px;border-radius:99px;border:1px solid var(--line);color:var(--muted)}
+.typ.Tech{background:var(--accent-soft);color:var(--accent);border-color:transparent;font-weight:500}
 .chips{display:flex;gap:6px;flex-wrap:wrap}
 .chip{background:var(--surface);color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:4px 12px;font:inherit;font-size:13px;cursor:pointer}
 .chip[aria-pressed="true"]{background:var(--accent);color:var(--surface);border-color:var(--accent)}
@@ -99,12 +102,15 @@ td.name small{display:block;color:var(--muted);font:400 11px var(--mono)}
 </header>
 <nav role="tablist" id="tabs">
   <button role="tab" aria-selected="true" data-t="ov">Overview</button>
+  <button role="tab" aria-selected="false" data-t="all" id="tab-all"></button>
   <button role="tab" aria-selected="false" data-t="mb" id="tab-mb"></button>
   <button role="tab" aria-selected="false" data-t="sm" id="tab-sm"></button>
 </nav>
 
 <section id="ov">
   <div class="tiles" id="tiles"></div>
+  <h2>All IPOs since 2021: tech against non-tech</h2>
+  <div class="scroll"><table id="t-all"></table></div>
   <h2>Mainboard tech, by startup tag</h2>
   <p class="sub">"Since IPO" compares today's price with the IPO issue price, adjusted for splits and bonus issues. Per year is the compound annual rate since listing. Listing gain is the listing-day open against the issue price.</p>
   <div class="scroll"><table id="t-tag"></table></div>
@@ -122,6 +128,26 @@ td.name small{display:block;color:var(--muted);font:400 11px var(--mono)}
     <li><b>SME tech is classified from business descriptions</b> on Chittorgarh, then pruned by hand (one wrongly tagged company was removed). Some SME rows have no split history, so their gains are not split-adjusted; a split would make the true gain higher. SME market caps and P/E come from news and data pages, scaled to the current price, so they are indicative.</li>
     <li><b>Valuation tag:</b> trailing P/E under 15 is Cheap, 15-40 Fair, above 40 Rich; Loss-making where earnings are negative. P/E is price divided by trailing earnings per share.</li>
   </ul>
+</section>
+
+<section id="all" hidden>
+  <div class="tools">
+    <input type="search" id="q-all" placeholder="Search company or symbol" aria-label="Search all IPOs">
+    <div class="chips" id="chips-board">
+      <button class="chip" data-v="All" aria-pressed="true">All boards</button>
+      <button class="chip" data-v="mainboard" aria-pressed="false">Mainboard</button>
+      <button class="chip" data-v="sme" aria-pressed="false">SME</button>
+    </div>
+    <div class="chips" id="chips-type">
+      <button class="chip" data-v="All" aria-pressed="true">All</button>
+      <button class="chip" data-v="Tech" aria-pressed="false">Tech</button>
+      <button class="chip" data-v="Non-tech" aria-pressed="false">Non-tech</button>
+    </div>
+    <select id="sel-sec" aria-label="Sector"><option value="All">All sectors</option></select>
+    <span class="count" id="c-all"></span>
+  </div>
+  <p class="hint">Every IPO listed since January 2021 on the mainboard and on SME platforms. Click a company for details. Tech IPOs with a full write-up open the full analysis.</p>
+  <div class="scroll"><table id="tb-all"></table></div>
 </section>
 
 <section id="mb" hidden>
@@ -160,9 +186,11 @@ td.name small{display:block;color:var(--muted);font:400 11px var(--mono)}
 <script>
 const MB = __MB__;
 const SME = __SME__;
+const ALL = __ALL__;
 
 const fmt = (v, d=2) => v == null ? "–" : v.toLocaleString("en-IN", {maximumFractionDigits: d});
 const pct = v => v == null || v === "" ? "–" : (v > 0 ? "+" : "") + Math.round(v).toLocaleString("en-IN") + "%";
+const boardLabel = {mainboard:"Mainboard", sme:"SME"};
 const crore = v => v == null ? "–" : v < 10 ? "₹" + v.toFixed(1) + " cr" : v >= 100000 ? "₹" + (v/100000).toFixed(2) + " lakh cr" : "₹" + Math.round(v).toLocaleString("en-IN") + " cr";
 const mult = v => v == null ? "–" : (v >= 10 ? Math.round(v) : v.toFixed(1)) + "x";
 const med = a => { if (!a.length) return null; const s = [...a].sort((x,y)=>x-y), m = s.length>>1; return s.length%2 ? s[m] : (s[m-1]+s[m])/2; };
@@ -190,14 +218,16 @@ function overview() {
   const all = MB.filter(r=>r.g!=null), st = MB.filter(r=>r.t==="Startup"), sme = SME.filter(r=>r.g!=null);
   const share = a => Math.round(a.filter(r=>r.g>0).length/a.length*100) + "%";
   document.getElementById("tiles").innerHTML = [
-    [MB.length, "Mainboard tech IPOs"], [share(all), "above IPO price"],
+    [ALL.length.toLocaleString("en-IN"), "IPOs since 2021 (all boards)"], [MB.length, "Mainboard tech IPOs"], [share(all), "above IPO price"],
     [st.length, "tagged startups"], [share(st), "of startups above IPO price"],
     [SME.length, "SME tech IPOs"], [share(sme), "of SME above IPO price"]
   ].map(([b,s]) => `<div class="tile"><b>${b}</b><span>${s}</span></div>`).join("");
+  summaryTable(document.getElementById("t-all"), ALL, r => (r.tech ? "Tech" : "Non-tech") + " · " + boardLabel[r.bd], "Group", ["Tech · Mainboard","Non-tech · Mainboard","Tech · SME","Non-tech · SME"]);
   summaryTable(document.getElementById("t-tag"), MB, r => ({Startup:"Startup",Borderline:"Borderline",Not:"Not startup"})[r.t], "Tag", ["Startup","Borderline","Not startup"]);
   summaryTable(document.getElementById("t-year"), MB, r => r.d.slice(0,4), "Year");
   summaryTable(document.getElementById("t-ind"), MB, r => r.ind, "Industry");
   summaryTable(document.getElementById("t-sme"), SME, r => r.d.slice(0,4), "Year");
+  document.getElementById("tab-all").textContent = `All IPOs (${ALL.length.toLocaleString("en-IN")})`;
   document.getElementById("tab-mb").textContent = `Mainboard tech (${MB.length})`;
   document.getElementById("tab-sm").textContent = `SME tech (${SME.length})`;
 }
@@ -220,7 +250,7 @@ function makeTable(el, rows, cols, state, kind) {
   el.innerHTML = `<thead><tr>${head}</tr></thead><tbody>${sorted.map((r,i) => `<tr class="row" data-i="${i}">${cols.map(c => c.cell(r)).join("")}</tr>`).join("")}</tbody>`;
   el.querySelectorAll("th").forEach(th => th.onclick = () => {
     const k = th.dataset.k;
-    state.dir = state.k === k ? -state.dir : (["n","ind","d","b","t"].includes(k) ? 1 : -1);
+    state.dir = state.k === k ? -state.dir : (["n","ind","d","b","t","bd","tt","sec","vt"].includes(k) ? 1 : -1);
     state.k = k; makeTable(el, rows, cols, state, kind);
   });
   el.querySelectorAll("tr.row").forEach(tr => tr.onclick = () => openPanel(sorted[+tr.dataset.i], kind, tr));
@@ -258,6 +288,29 @@ const smCols = [
   {k:"vt", l:"Valuation", cell:valCell},
 ];
 
+const allCols = [
+  {k:"n", l:"Company", cell:nameCell},
+  {k:"bd", l:"Board", cell:r=>`<td>${boardLabel[r.bd]}</td>`},
+  {k:"tt", l:"Type", cell:r=>`<td><span class="typ ${r.tech ? "Tech" : ""}">${r.tech ? "Tech" : "Non-tech"}</span></td>`},
+  {k:"sec", l:"Sector", cell:r=>`<td>${esc(r.sec)}</td>`},
+  {k:"d", l:"Listed", cell:r=>`<td class="num">${r.d}</td>`},
+  {k:"b", l:"Price band", cell:r=>`<td class="num">${esc(r.b)}</td>`},
+  {k:"i", l:"IPO price ₹", num:1, cell:r=>`<td class="num">${fmt(r.i)}</td>`},
+  {k:"o", l:"Listing open ₹", num:1, cell:r=>`<td class="num">${fmt(r.o)}</td>`},
+  {k:"lg", l:"Listing gain", num:1, cell:r=>`<td class="num ${cls(r.lg)}">${pct(r.lg)}</td>`},
+  {k:"c", l:"Now ₹", num:1, cell:r=>`<td class="num">${fmt(r.c)}</td>`},
+  {k:"mc", l:"Market cap", num:1, cell:r=>`<td class="num">${crore(r.mc)}</td>`},
+  {k:"g", l:"Since IPO", num:1, cell:sinceCell},
+  {k:"y", l:"Per year", num:1, cell:r=>`<td class="num ${cls(r.y)}">${pct(r.y)}</td>`},
+];
+ALL.forEach(r => r.tt = r.tech ? "Tech" : "Non-tech");
+const allState = {k:"d", dir:-1, board:"All", type:"All", sec:"All", q:""};
+function renderAll() {
+  const q = allState.q.toLowerCase();
+  const rows = ALL.filter(r => (allState.board==="All" || r.bd===allState.board) && (allState.type==="All" || r.tt===allState.type) && (allState.sec==="All" || r.sec===allState.sec) && (r.n+" "+(r.s||"")).toLowerCase().includes(q));
+  document.getElementById("c-all").textContent = rows.length.toLocaleString("en-IN") + " shown";
+  makeTable(document.getElementById("tb-all"), rows, allCols, allState, "all");
+}
 const mbState = {k:"d", dir:-1, tag:"All", q:""}, smState = {k:"d", dir:-1, q:""};
 function renderMB() {
   const q = mbState.q.toLowerCase();
@@ -274,6 +327,11 @@ function renderSM() {
 
 let lastFocus = null;
 function openPanel(r, kind, from) {
+  if (kind === "all") {
+    const rich = r.bd === "mainboard" ? MB.find(x => x.s === r.s) : SME.find(x => x.n === r.n);
+    if (rich) return openPanel(rich, r.bd === "mainboard" ? "mb" : "sm", from);
+    return openBasic(r, from);
+  }
   lastFocus = from.querySelector("button") || from;
   document.getElementById("p-title").textContent = r.n;
   document.getElementById("p-meta").textContent = [r.s, kind === "mb" ? r.ind : "SME board", "listed " + r.d].filter(Boolean).join(" · ");
@@ -302,6 +360,21 @@ function openPanel(r, kind, from) {
   const p = document.getElementById("panel"); p.hidden = false; p.scrollTop = 0;
   document.getElementById("p-close").focus();
 }
+function openBasic(r, from) {
+  lastFocus = from.querySelector("button") || from;
+  document.getElementById("p-title").textContent = r.n;
+  document.getElementById("p-meta").textContent = [r.s, boardLabel[r.bd], r.sec, "listed " + r.d].filter(Boolean).join(" · ");
+  const stat = (b, s, c="") => `<div><b class="${c}">${b}</b><span>${s}</span></div>`;
+  let h = `<div class="stats">${stat("₹" + fmt(r.i), "IPO price")}${stat("₹" + fmt(r.o), "Listing open")}${stat("₹" + fmt(r.c), "Now")}
+    ${stat(mult(r.x), "Now vs IPO price", cls(r.g))}${stat(pct(r.g), "Since IPO", cls(r.g))}${stat(r.y === "" ? "–" : pct(r.y), r.y === "" ? "Per year (under 1 yr)" : "Per year", cls(r.y))}${stat(crore(r.mc), "Market cap now")}</div>
+    <p class="hint" style="margin-top:8px">Listing-day gain: <span class="${cls(r.lg)}">${pct(r.lg)}</span> · price band ${esc(r.b)}${r.adj ? " · split/bonus adjusted" : ""}<br>Price: ${esc(r.ps)}${r.ps === "Chittorgarh" ? ", may lag" : ""}</p>`;
+  h += `<h4>What it does</h4><p>${esc(r.about || "No description available.")}</p>`;
+  h += `<p class="src">Sector is ${r.tech ? "from the tech list" : esc(r.ss || "approximate")}. This is not a tech IPO under our classification, so no detailed research is attached. Not investment advice.</p>`;
+  document.getElementById("p-body").innerHTML = h;
+  document.getElementById("scrim").hidden = false;
+  const p = document.getElementById("panel"); p.hidden = false; p.scrollTop = 0;
+  document.getElementById("p-close").focus();
+}
 function closePanel() {
   document.getElementById("panel").hidden = true; document.getElementById("scrim").hidden = true;
   if (lastFocus) lastFocus.focus();
@@ -319,11 +392,17 @@ document.querySelectorAll("#chips-mb .chip").forEach(b => b.onclick = () => {
 });
 document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => {
   document.querySelectorAll("#tabs button").forEach(x => x.setAttribute("aria-selected", x===b));
-  ["ov","mb","sm"].forEach(id => document.getElementById(id).hidden = id !== b.dataset.t);
+  ["ov","all","mb","sm"].forEach(id => document.getElementById(id).hidden = id !== b.dataset.t);
 });
 document.getElementById("theme").onclick = () => {
   const r = document.documentElement, dark = r.dataset.theme === "dark" || (!r.dataset.theme && matchMedia("(prefers-color-scheme:dark)").matches);
   r.dataset.theme = dark ? "light" : "dark";
 };
-overview(); renderMB(); renderSM();
+[...new Set(ALL.map(r => r.sec))].sort().forEach(v => { const o = document.createElement("option"); o.value = v; o.textContent = v; document.getElementById("sel-sec").appendChild(o); });
+document.getElementById("q-all").oninput = e => { allState.q = e.target.value; renderAll(); };
+document.getElementById("sel-sec").onchange = e => { allState.sec = e.target.value; renderAll(); };
+[["chips-board","board"],["chips-type","type"]].forEach(([id,key]) => document.querySelectorAll("#"+id+" .chip").forEach(b => b.onclick = () => {
+  allState[key] = b.dataset.v; document.querySelectorAll("#"+id+" .chip").forEach(x => x.setAttribute("aria-pressed", x===b)); renderAll();
+}));
+overview(); renderAll(); renderMB(); renderSM();
 </script>

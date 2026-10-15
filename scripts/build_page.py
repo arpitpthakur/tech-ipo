@@ -116,5 +116,7 @@ for r in csv.DictReader(open("data/sme_tech_last5y.csv")):
         why=n["why"], outlook=n["outlook"], links=n["src"], conf=n.get("conf", "low")))
 
 tpl = open("scripts/page_template.html").read()
-open(OUT, "w").write(tpl.replace("__MB__", json.dumps(mb, ensure_ascii=False)).replace("__SME__", json.dumps(sme, ensure_ascii=False)))
+allr = json.load(open("data/all_ipos.json"))
+for r in allr: r["ss"] = "approximate, from industry and business description"
+open(OUT, "w").write(tpl.replace("__MB__", json.dumps(mb, ensure_ascii=False)).replace("__SME__", json.dumps(sme, ensure_ascii=False)).replace("__ALL__", json.dumps(allr, ensure_ascii=False)))
 print(len(mb), len(sme))

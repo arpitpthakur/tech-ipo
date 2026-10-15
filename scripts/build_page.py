@@ -36,7 +36,7 @@ def perf_read(r):
         b.append("Trades below the IPO price.")
     return b
 
-def fin_read(p):
+def fin_read(p, now):
     b = []
     g, nm, om, rev, mc = p.get("rev_growth"), p.get("net_margin"), p.get("op_margin"), p.get("revenue"), p.get("mcap")
     if g is not None:
@@ -50,7 +50,7 @@ def fin_read(p):
         b.append(f"Cash {inr(cash)} against debt {inr(debt)}: " + ("net cash." if cash >= debt else "more debt than cash."))
     if mc and rev and rev > 0:
         b.append(f"Market cap is {mc/rev:.1f}x trailing revenue.")
-    t, pr = p.get("target"), p.get("price")
+    t, pr = p.get("target"), now
     if t and pr:
         b.append(f"Analyst mean target ₹{t:,.0f} is {(t/pr-1)*100:+.0f}% from the current price" + (f" (consensus: {p['rec'].replace('_',' ')})." if p.get("rec") else "."))
     return b
@@ -69,8 +69,8 @@ for r in rows:
     if p.get("employees"): facts.append(["Employees", f"{p['employees']:,}"])
     mb.append(dict(n=re.sub(r" (Ltd\.|Limited)$", "", r["company"]), s=r["symbol"], ind=r["industry"], d=r["listed"], b=r["band"],
         i=r["issue"], o=r["listing_open"], lg=r["listing_gain"], c=r["now"], x=r["multiple"], g=r["total_gain"], y=r["cagr"] if r["cagr"] == "" else r["cagr"],
-        yrs=r["years"], t=r["tag"], about=about, facts=facts, read=perf_read(r) + fin_read(p), web=p.get("website"),
-        src="Yahoo Finance" if p.get("summary") else "Chittorgarh"))
+        yrs=r["years"], t=r["tag"], about=about, facts=facts, read=perf_read(r) + fin_read(p, r["now"]), web=p.get("website"),
+        ps=r["price_src"], src="Yahoo Finance" if p.get("summary") else "Chittorgarh"))
 
 sme = []
 for r in csv.DictReader(open("data/sme_tech_last5y.csv")):
@@ -81,7 +81,7 @@ for r in csv.DictReader(open("data/sme_tech_last5y.csv")):
     cagr = round((x ** (1 / yrs) - 1) * 100, 1) if x and x > 0 and yrs >= 1 else ""
     sme.append(dict(n=re.sub(r" (Ltd\.|Limited)$", "", r["company"]), s=r["symbol"], d=r["listing_date"], b=r["price_band"], i=iss, o=op,
         lg=round((op/iss-1)*100,1) if op and iss else None, c=cur, x=round(x,2) if x else None, g=g, y=cagr, yrs=round(yrs,2),
-        about=r["description"], adj=r["has_split_data"] == "True"))
+        ps=r["price_src"], about=r["description"], adj=r["has_split_data"] == "True"))
 
 tpl = open("scripts/page_template.html").read()
 open(OUT, "w").write(tpl.replace("__MB__", json.dumps(mb, ensure_ascii=False)).replace("__SME__", json.dumps(sme, ensure_ascii=False)))

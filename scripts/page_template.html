@@ -89,7 +89,7 @@ td.name small{display:block;color:var(--muted);font:400 11px var(--mono)}
 <div class="wrap">
 <header>
   <h1>India Tech IPO Tracker</h1>
-  <div><span class="asof">Prices as of 15 Oct 2026</span> <button class="theme" id="theme" type="button">Theme</button></div>
+  <div><span class="asof">Zerodha Kite prices, 15 Oct 2026</span> <button class="theme" id="theme" type="button">Theme</button></div>
 </header>
 <nav role="tablist" id="tabs">
   <button role="tab" aria-selected="true" data-t="ov">Overview</button>
@@ -263,7 +263,7 @@ function openPanel(r, kind, from) {
   const stat = (b, s, c="") => `<div><b class="${c}">${b}</b><span>${s}</span></div>`;
   let h = `<div class="stats">${stat("₹" + fmt(r.i), "IPO price")}${stat("₹" + fmt(r.o), "Listing open")}${stat("₹" + fmt(r.c), "Now")}
     ${stat(mult(r.x), "Now vs IPO price", cls(r.g))}${stat(pct(r.g), "Since IPO", cls(r.g))}${stat(r.y === "" ? "–" : pct(r.y), r.y === "" ? "Per year (under 1 yr)" : "Per year", cls(r.y))}</div>
-    <p class="hint" style="margin-top:8px">Listing-day gain: <span class="${cls(r.lg)}">${pct(r.lg)}</span> · price band ${esc(r.b)}${kind==="sm" && !r.adj ? " · not split-adjusted" : ""}</p>`;
+    <p class="hint" style="margin-top:8px">Listing-day gain: <span class="${cls(r.lg)}">${pct(r.lg)}</span> · price band ${esc(r.b)}${kind==="sm" && !r.adj ? " · not split-adjusted" : ""}<br>${r.ps === "kite" ? "Price: Zerodha Kite last traded price, 15 Oct 2026" : "Price: Chittorgarh, may lag (not found on Kite NSE)"}</p>`;
   h += `<h4>What it does</h4><p>${esc(r.about || "No description available.")}</p>`;
   if (kind === "mb") {
     if (r.facts.length) h += `<h4>Business snapshot</h4><dl class="facts">${r.facts.map(([k,v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl>`;

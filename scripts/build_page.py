@@ -55,7 +55,14 @@ def fin_read(p, now, mc):
         b.append(f"Analyst mean target ₹{t:,.0f} is {(t/pr-1)*100:+.0f}% from the current price" + (f" (consensus: {p['rec'].replace('_',' ')})." if p.get("rec") else "."))
     return b
 
+VI = json.load(open("data/valuation_inputs.json"))
 SH = json.load(open("data/shares_outstanding.json"))
+
+def vtag(pe, loss):
+    if loss: return "Loss-making"
+    if pe is None: return None
+    return "Cheap" if pe < 15 else "Fair" if pe <= 40 else "Rich"
+
 NOTES = {}
 for f in sorted(glob.glob("data/research/notes_*.json")): NOTES.update(json.load(open(f)))
 rows = list(csv.DictReader(open("data/tech_mainboard_v2.csv")))
@@ -66,6 +73,9 @@ for r in rows:
     p = P[r["symbol"]]
     sh = SH.get(r["symbol"]); mc = sh["shares"] * r["now"] if sh else None
     note = NOTES[r["symbol"]]
+    vi = VI.get(r["symbol"], {}); eps, bv = vi.get("eps"), vi.get("bvps")
+    pe = round(r["now"] / eps, 1) if eps and eps > 0 else None
+    pb = round(r["now"] / bv, 1) if bv and bv > 0 else None
     about = trim(p.get("summary")) or trim(desc.get(str(raw[r["symbol"]]["id"])))
     facts = []
     if p.get("revenue") is not None: facts.append(["Revenue (TTM)", inr(p["revenue"])])
@@ -74,18 +84,36 @@ for r in rows:
     mb.append(dict(n=re.sub(r" (Ltd\.|Limited)$", "", r["company"]), s=r["symbol"], ind=r["industry"], d=r["listed"], b=r["band"],
         i=r["issue"], o=r["listing_open"], lg=r["listing_gain"], c=r["now"], x=r["multiple"], g=r["total_gain"], y=r["cagr"] if r["cagr"] == "" else r["cagr"],
         yrs=r["years"], t=r["tag"], about=about, facts=facts, read=perf_read(r) + fin_read(p, r["now"], mc), web=p.get("website"),
-        ps=r["price_src"], mc=round(mc / 1e7) if mc else None, mcb=sh["basis"] if sh else None, why=note["why"], outlook=note["outlook"], links=note["src"], conf=note.get("conf", "medium"), src="Yahoo Finance" if p.get("summary") else "Chittorgarh"))
+        pe=pe, pb=pb, vt=vtag(pe, eps is not None and eps <= 0), ps=r["price_src"], mc=round(mc / 1e7) if mc else None, mcb=sh["basis"] if sh else None, why=note["why"], outlook=note["outlook"], links=note["src"], conf=note.get("conf", "medium"), src="Yahoo Finance" if p.get("summary") else "Chittorgarh"))
+
+SNOTES = {}
+for f in sorted(glob.glob("data/research_sme/notes_*.json")): SNOTES.update(json.load(open(f)))
+def snote(r):
+    for k, n in SNOTES.items():
+        if r["company"].startswith(n.get("match", k)) or k == r["symbol"]: return n
 
 sme = []
+from datetime import date
 for r in csv.DictReader(open("data/sme_tech_last5y.csv")):
     iss, op, cur = fl(r["issue_price"]), fl(r["listing_open"]), fl(r["current_price"])
     g = fl(r["adj_gain_pct"]); x = (1 + g / 100) if g is not None else None
-    from datetime import date
     yrs = (date(2026,10,15) - date.fromisoformat(r["listing_date"])).days / 365.25
     cagr = round((x ** (1 / yrs) - 1) * 100, 1) if x and x > 0 and yrs >= 1 else ""
+    n = snote(r)
+    mc = mcb = pe = None
+    if n.get("mcref") and cur:
+        mc = n["mcref"][0] * cur / n["mcref"][1]
+        mcb = f"reported market cap of ₹{n['mcref'][0]:,.0f} crore at ₹{n['mcref'][1]:,.2f}, scaled to the current price"
+    elif n.get("mc_direct"):
+        mc = n["mc_direct"][0]; mcb = f"reported market cap of ₹{mc:,.0f} crore as of {n['mc_direct'][1]} (not scaled to today's price)"
+    if n.get("pe"):
+        pe = round(n["pe"] * cur / n["mcref"][1], 1) if n.get("mcref") and cur else n["pe"]
+    loss = n["why"].lower().count("loss-making") > 0 or "negative" in n["why"].lower() and "p/e" in n["why"].lower()
     sme.append(dict(n=re.sub(r" (Ltd\.|Limited)$", "", r["company"]), s=r["symbol"], d=r["listing_date"], b=r["price_band"], i=iss, o=op,
         lg=round((op/iss-1)*100,1) if op and iss else None, c=cur, x=round(x,2) if x else None, g=g, y=cagr, yrs=round(yrs,2),
-        ps=r["price_src"], about=r["description"], adj=r["has_split_data"] == "True"))
+        ps=r["price_src"], about=r["description"], adj=r["has_split_data"] == "True",
+        mc=round(mc) if mc is not None and mc >= 10 else (round(mc, 1) if mc is not None else None), mcb=mcb, pe=pe, vt=vtag(pe, loss and pe is None),
+        why=n["why"], outlook=n["outlook"], links=n["src"], conf=n.get("conf", "low")))
 
 tpl = open("scripts/page_template.html").read()
 open(OUT, "w").write(tpl.replace("__MB__", json.dumps(mb, ensure_ascii=False)).replace("__SME__", json.dumps(sme, ensure_ascii=False)))

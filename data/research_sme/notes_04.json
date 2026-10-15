@@ -1,0 +1,139 @@
+{
+ "VEEFIN": {
+  "match": "Veefin",
+  "why": "About 2.9x the ₹82 issue price but down 38% over a year (52-week range ₹211-411). No source stated why. Reported flags: promoters have pledged about 69% of their holding (undated), receivables are high at 176 days, and a July 2026 EGM was held. Business is growing fast: standalone FY26 revenue about ₹74 crore against ₹38 crore and profit ₹18.2 crore against ₹11.2 crore; Q4 consolidated revenue rose 27% to ₹131 crore with profit about doubling.",
+  "outlook": "Guidance (November 2025): standalone revenue growth of 75-85% and consolidated 290-300% for FY26, margins expanding as product investment levels off. Enterprise pipeline passed $80 million; 75% now comes from non-supply-chain-finance products. It plans to merge subsidiaries (expected to lift EPS). P/E 34-43 by source.",
+  "mcref": [
+   617,
+   241.75
+  ],
+  "pe": 43.5,
+  "conf": "medium",
+  "src": [
+   "https://www.freepressjournal.in/business/veefin-solutions-q4-consolidated-revenue-surges-27-to-131-crore-pat-doubles",
+   "https://uniindia.com/veefin-solutions-delivers-476-yoy-revenue-growth-in-h1-fy26/prnewswire/news/3647730.html",
+   "https://www.screener.in/company/543931"
+  ]
+ },
+ "TRIDHYA": {
+  "match": "Tridhya",
+  "why": "Down about 85% from the ₹42 issue price, falling steadily through 2026 (₹13.10 in January, ₹8.9 in June, ₹6.45 now). One source shows a net margin of -21% and debt to equity of 187%, but another shows small positive EPS, and it is thinly traded. No confirmed cause. Promoters hold about 62%.",
+  "outlook": "No analyst targets or formal forecast found. Market cap is about ₹15-20 crore. Check the latest results filings.",
+  "mcref": [
+   20,
+   8.5
+  ],
+  "pe": null,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/tridhya-tech-ltd",
+   "https://www.aajtak.in/business/stock/tridhya-tech-ltd-tridhya-share-price-5657"
+  ]
+ },
+ "SYNOPTICS": {
+  "match": "Synoptics",
+  "why": "Down about 79% from the ₹237 issue price, with a rebound from a mid-April 2026 low of ₹46 to about ₹74 by August. FY26 standalone revenue was about ₹57 crore with profit about ₹4.1 crore; P/E near 15 and price-to-book 0.9. The sources do not state why it fell; there was a 9 June 2026 'price movement' clarification to exchanges that I could not read.",
+  "outlook": "No analyst ratings or guidance found. Valuation is low (P/E 15, P/B 0.9) for a profitable company, which suggests the market doubts earnings quality or is limited by thin trading.",
+  "mcref": [
+   62.9,
+   74.2
+  ],
+  "pe": 15.4,
+  "conf": "low",
+  "src": [
+   "https://www.screener.in/company/SYNOPTICS",
+   "https://www.businesstoday.in/stocks/synoptics-technologies-ltd-share-price-388604"
+  ]
+ },
+ "ACCELERATE": {
+  "match": "AccelerateBS",
+  "why": "Up about 2.4x on the bonus-adjusted ₹90 issue price but extremely volatile: ₹85 in January 2026, ₹155 in April (+81% in six months), ₹100 by mid-July, 52-week range ₹67-199. The sources do not explain the swings. Trailing revenue is only about ₹7 crore, so P/E above 50 and price-to-book of 8-9 are high. A ₹0.10 dividend was proposed in May.",
+  "outlook": "No analyst targets or 2026 forecast found. It provides digital experience platform consulting and implementation. Market cap about ₹33-35 crore.",
+  "mcref": [
+   34.5,
+   100.23
+  ],
+  "pe": 53.4,
+  "conf": "low",
+  "src": [
+   "https://www.businesstoday.in/stocks/acceleratebs-india-ltd-share-price-388591",
+   "https://www.tickertape.in/stocks/acceleratebs-india-ACCEL"
+  ]
+ },
+ "YUDIZ": {
+  "match": "Yudiz",
+  "why": "Down 86% from the ₹165 issue price, with the shares hitting fresh lows. Past results explain some of it: H1 FY25 standalone profit was only ₹5,000 against ₹1.34 crore a year before (loss without a tax credit) and operating revenue fell 23% to ₹11.15 crore. Trading is very thin (about 1,600 shares a day). Latest news found is old and there are no 2026 results.",
+  "outlook": "No guidance, forecasts or 2026 results found. Recent subsidiary deals (Insightly Dataworks, ABCM App) have an unconfirmed financial impact. The stock now trades near book value (P/B about 0.72).",
+  "mcref": [
+   26,
+   24.8
+  ],
+  "pe": null,
+  "conf": "low",
+  "src": [
+   "https://inc42.com/buzz/yudiz-shares-slide-5-to-hit-fresh-52-week-low",
+   "https://anandrathi.com/stocks/yudiz-solutions-ltd"
+  ]
+ },
+ "KODY": {
+  "match": "Kody",
+  "why": "About 9.5x the ₹160 issue price and up about 118% in six months (52-week low about ₹556, now about ₹1,500+). No 2026 catalyst was found. Earnings growth came earlier: FY25 revenue rose 214% to ₹73 crore and profit 260% to ₹17.6 crore; a 2025 Falcon Tech Robotics joint venture targets the GCC region. Receivables are high (192 days) and the share count is small.",
+  "outlook": "No guidance found; the next result date is listed as 5 November 2026. P/E is about 99-110 and price-to-book about 10.5, and Stockopedia labels it a momentum trap. The 'undervalued' claim from one aggregator conflicts with that valuation.",
+  "mcref": [
+   2168,
+   1516.8
+  ],
+  "pe": 99.2,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/kody-technolab-ltd/share-price-today",
+   "https://www.screener.in/company/KODYTECH/consolidated/",
+   "https://stockopedia.com/share-prices/kody-technolab-NSI:KODYTECH"
+  ]
+ },
+ "CANARYS": {
+  "match": "Canarys",
+  "why": "Slightly below the ₹31 issue price, up about 27% over six months but down about 19% over a year (52-week range ₹14.60-35.20). The sources gave no single cause. It bought 51% of Fortira Inc (USA) in April 2025. P/E is only around 10 and trading is light.",
+  "outlook": "Management guides to 20-25% revenue growth with consolidated revenue of about ₹200-210 crore, and at least 20% annual growth for FY27. Order book: IT solutions about ₹150 crore, water resource management about ₹50 crore, plus about $15 million at Fortira (51% owned). These are management targets, not independent forecasts.",
+  "mcref": [
+   124.5,
+   23.15
+  ],
+  "pe": 10.0,
+  "conf": "medium",
+  "src": [
+   "https://www.arthneeti.com/insights/canarys-automations-ltd-q1-fy27-earnings",
+   "https://www.bajajfinservmarkets.in/stocks/canarys-automations-ltd"
+  ]
+ },
+ "WOMANCART": {
+  "match": "WomanCart",
+  "why": "Flat on the ₹86 issue price after a peak of ₹358 (November 2025). It fell about 20% on 30 April 2026 after FY26 results: revenue more than doubled (+126% to ₹133.7 crore) but profit was flat at ₹6.9 crore because cost of goods sold grew 204%, which the report links to margin dilution from inventory build-up, new stores and warehouses, and higher finance costs. Down 56% over a year.",
+  "outlook": "A February 2026 business update was upbeat on demand, retail expansion and logistics, but predates the margin concerns. No analyst targets or guidance found. Cash ₹9.7 crore against debt ₹13.5 crore; P/E 14-46 by source.",
+  "mcref": [
+   81.88,
+   99.7
+  ],
+  "pe": 27.3,
+  "conf": "medium",
+  "src": [
+   "https://tradebrains.in/womancart-shares-fall-20-despite-revenue-doubling-to-134-cr-in-fy26/",
+   "https://www.chittorgarh.com/stockpricequote/womancart-limited/5845/"
+  ]
+ },
+ "ONDOOR": {
+  "match": "On Door",
+  "why": "Up about 21% on the ₹208 issue price, with a 2026 rally from ₹119 (February) to ₹175 (June) to about ₹267 in September (52-week range ₹100-340). No source tied this to a specific announcement. FY25 revenue rose 17% to ₹273 crore and profit 28% to ₹7.8 crore; P/E about 9 and price-to-book about 0.9 per one page. It sells groceries online and is exploring B2B.",
+  "outlook": "No analyst ratings or 2026 forecast found. Promoter holding figures conflict (about 29% vs a 5.9% rise). A low P/E with thin trading means price moves may not track fundamentals.",
+  "mcref": [
+   98.83,
+   174.95
+  ],
+  "pe": 9.1,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/on-door-concepts-ltd/share-price-today",
+   "https://www.icicidirect.com/stocks/on-door-concepts-ltd-share-price"
+  ]
+ }
+}

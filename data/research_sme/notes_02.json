@@ -1,0 +1,140 @@
+{
+ "FONE4": {
+  "match": "Fone4",
+  "why": "Down about 59% from the ₹10 issue price (₹4.09) and down more than half in six months (52-week range ₹3.79-11.20). The company is loss-making (P/E negative) and sells phones, laptops, TVs and accessories online. No source gave a company-specific cause for the 2026 slide.",
+  "outlook": "No guidance, analyst view or results commentary found. Market cap is about ₹10-11 crore on 2.495 crore shares.",
+  "mcref": [
+   11.25,
+   4.51
+  ],
+  "pe": null,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/fone4-communications-india-ltd/share-price-today",
+   "https://www.indmoney.com/stocks/fone4-communications-india-ltd-share-price/technical-analysis"
+  ]
+ },
+ "GSTL": {
+  "match": "Globesecure",
+  "why": "Down about 62% from the ₹29 issue price (52-week range ₹5.95-37.65). Revenue fell to ₹16.9 crore in FY25 from ₹25.0 crore and it posted a loss of ₹2.87 crore with operating cash flow of -₹24 crore, per an aggregator. No source attributes the fall to these figures directly.",
+  "outlook": "No analyst forecast, guidance or 2026 results found. It sells cyber security and cloud services. Check exchange filings and any surveillance notices.",
+  "mcref": [
+   16.74,
+   10.95
+  ],
+  "pe": null,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/globesecure-technologies-ltd",
+   "https://www.torusdigital.com/stocks/globesecure-technologies-ltd-share-price"
+  ]
+ },
+ "FIDEL": {
+  "match": "Fidel Softech",
+  "why": "About 4.9x the ₹37 issue price, but down about 20% over a year and up about 23% over six months (a rebound from a ₹108 low; range up to ₹200+). Weak recent quarters: June 2026 quarter profit down about 47% (₹9.15 crore) with revenue ₹11.56 crore against ₹15.42 crore. ROE is high at about 27%. No catalyst for a re-rating was found.",
+  "outlook": "Simply Wall St scores future growth 0 out of 6 and its cash-flow model valued the stock near ₹73 against a ₹131.6 price then. No broker target or guidance found. P/E ranges 12-22 by source.",
+  "mcref": [
+   246,
+   157.4
+  ],
+  "pe": 18.6,
+  "conf": "low",
+  "src": [
+   "https://www.share.market/stocks/fidel-softech-ltd-share/technicals",
+   "https://simplywall.st/stocks/in/software/nse-fidel/fidel-softech-shares/valuation"
+  ]
+ },
+ "OLATECH": {
+  "match": "Olatech",
+  "why": "Down about 62% over six months from a January 2026 level near ₹212 (52-week range ₹58-291) and about 2x the ₹27 issue price. The sources gave no results or news for the fall. It sells OSS/BSS telecom software, network monitoring, ERP/CRM and cloud services from Navi Mumbai and is listed only on BSE.",
+  "outlook": "No guidance, forecast or analyst view found. Market cap of about ₹29 crore (28 August) shows how far it has fallen from ₹94 crore in January.",
+  "mcref": [
+   29,
+   64.05
+  ],
+  "pe": null,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/olatech-solutions-ltd/share-price-today",
+   "https://www.businesstoday.in/stocks/olatech-solutions-ltd-share-price-366094"
+  ]
+ },
+ "CLOUD": {
+  "match": "Varanium",
+  "why": "Down about 95% from a 2023 peak near ₹191 (market cap then ₹847 crore) to about ₹5.85, below the ₹122 issue price. Possible causes found: a 2023 rights issue priced at ₹123, weak late-2023 results (a ₹2.73 crore loss), and an unverified March 2026 headline about an accounting scandal. Many 2026-labelled pages carry 2025 data.",
+  "outlook": "No credible forecast or guidance found; FY26 results (year end 31 March 2026) are the near-term test. Simply Wall St scores it 0 of 6 on growth and financial health. Kite had no live quote for it, so the price and market cap are indicative aggregator figures.",
+  "mcref": [
+   24,
+   5.85
+  ],
+  "pe": null,
+  "price_override": 5.85,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/varanium-cloud-ltd/share-price-today",
+   "https://simplywall.st/stocks/in/software/nse-cloud/varanium-cloud-shares",
+   "https://bigul.co/blog/rights-issue/varanium-cloud-limited-rights-issue"
+  ]
+ },
+ "CMRSL": {
+  "match": "Cyber Media Research",
+  "why": "Down about 61% from the ₹180 issue price (52-week range ₹52-97). It is an ad-tech and data analytics company with TTM revenue of about ₹91 crore and profit of about ₹3 crore (March 2026 quarter revenue ₹17.4 crore and profit ₹1.32 crore). No source explained the price moves; liquidity is low (one day traded 10,400 shares).",
+  "outlook": "No analyst ratings or guidance found. P/E is only about 5.7 and price-to-book near 1, so the market is valuing it cheaply, likely reflecting the low liquidity and small scale.",
+  "mcref": [
+   20,
+   67.5
+  ],
+  "pe": 5.7,
+  "conf": "low",
+  "src": [
+   "https://www.valueresearchonline.com/stocks/309748/cyber-media-research-services-ltd/",
+   "https://anandrathi.com/stocks/cyber-media-research-and-services-ltd/share-price-today"
+  ]
+ },
+ "PACEECOM": {
+  "match": "Pace E-Commerce",
+  "why": "Down about 85% from the ₹103 issue price. MarketsMojo (July 2026) cites a 24% year-to-date drop, trading below all major moving averages and delivery volume down 78%. No company-specific cause found. It added software development and IT services to its objects and began IT operations in FY25.",
+  "outlook": "No results, guidance or analyst view found. Market cap is about ₹31 crore.",
+  "mcref": [
+   31.2,
+   13.0
+  ],
+  "pe": null,
+  "conf": "low",
+  "src": [
+   "https://www.marketsmojo.com/stocks-analysis/pace-e-commerce-ventures-1003729-0",
+   "https://www.valueresearchonline.com/stocks/310175/pace-e-commerce-ventures-ltd/"
+  ]
+ },
+ "ALLETEC": {
+  "why": "Up modestly on the ₹90 issue price but down about 62% over a year (52-week range ₹115.80-315). Management says growth slowed from longer decision-making cycles tied to global uncertainty and tariff pressure, and from AI-driven shifts; mid-market customers have become cautious. It is a Microsoft business-applications and digital transformation partner.",
+  "outlook": "Management expects recovery in one to two quarters, growth in FY27, and a medium-term revenue target of ₹500 crore over four to five years through organic growth and selective acquisitions; growth drivers named are international business, IP-led products, AI, Azure, ERP and CRM. P/E is about 10 (sources range 9.6-28.8).",
+  "mcref": [
+   247,
+   122
+  ],
+  "pe": 10.1,
+  "conf": "medium",
+  "src": [
+   "https://www.valueresearchonline.com/stocks/313812/all-e-technologies-ltd/",
+   "https://www.arthneeti.com/insights/all-e-technologies-ltd-q3-fy26-earnings",
+   "https://valueeducator.substack.com/p/all-e-technologies-and-the-quiet"
+  ],
+  "match": "All E Technologies"
+ },
+ "ANLON": {
+  "why": "About 7.4x the ₹100 issue price, up about 69% in six months. FY26 revenue rose 111% to ₹105.9 crore and profit 114% to ₹13.9 crore, with an order book near ₹110 crore. A ₹22.22 crore five-year operations and maintenance contract at Noida International Airport lifted the shares 9.5% in October 2025, and it started full-scale manufacturing and assembly in FY25.",
+  "outlook": "No guidance or broker targets found. P/E is about 45 (one source 27) on EPS near ₹18.5, so the valuation prices in further growth. The stock is volatile (52-week range ₹335-748).",
+  "mcref": [
+   443,
+   640.1
+  ],
+  "pe": 45.4,
+  "conf": "medium",
+  "src": [
+   "https://insights.dsij.in/dsijarticledetail/rs-110-crore-order-book-anlon-technology-solutions-reports-111-revenue-growth-in-fy26-pat-doubles-id021-57378",
+   "https://hdfcsky.com/news/anlon-technology-share-price-jumps-9-47-percent-after-securing-rs-22-22-crore",
+   "https://www.aajtak.in/business/stock/anlon-technology-solutions-ltd-anlon-share-price-5546"
+  ]
+ }
+}

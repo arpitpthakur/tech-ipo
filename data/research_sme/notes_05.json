@@ -1,0 +1,138 @@
+{
+ "IBLFL": {
+  "match": "IBL Finance",
+  "why": "Up about 14% on the ₹51 issue price (52-week range ₹44-72.8), recovering from a spring low near ₹47.5; the sources do not say what drove it. It is a fintech-driven NBFC lending to small businesses. Returns are thin (ROE 4.1%) while the P/E is 77 against an industry 31; no dividend, and interest coverage was flagged as low. Promoters hold 63%.",
+  "outlook": "No guidance or analyst view found. A board item on fund raising (6 June 2026) could dilute holders; check its outcome.",
+  "mcref": [
+   151,
+   61.0
+  ],
+  "pe": 77.2,
+  "conf": "low",
+  "src": [
+   "https://www.screener.in/company/IBLFL/",
+   "https://www.share.market/stocks/ibl-finance-ltd-share/events"
+  ]
+ },
+ "LAWSIKHO": {
+  "match": "Addictive Learning",
+  "why": "Down about 70% from the ₹140 issue price and from ₹120 in January to about ₹40 in August 2026 (down 63% over the year to February). FY26 revenue fell to ₹75.7 crore from ₹81.4 crore and it posted a ₹0.48 crore loss; ROE -0.6%. No source states the cause directly. Promoters disclosed share purchases in January 2026.",
+  "outlook": "In its Q2 FY26 call management targeted ₹50 crore revenue over six months and growth of 50-100% from AI-enabled sales expansion, which are management targets, not forecasts. No independent analyst forecast found.",
+  "mcref": [
+   63.64,
+   40.2
+  ],
+  "pe": null,
+  "conf": "low",
+  "src": [
+   "https://www.screener.in/company/ADDICTIVE/consolidated/",
+   "https://www.arthneeti.com/insights/addictive-learning-technology-ltd-q3-fy26-earnings"
+  ]
+ },
+ "EUPHORIA": {
+  "match": "Euphoria",
+  "why": "Down about 72% from the ₹100 issue price and from an all-time high of ₹199.50 (January 2024); an all-time low of ₹22.53 on 30 March 2026. Revenue was ₹13.3 crore in FY25 (₹6.0 crore in FY24) but operating cash flow was negative (-₹0.59 crore in FY25, -₹6.64 crore in FY24). It trades thinly (one day 1,200 shares). The cause was not stated.",
+  "outlook": "No broker research, guidance or forecasts found. The stock looks cheap (P/E about 5, P/B 0.45) but low valuation alone does not signal recovery given weak cash generation and thin trading.",
+  "mcref": [
+   8,
+   27.6
+  ],
+  "pe": 5.2,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/euphoria-infotech-india-ltd/share-price-today",
+   "https://www.torusdigital.com/stocks/euphoria-infotech-india-ltd-share-price"
+  ]
+ },
+ "BRISK": {
+  "match": "Brisk",
+  "why": "Down about 51% from the ₹156 issue price, near its 52-week low (₹64.50, high ₹111.90) and down about 36% over a year. FY26 revenue was about ₹30.3 crore with profit about ₹1.0 crore (EPS ₹5.08), down from about ₹2.0 crore in FY24. No source states the cause. P/E about 13-18.",
+  "outlook": "No guidance or analyst view found. Simply Wall St scores future growth 0 of 6 and financial health 6 of 6. Market cap is only about ₹14-19 crore.",
+  "mcref": [
+   14,
+   69.88
+  ],
+  "pe": 15.0,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/brisk-technovision-ltd/share-price-today",
+   "https://simplywall.st/stocks/in/tech/bse-544101/brisk-technovision-shares"
+  ]
+ },
+ "DELAPLEX": {
+  "match": "DelaPlex",
+  "why": "Down about 15% from the ₹192 issue price (52-week range ₹80-195; down about 35% over a year). No company-specific cause found; the explanations are generic (trading below moving averages, thin trading). It is almost debt free with ROE 16.5% and FY26 revenue of about ₹62-69 crore. P/E is only about 7-8, a steep discount to peers.",
+  "outlook": "No guidance or forecast found. Simply Wall St's cash-flow model puts fair value near ₹32, far below the price. A very low P/E with weak price action suggests investors doubt earnings quality or are put off by thin trading.",
+  "mcref": [
+   102,
+   112.0
+  ],
+  "pe": 7.9,
+  "conf": "low",
+  "src": [
+   "https://www.valueresearchonline.com/stocks/329929/delaplex-ltd/",
+   "https://www.marketsmojo.com/news/stocks-in-action/why-is-delaplex-fallingrising-3722333"
+  ]
+ },
+ "ESCONET": {
+  "match": "Esconet",
+  "why": "About 3.5x the ₹84 issue price and up 100% in six months, mostly between July and September 2026 (₹121 in mid-July to about ₹214 in September; 52-week range ₹91-280). No catalyst was found. Revenue rose about 32% to ₹300.7 crore in FY26 and the June 2026 quarter showed revenue ₹63 crore and profit ₹6.84 crore. It trades IT hardware (servers, workstations) and provides supercomputing and data-centre solutions.",
+  "outlook": "No analyst targets or guidance found. By my estimate, P/E at the September price would be about 40-47x. Earnings are described as degrowing by one screener and valuation as fair against peers by another.",
+  "mcref": [
+   158,
+   121.0
+  ],
+  "pe": 29.3,
+  "conf": "low",
+  "src": [
+   "https://www.share.market/stocks/esconet-technologies-ltd-share/technicals",
+   "https://anandrathi.com/stocks/esconet-technologies-ltd/share-price-today"
+  ]
+ },
+ "ENFUSE": {
+  "match": "Enfuse",
+  "why": "About 65% above the ₹96 issue price, but down from ₹248 in December 2025 to about ₹160 in August 2026. No source gave a cause for the rise or the fall. TTM revenue is about ₹43 crore with a P/E near 57; the ROE shown ranged from -56% to 9% across sources.",
+  "outlook": "No analyst forecasts, guidance or catalysts found. Sources disagree on profitability, so check exchange filings.",
+  "mcref": [
+   142,
+   160.0
+  ],
+  "pe": 57.3,
+  "conf": "low",
+  "src": [
+   "https://www.valueresearchonline.com/stocks/332697/enfuse-solutions-ltd/",
+   "https://www.share.market/stocks/enfuse-solutions-ltd-share/events"
+  ]
+ },
+ "TRUST": {
+  "match": "Trust Fintech",
+  "why": "Down about 75% from the ₹101 issue price and 52% over a year (52-week range ₹23.80-77). FY25 profit fell 28% to ₹9 crore with revenue flat at ₹35.6 crore. No source gave an explanation or 2026 commentary.",
+  "outlook": "No analyst outlook or guidance found. P/E is about 9 and price-to-book 0.67, a low valuation; promoters hold 69%.",
+  "mcref": [
+   62,
+   26.05
+  ],
+  "pe": 9.4,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/trust-fintech-ltd/share-price-today",
+   "https://trendlyne.com/equity/consensus-estimates/2163920/TRUST/trust-fintech-ltd/"
+  ]
+ },
+ "TAC": {
+  "match": "TAC Infosec",
+  "why": "About 7.3x the split-adjusted issue price (₹53 after a 1:1 bonus; peak near ₹856 in October 2025). The October 2025 rally followed H1 FY26 results: revenue up 131% to ₹30.4 crore, profit up 139% to ₹15.6 crore, PAT margin 51% from a subscription cybersecurity model, plus a $100 million fund plan to FY30 and its Socify compliance platform on AWS. In 2026 it fell about 5% to ₹459 after H2 FY26 disclosures, which included buying 60% of a Web3 security firm for $1.4 million.",
+  "outlook": "A US listing for its Cyberscope subsidiary is still being prepared, with no timeline. The bear case is valuation: trailing P/E about 46x against about 17x for comparable companies and the stock has dropped from its peak. Analyst-target upside was shown as about -20% (date unclear).",
+  "mcref": [
+   960,
+   459.0
+  ],
+  "pe": 46.3,
+  "conf": "medium",
+  "src": [
+   "https://inc42.com/buzz/tac-infosec-h2-profit-rises-30-yoy-to-%e2%82%b910-8-cr-revenue-zooms-54/",
+   "https://hdfcsky.com/news/shares-of-tac-infosec-hit-higher-circuit-for-second-session-in-a-row",
+   "https://il.investing.com/equities/tac-infosec"
+  ]
+ }
+}

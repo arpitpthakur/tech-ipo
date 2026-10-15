@@ -1,0 +1,147 @@
+{
+ "IDENTIX": {
+  "match": "Identixweb",
+  "why": "Up about 20% on the ₹54 issue price (52-week range roughly ₹55-101). Business is growing: revenue about ₹12.1 crore in FY26 against ₹9.0 crore and profit ₹6.0 crore against ₹4.1 crore (units likely crore). It builds SaaS products and custom IT for Shopify e-commerce sellers. Promoter holding fell from 89% to 63% after the March 2025 IPO. Upstox rates its performance as very poor against a 7% fixed-deposit return.",
+  "outlook": "No analyst forecast or guidance found. P/E ranges 11.7-21.9 by source, so valuation is modest.",
+  "mcref": [
+   63.7,
+   61.0
+  ],
+  "pe": 17.9,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/identixweb-ltd/share-price-today",
+   "https://angelone.in/stocks/identixweb-ltd"
+  ]
+ },
+ "VGINFOTECH": {
+  "match": "Virtual Galaxy",
+  "why": "Slightly below the ₹142 issue price and down 25% over a year despite strong earnings: Q4 FY26 revenue rose 189% to ₹54.7 crore and profit 196% to ₹14.5 crore; FY26 revenue was ₹182.1 crore (+52%) and profit ₹46.1 crore (+44%). The sources do not explain why the stock fell. It sells AI-led products, ERP and e-governance and has a USD 1.1 million Botswana contract and a Konkan Railway MoU.",
+  "outlook": "Management projects a 40%+ revenue CAGR over three years, targeting ₹500 crore by FY29 (a company projection). No analyst targets found. Promoters hold 65% and institutions only about 2%. P/E 8-23 depending on source.",
+  "mcref": [
+   367,
+   147.7
+  ],
+  "pe": 19.3,
+  "conf": "medium",
+  "src": [
+   "https://businessnewsthisweek.com/business/virtual-galaxy-infotech-reports-robust-performance-in-q4-fy26-sustained-growth-driven-by-ai-led-solutions-and-strong-order-books/",
+   "https://anandrathi.com/stocks/virtual-galaxy-infotech-ltd/share-price-today"
+  ]
+ },
+ "UNIFIED": {
+  "match": "Unified Data",
+  "why": "About 1.7x the ₹273 issue price, up 48% in six months, with most of the gain in the two months to October 2026 (₹361 on 28 August, about ₹486 on 9 October; 52-week range ₹284-535). No source gave a cause. FY26 revenue rose about 33% to ₹302 crore and EBITDA to ₹54.1 crore from ₹45.3 crore. It sells data-centre, virtualisation, networking and cybersecurity infrastructure.",
+  "outlook": "No analyst ratings, targets or guidance found. P/E about 19-24. The company's demand case rests on IT, data-centre and cloud spending.",
+  "mcref": [
+   834.14,
+   415.2
+  ],
+  "pe": 20.5,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/unified-data-tech-solutions-ltd/share-price-today",
+   "https://www.research360.in/stocks/unified"
+  ]
+ },
+ "META": {
+  "match": "Meta Infotech",
+  "why": "Down about 43% (the price is a web quote because Kite has no match) from the ₹161 issue price after a peak of ₹250 (July 2025); a March 2026 low near ₹54 and a rebound to about ₹92 in August. Reasons cited by a single AI-written source: profit compression from investment in talent and a 'Meta 2.0' pivot toward a services-led model, debt and cash-flow concerns, and technical selling. The promoter bought 16,800 shares in June.",
+  "outlook": "Management aims for up to 4x profit growth by FY29 and 30-40% annual revenue growth over 3-5 years, with an order book of about ₹506-520 crore executable mostly over two years and a ₹120 crore ICICI Bank contract. These are company targets and the sources are largely automated, so treat with caution.",
+  "mcref": [
+   173.69,
+   91.99
+  ],
+  "pe": null,
+  "price_override": 91.99,
+  "conf": "low",
+  "src": [
+   "https://marketsmojo.motilaloswal.com/stocks-analysis/meta-infotech-10039656-0",
+   "https://www.sahi.com/news/meta-infotech-schedules-analyst-meeting-for-july-3-following-506-cr-order-book-milestone-3713920-PE1_",
+   "https://scanx.trade/stock-market-news/companies/meta-infotech-board-to-meet-on-may-27-to-consider-fy26-results/40822856"
+  ]
+ },
+ "TAKYON": {
+  "match": "Takyon",
+  "why": "Down about 70% from the ₹54 issue price and 66% over a year (52-week range ₹16.81-56.15; low on 21 August 2026). FY26 revenue was ₹70.4 crore with profit ₹3.07 crore against ₹99.4 crore and ₹6.38 crore the year before. No source stated a cause; Upstox rates its earnings very poor.",
+  "outlook": "No analyst forecast, guidance or 2026 outlook found. The market cap of roughly ₹23 crore is my estimate from an implied 1.4 crore shares, not a reported figure.",
+  "mcref": [
+   23.0,
+   16.44
+  ],
+  "pe": null,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/takyon-networks-ltd/share-price-today",
+   "https://www.chittorgarh.com/stockpricequote/takyon-networks-ltd/7049/"
+  ]
+ },
+ "IPSL": {
+  "match": "Icodex",
+  "why": "Down about 65% from the ₹102 issue price (52-week high about ₹82 in August 2025, price about ₹36 in late August 2026; down 42% over a year). Brief bounces (₹31 to ₹48 in April 2026) did not hold. A Tribune headline refers to the company reaffirming governance standards amid media speculation (not readable). It provides software and process services to scholarly publishers and promoted its PaperPerfect AI platform in June 2026.",
+  "outlook": "No analyst targets or forecasts found; IPO proceeds were reallocated on 10 July 2026 (details not found). P/E is only about 8-9, a low valuation that may reflect the doubts above.",
+  "mcref": [
+   56,
+   36.05
+  ],
+  "pe": 8.1,
+  "price_override": 36.05,
+  "conf": "low",
+  "src": [
+   "https://www.bajajbroking.in/stock/icodex-publishing-solutions-ltd-share-price",
+   "https://marketsmojo.motilaloswal.com/stocks-analysis/icodex-publishing-solutions-10039714-0",
+   "https://www.muthootsecurities.com/CorporateInfo/Share-Price/Icodex-Publishing-Solutions-Ltd/544483"
+  ]
+ },
+ "GLOBTIER": {
+  "match": "Globtier",
+  "why": "Down about 78% from the ₹72 issue price after a weak debut (listed at ₹57.60, a 20% discount, on a 1.34x subscribed IPO) and sustained selling: 43.7% down year to date by July 2026 and 70% down over a year. It fell 10% on 13 October 2026 to ₹15.87. Trading is thin and the company is very small.",
+  "outlook": "No management guidance or analyst view found; a model-based rating (MoneyWorks4Me) calls the price trend weak and valuation overvalued but its track record average. P/E reported at 5.8-25.4.",
+  "mcref": [
+   27,
+   15.87
+  ],
+  "pe": null,
+  "conf": "low",
+  "src": [
+   "https://www.5paisa.com/gujarati/news/globtier-infotech-ipo-listing",
+   "https://www.marketsmojo.com/stocks-analysis/globtier-infotec-10039730-0",
+   "https://anandrathi.com/stocks/globtier-infotech-ltd"
+  ]
+ },
+ "AUSTERE": {
+  "match": "Austere",
+  "why": "Down about 24% from the ₹55 issue price after listing at ₹75.55 (a 37% premium), giving back the gain (52-week range ₹38-79; down 47% over a year). The business looks profitable (ROE 32%, operating margin 32%, profit about ₹4 crore on revenue about ₹19 crore) so the fall looks like sentiment and thin trading. Interim dividend of ₹0.20 proposed in January 2026.",
+  "outlook": "No analyst targets or guidance found. P/E about 9.4 and price-to-book 1.5, a discount to peers per Value Research, though Tickertape rates valuation as high.",
+  "mc_direct": [
+   47,
+   "18 Jun 2026"
+  ],
+  "pe": 9.4,
+  "conf": "low",
+  "src": [
+   "https://www.valueresearchonline.com/stocks/368538/austere-systems-ltd/",
+   "https://www.tickertape.in/stocks/austere-systems-AUST"
+  ]
+ },
+ "OPTIVALUE": {
+  "match": "Optivalue",
+  "why": "About 2.9x the ₹84 issue price after listing at ₹103.60 (+22%) on NSE Emerge in September 2025. The shares rose from about ₹80 in June 2026 to the ₹190-240 range by August-October (52-week range ₹56-202+). No source tied this to a cause; on 9 July 2026 the company announced a ₹375 crore international technical support services contract, which the sources do not link to the price. The exchange sought clarification on a filing for the March 2026 quarter.",
+  "outlook": "No analyst forecast found. P/E about 33 and price-to-book 10.3, a high valuation. It is a technology consulting firm with offices in the US and Australia; promoters hold 64%.",
+  "mcref": [
+   447,
+   190.75
+  ],
+  "pe": 32.7,
+  "conf": "low",
+  "src": [
+   "https://hdfcsky.com/news/optivalue-tek-consulting-lists-at-rs-103-60-surges-over-22-percent",
+   "https://www.screener.in/company/OPTIVALUE/consolidated/",
+   "https://www.marketsmojo.com/stocks-analysis/optivalue-tek-10039745-1"
+  ]
+ },
+ "SELLOWRAP": {
+  "match": "Sellowrap",
+  "exclude": "Chittorgarh's page text for Sellowrap Industries is identical to Optivalue Tek's (a scrape error), so its tech classification is unsupported. Removed from the SME tech list."
+ }
+}

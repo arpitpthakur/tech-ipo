@@ -1,0 +1,141 @@
+{
+ "TECHD": {
+  "match": "TechD",
+  "why": "About 3x the ₹193 issue price (52-week range ₹360-844; reported up 51% over a year). The sources give no direct cause; drivers cited from filings: FY26 profit up 67% to ₹14.0 crore and income up 76% to ₹53.3 crore, an order book of ₹70 crore (up 63% from ₹43 crore at March 2026) after the largest single order to date (₹13.08 crore including GST, October 2026). Investor Vijay Kedia held over 5% at March 2026.",
+  "outlook": "Management targets 40-50% revenue growth, about 100% from FY27 on global expansion (third-party summary), and $80-100 million revenue by 2030. These are company targets, not analyst forecasts. P/E about 30-32 and price-to-book near 6, so expectations are high.",
+  "mc_direct": [
+   452.7,
+   "4 Aug 2026"
+  ],
+  "pe": 32.2,
+  "conf": "medium",
+  "src": [
+   "https://www.outlookbusiness.com/deeptech/techd-cybersecurity-q4-profit-jumps-67-revenue-rises-to-53-crore-in-fy26",
+   "https://hdfcsky.com/news/techd-cybersecurity-lands-rs-13-08-crore-bfsi-order-shares-rise-0-18-percent",
+   "https://www.arthneeti.com/insights/techd-cybersec-q2-fy26-earnings"
+  ]
+ },
+ "PRARUH": {
+  "match": "Praruh",
+  "why": "About 2.3x the ₹63 issue price after listing flat at ₹63.20 on weak subscription. It rose about 178% from about ₹52 in June to ₹144.60 (upper circuit) on 16 September 2026, from a ₹45 low in March. No explanation was found; a partnership with Quantum Networks (15 September) and a ₹33.5 crore RailTel order (May) are the nearest news items. Promoters hold about 73%, leaving a small free float.",
+  "outlook": "No analyst targets or guidance found, and the FY26 results (29 May 2026) were not summarised in the sources. The rally looks momentum-driven; verify the Quantum Networks details and FY26 results on the exchange.",
+  "mcref": [
+   201.22,
+   144.6
+  ],
+  "pe": null,
+  "conf": "low",
+  "src": [
+   "https://www.5paisa.com/index.php/news/praruh-technologies-ipo-listing",
+   "https://www.moneyworks4me.com/company/news/index/id/837714",
+   "https://www.valueresearchonline.com/stocks/370081/praruh-technologie-ltd/"
+  ]
+ },
+ "INFINITY": {
+  "match": "Infinity Infoway",
+  "why": "About 3.5x the ₹155 issue price after listing at ₹294.50 (+90%). It rose sharply in 2026 (about ₹384 on 14 August to about ₹543 on 21 September; 55% in six months). No explanation was found. FY26 revenue rose to ₹24.5 crore from ₹13.5 crore and profit to ₹7.0 crore from ₹4.4 crore, with ROE 47% and almost no debt, but receivables are 157 days. It sells cloud ERP and a campus-management system used in 26 universities.",
+  "outlook": "No analyst target or guidance found. P/E 29-43 and price-to-book 4-5. A Q1 FY27 earnings call was held on 13 August 2026; its contents were not retrievable.",
+  "mcref": [
+   296,
+   543.0
+  ],
+  "pe": 33.5,
+  "conf": "low",
+  "src": [
+   "https://www.5paisa.com/news/ipos/infinity-infoway-ipo-listing",
+   "https://www.valueresearchonline.com/stocks/370294/infinity-infoway-ltd/",
+   "https://www.screener.in/company/544567"
+  ]
+ },
+ "WORKMATES": {
+  "match": "Workmates",
+  "why": "About 2x the ₹204 issue price (listed at ₹387.60, +90%), but no sustained 2026 rally: 52-week range ₹264-514 and roughly -14% in six months. It jumped 10% to ₹332 after FY26 results: revenue rose 34% to ₹143.8 crore and profit 16% to ₹15.9 crore, with recurring revenue at 82.5% of sales. Revenue slipped 9% from H1 (₹75 crore) to H2 (₹68 crore).",
+  "outlook": "Management targets ₹210 crore FY27 revenue (45%+ growth) and PAT of about ₹24-25 crore, with ₹160 crore of annual contracted revenue already secured, and AI as the main growth engine from FY28; one source gives a more conservative ₹200 crore and ₹550 crore by FY30. These are management targets. P/E 23-34.",
+  "mcref": [
+   525,
+   423.0
+  ],
+  "pe": 30.2,
+  "conf": "medium",
+  "src": [
+   "https://scanx.trade/stock-market-news/companies/workmates-core2cloud-solution-limited-schedules-earnings-conference-call-for-h2-fy2026-on-may-20-2026/40500517",
+   "https://tradebrains.in/it-stock-hits-10-upper-circuit-after-robust-q4-results-declares-2-dividend/",
+   "https://www.constructionworld.in/amp/policy-updates-and-economic-news/workmates-reports-strong-fy2026-revenue-and-debt-free-balance-sheet/92044"
+  ]
+ },
+ "LOGICIEL": {
+  "match": "Logiciel",
+  "why": "Down about 83% from the ₹193 issue price after a 24% discount debut (₹146.70) in December 2025, and down 53.5% year to date by July 2026 (52-week range ₹28-154). The sources cite general negative sentiment, thin trading and bearish technicals, not a company event. FY25 profit was reported at ₹5.47 crore on revenue of ₹21.2 crore with ROE 33% and almost no debt.",
+  "outlook": "No formal analyst rating or management outlook found. Simply Wall St scores future growth 0 of 6. In July 2026 the board approved making its US entity a wholly owned subsidiary. Market cap is only about ₹24 crore.",
+  "mcref": [
+   24,
+   31.94
+  ],
+  "pe": null,
+  "conf": "low",
+  "src": [
+   "https://www.marketsmojo.com/stocks-analysis/logiciel-solutions-10039869-0",
+   "https://www.screener.in/company/544625"
+  ]
+ },
+ "METHODHUB": {
+  "match": "Methodhub",
+  "why": "Down about 62% from the ₹194 issue price: it hit ₹60.94 on 4 September 2026 (a 52-week low) and fell to the lower circuit at ₹74.65 on 24 September when it hit the lower circuit; down 57.6% year to date. No company announcement explained the falls. Reported FY26 revenue of about ₹333 crore (+147%) conflicts with other providers, so check filings. Reported P/E 4.0, P/B 0.8, ROE 42%.",
+  "outlook": "No analyst coverage or forecast found; a technical signal reads Strong Sell. Market cap was roughly ₹130-148 crore in September. The very low multiples alongside falling prices suggest the market is discounting something the sources do not name.",
+  "mcref": [
+   148,
+   74.65
+  ],
+  "pe": 4.0,
+  "conf": "low",
+  "src": [
+   "https://univest.in/blogs/why-methodhub-share-price-lower-circuit-today-2026",
+   "https://www.marketsmojo.com/stocks-analysis/methodhub-software-10039886-0"
+  ]
+ },
+ "SHIPWAVES": {
+  "match": "Shipwaves",
+  "why": "Down about 73% from the ₹12 issue price and 69% over a year (52-week range ₹2.55-12). Promoter holding fell from 99.96% to 66.78% after the December 2025 IPO raised ₹56.35 crore with 4.7 crore new shares, which fits a post-listing sell-off. Operating cash flow was negative (-₹3.45 crore in FY25). It sells digital freight forwarding software.",
+  "outlook": "No analyst forecast or guidance found; ROE figures conflict (30% vs 2.4%). Price is below its 20- and 50-day averages.",
+  "mcref": [
+   50,
+   3.51
+  ],
+  "pe": null,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/shipwaves-online-ltd",
+   "https://www.aajtak.in/business/stock/shipwaves-online-ltd-share-price-6823"
+  ]
+ },
+ "MOBILISE": {
+  "match": "Mobilise",
+  "why": "About 1.2x the ₹80 issue price. It listed at ₹64.10 (a 20% discount) despite a 100x subscribed IPO, then climbed to about ₹108-113 by August-September 2026 (52-week range ₹45-126). FY26 revenue rose to ₹18.8 crore from ₹16.2 crore and profit to ₹5.6 crore from ₹4.8 crore. Debtor days rose from 48 to 83. No cause for the rally was stated; promoters hold 70.7%.",
+  "outlook": "No analyst target or guidance found. MarketScreener shows a model-estimated 2026 P/E of 6.8x. The small free float means large price swings.",
+  "mcref": [
+   108,
+   108.15
+  ],
+  "pe": null,
+  "conf": "low",
+  "src": [
+   "https://www.5paisa.com/news/mobilise-app-lab-ipo-listing",
+   "https://www.screener.in/company/MOBILISE"
+  ]
+ },
+ "ACETECH": {
+  "match": "Acetech",
+  "why": "Slightly above the ₹112 issue price after a flat debut (IPO subscribed only 1.1x), reaching ₹126 by June 2026. Reported annual revenue is about ₹82.8 crore (+17.6%) with profit about ₹10.3 crore. IPO money goes to marketing, working capital and acquisitions. Promoters hold 64.4%; trading is thin.",
+  "outlook": "No analyst forecast or 2026 guidance found. P/E is about 22. The online retail and marketplace model relies on digital marketing and working capital growth.",
+  "mcref": [
+   206.44,
+   126.0
+  ],
+  "pe": 22.0,
+  "conf": "low",
+  "src": [
+   "https://www.5paisa.com/news/acetech-ecommerce-ltd-ipo-listing",
+   "https://www.share.market/stocks/acetech-e-commerce-ltd-share/financials"
+  ]
+ }
+}

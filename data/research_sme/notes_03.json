@@ -1,0 +1,135 @@
+{
+ "MACFOS": {
+  "match": "Macfos",
+  "why": "About 10x the ₹102 issue price. FY26 revenue rose about 60-67% to roughly ₹312 crore, March-2026 quarter profit about doubled to ₹9.87 crore, and the board approved a 1:10 bonus issue on 11 March 2026; the stock hit a series of 52-week highs in May-June. It gained 44.6% over a year; one 9% jump in August came with no clear catalyst. Q1 FY27 standalone profit was reported at ₹5.8 crore (unverified).",
+  "outlook": "Management aims to keep about 50% revenue CAGR for 2-3 years, but it says it has no large active order book and its defence orders are very small. MarketsMojo rated it Sell (28 September 2026) on valuation, financial trend and technicals. P/E was about 44 in August.",
+  "mc_direct": [
+   1137.52,
+   "3 Aug 2026"
+  ],
+  "pe": 44.4,
+  "conf": "medium",
+  "src": [
+   "https://insights.dsij.in/dsijarticledetail/small-cap-electronics-stock-jumps-over-15-on-wednesday-as-company-reports-107-surge-in-q4-pat-and-60-fy26-revenue-growth-56795",
+   "https://univest.in/blogs/macfos-ltd-share-price-rise-2026-08-03",
+   "https://www.marketsmojo.com/news/stock-recommendation/macfos-ltd-is-rated-sell-4220815"
+  ]
+ },
+ "ITCONS": {
+  "match": "ITCONS",
+  "why": "Up about 4.7x the ₹51 issue price but down 47% over a year (52-week range ₹230-620). It is mainly a recruitment and staffing business. No source explained the fall; profit is thin (about ₹3 crore TTM) and returns slipped (ROE 8.7% against 19% earlier in the year).",
+  "outlook": "No guidance, forecast or analyst view found. At a P/E of 46-100 (sources differ) against a sector near 17-21, the valuation is high for a business with modest profit.",
+  "mcref": [
+   242,
+   268.6
+  ],
+  "pe": 46.0,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/itcons-e-solutions-ltd/share-price-today",
+   "https://www.valueresearchonline.com/stocks/316513/itcons-e-solutions-ltd/"
+  ]
+ },
+ "SYSTANGO": {
+  "match": "Systango",
+  "why": "About 2.5x the ₹90 issue price but 45% below its ₹411 high (52-week low ₹202.55). The sources do not state why. Earnings look strong on paper (FY26 EPS ₹20.38, 41% five-year profit CAGR, ROCE 31.5%, almost debt free, ₹7 interim dividend) but working-capital days rose from 194 to 406, and institutions hold little (promoters 72%). Reported FY26 revenue differed across sources.",
+  "outlook": "No FY27 guidance or analyst target found. The P/E is low at about 11. Simply Wall St's cash-flow model valued it well below the price, and one platform rates it overvalued against peers.",
+  "mcref": [
+   324,
+   226.7
+  ],
+  "pe": 10.8,
+  "conf": "low",
+  "src": [
+   "https://www.screener.in/company/SYSTANGO/",
+   "https://anandrathi.com/stocks/systango-technologies-ltd/share-price-today",
+   "https://univest.in/blogs/systango-technologies-q4-fy26-results"
+  ]
+ },
+ "VERTEXPLUS": {
+  "match": "Vertexplus",
+  "why": "Down about 24% from the ₹96 issue price and, at the August low, about 53% down over a year (range ₹36-150). The sources gave no cause. The latest quarter shown was loss-making (operating loss ₹3.36 crore, loss after tax ₹4.63 crore on ₹22.7 crore income), with ROE of -21% and ROCE of -13%.",
+  "outlook": "No analyst forecast, guidance or corporate announcement explaining the outlook was found. Market cap is only about ₹20-40 crore.",
+  "mcref": [
+   20.5,
+   37.0
+  ],
+  "pe": null,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/vertexplus-technologies-ltd",
+   "https://simplywall.st/stocks/in/software/nse-vertexplus/vertexplus-technologies-shares"
+  ]
+ },
+ "MOS": {
+  "match": "MOS Utility",
+  "why": "About 28% below the split-adjusted ₹76 issue price (a 1:10 split). Reported results are mixed: FY26 profit rose 44% to about ₹18 crore on sales up about 3%, but sales fell 12.5% in the March-2026 quarter and 5.5% to ₹151 crore in the June-2026 quarter while profit edged up 2.2% to ₹4.17 crore. No source linked the share price fall to these results, and price data in the sources conflicted.",
+  "outlook": "No analyst forecast or guidance found. A long-term article cites digital payments and financial inclusion as structural tailwinds (a general thesis, not a forecast). Market cap and share count were not found.",
+  "pe": null,
+  "conf": "low",
+  "src": [
+   "https://www.kotakneo.com/financial-results/mos-utility-share-price-q4fy2025-26-results/",
+   "https://askfuzz.ai/discover/news/companies/mos-utility-q1-fy27-net-profit-up-2-21-to-4-17-crore"
+  ]
+ },
+ "SANCODE": {
+  "match": "Sancode",
+  "why": "About 20x the ₹47 issue price, up about 561% in a year and 221% year to date to an all-time high of ₹449.5 on 5 August 2026 (per the source's price, the stock had since moved higher). MarketsMojo attributes the move to technical momentum, strong sales growth, improving volumes and three quarters of improving earnings. Profit is tiny (TTM about ₹1 crore), so the P/E is extreme.",
+  "outlook": "No analyst target or forecast found. Shareholders approved expansion into new technologies including semiconductors, and it plans to explore AI. P/E was reported at 188-494 across dates; Simply Wall St scores growth and valuation 0 of 6. Treat as highly speculative.",
+  "mcref": [
+   237.48,
+   458.0
+  ],
+  "pe": 494.0,
+  "conf": "medium",
+  "src": [
+   "https://www.marketsmojo.com/news/stocks-in-action/sancode-technologies-ltd-gains-610-5-key-factors-driving-the-rally-4131348",
+   "https://www.valueresearchonline.com/stocks/317765/sancode-technologies-ltd/"
+  ]
+ },
+ "QUICKTOUCH": {
+  "why": "Down about 78% from the ₹61 issue price (down 63% over a year). Trailing ROCE is -2.7% and trailing P/E is negative (loss-making); one tracker reports profit fell sharply in the latest quarter. A MarketsMojo note suggests caution ahead of results. No confirmed cause was found.",
+  "outlook": "No analyst targets, guidance or 2026 forecasts found. Market cap is about ₹20 crore.",
+  "mcref": [
+   20,
+   16.15
+  ],
+  "pe": null,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/quicktouch-technologies-ltd",
+   "https://www.marketsmojo.com/news/stocks-in-action/quicktouch-technologies-ltd-edges-down-018-despite-upper-circuit-surge-3-key-factors-driving-the-week-4022644"
+  ]
+ },
+ "DENTALKART": {
+  "match": "Vasa Denticity",
+  "why": "About 3.5x the ₹128 issue price but down 37% over a year (52-week range ₹322-636+). The source gave no cause for the fall. Fundamentals: earnings grew about 31.6% a year, ROE 9%, net margin 5.8%, nearly debt free; the P/E of 57-62 is above the industry's 49. It distributes dental products through an online and app platform.",
+  "outlook": "No 2026 guidance or analyst target found. Value Research scores quality 6/10, growth 7/10, valuation 4/10 and momentum 2/10. Promoters hold 60%, FIIs 6.9%.",
+  "mcref": [
+   686,
+   395.5
+  ],
+  "pe": 56.7,
+  "conf": "low",
+  "src": [
+   "https://www.valueresearchonline.com/stocks/319810/vasa-denticity-ltd/",
+   "https://anandrathi.com/stocks/vasa-denticity-ltd/share-price-today"
+  ]
+ },
+ "SAHANA": {
+  "match": "Sahana",
+  "why": "About 8.6x the bonus-adjusted issue price (52-week range ₹571-1,047). It rallied about 35% in a month into late August 2026 after a strong run, then pulled back; one source says it hit nine straight upper circuits on two new orders (dating unclear). Fundamentals cited: ROE 24-32%, low debt, and FY25 revenue up about 105% to ₹110 crore (FY26 about ₹237 crore in one source).",
+  "outlook": "No analyst targets or guidance found. The P/E ranged 11-19 depending on source and earnings base, which is modest against its growth. Sources did not reconcile on revenue or EPS.",
+  "mcref": [
+   917,
+   849.1
+  ],
+  "pe": 19.0,
+  "conf": "low",
+  "src": [
+   "https://anandrathi.com/stocks/sahana-systems-ltd/share-price-today",
+   "https://www.share.market/stocks/sahana-system-ltd-share/news",
+   "https://www.5paisa.com/hindi/stocks/sahana-share-price"
+  ]
+ }
+}

@@ -1,5 +1,5 @@
 import csv, json, statistics as st
-S = '/private/tmp/claude-501/-Users-thakur-Desktop-Tech-Ipo/7ff88761-8e6e-40ba-a547-d88d95c112fb/scratchpad/splits.json'
+S = 'data/splits_cache.json'
 sp = json.load(open(S))
 KEEP = {1,2,3,5,6,7,8,9,13,14,15,16,17,18,21,22,23,26,28,29,30,31,33,34,35,37,39,41,42,43,45,47,48,50,53,54,61,62,63,64,65,66,68,70,71,74,75,76,77,79,81,85,89,92,96,98,99,102,103,104,105,106,107,108,109,110,112,115,116,122,124,125,134,136,137,139,144,145,147,150,155,157,158}
 cand = [r for r in csv.DictReader(open('data/sme_classified.csv')) if r['is_tech'] == 'True']

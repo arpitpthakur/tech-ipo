@@ -1,0 +1,305 @@
+<title>India Tech IPO Tracker</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: sticky header with tabs, summary tables on Overview, dense sortable tables, row click opens a side panel with the stock's analysis */
+:root{
+  --bg:#f5f6f4; --surface:#ffffff; --fg:#17201e; --muted:#5d6a67; --line:#dfe4e1;
+  --accent:#0d6b63; --accent-soft:#dcefec; --gain:#13734a; --loss:#b4372f;
+  --gain-bar:#8fcfae; --loss-bar:#e8a49e; --hover:#eef2f0; --scrim:rgba(10,18,16,.45);
+  --sans:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121816; --surface:#1a2220; --fg:#e6ece9; --muted:#97a6a1; --line:#2b3633;
+  --accent:#58c4b8; --accent-soft:#1d3532; --gain:#5fd09a; --loss:#f08b82;
+  --gain-bar:#2d6a4d; --loss-bar:#7a3a35; --hover:#202b28; --scrim:rgba(0,0,0,.6); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121816; --surface:#1a2220; --fg:#e6ece9; --muted:#97a6a1; --line:#2b3633;
+  --accent:#58c4b8; --accent-soft:#1d3532; --gain:#5fd09a; --loss:#f08b82;
+  --gain-bar:#2d6a4d; --loss-bar:#7a3a35; --hover:#202b28; --scrim:rgba(0,0,0,.6); color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:14px/1.5 var(--sans);padding-inline:16px}
+.wrap{max-width:1240px;margin:0 auto;padding-block:20px 48px}
+header{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;justify-content:space-between;margin-bottom:16px}
+h1{font-size:22px;font-weight:600;margin:0;letter-spacing:-.01em}
+.asof{color:var(--muted);font-size:12px;font-family:var(--mono)}
+nav{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-bottom:20px;overflow-x:auto}
+nav button{background:none;border:0;border-bottom:2px solid transparent;color:var(--muted);font:500 14px var(--sans);padding:10px 14px;cursor:pointer;white-space:nowrap}
+nav button[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h2{font-size:15px;font-weight:600;margin:28px 0 4px}
+.sub{color:var(--muted);margin:0 0 12px;max-width:72ch}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:8px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px;min-width:0}
+.tile b{display:block;font:500 22px var(--mono);letter-spacing:-.02em}
+.tile span{color:var(--muted);font-size:12px}
+.scroll{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 10px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+th{font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);background:var(--surface);position:sticky;top:0}
+th button{all:unset;cursor:pointer;display:inline-flex;gap:4px;align-items:center}
+th button:focus-visible{outline:2px solid var(--accent)}
+th[aria-sort="ascending"] button::after{content:"▲";font-size:8px}
+th[aria-sort="descending"] button::after{content:"▼";font-size:8px}
+tbody tr.row{cursor:pointer}
+tbody tr.row:hover{background:var(--hover)}
+.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+th.num{text-align:right}
+td.name{white-space:normal;min-width:180px}
+td.name button{all:unset;cursor:pointer;font-weight:500;color:var(--accent);text-decoration:underline;text-decoration-color:transparent;text-underline-offset:3px}
+td.name button:hover{text-decoration-color:currentColor}
+td.name button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+td.name small{display:block;color:var(--muted);font:400 11px var(--mono)}
+.gain{position:relative;min-width:120px}
+.gain i{position:absolute;top:50%;height:16px;transform:translateY(-50%);opacity:.9;border-radius:1px}
+.gain span{position:relative;font-weight:500}
+.gain small{position:relative;display:block;font-size:11px;color:var(--muted)}
+.up{color:var(--gain)} .down{color:var(--loss)}
+.tag{font-size:11px;padding:1px 7px;border-radius:99px;border:1px solid var(--line);color:var(--muted)}
+.tag.Startup{background:var(--accent-soft);color:var(--accent);border-color:transparent;font-weight:500}
+.tools{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin-bottom:12px}
+.tools input[type=search]{flex:1 1 200px;min-width:0;background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:7px 10px;font:inherit}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{background:var(--surface);color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:4px 12px;font:inherit;font-size:13px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+.count{color:var(--muted);font-size:12px;font-family:var(--mono)}
+.hint{color:var(--muted);font-size:12px;margin:0 0 8px}
+.notes li{margin-bottom:6px;color:var(--muted);max-width:75ch}
+.notes b{color:var(--fg);font-weight:500}
+.theme{background:none;border:1px solid var(--line);color:var(--muted);border-radius:6px;padding:4px 10px;font:inherit;font-size:12px;cursor:pointer}
+
+/* detail panel */
+#scrim{position:fixed;inset:0;background:var(--scrim);z-index:20}
+#panel{position:fixed;top:0;right:0;bottom:0;width:min(520px,100%);background:var(--surface);border-left:1px solid var(--line);z-index:21;overflow-y:auto;padding:20px 20px calc(28px + env(safe-area-inset-bottom,0px));padding-top:calc(20px + env(safe-area-inset-top,0px))}
+#panel h3{font-size:20px;margin:0 0 2px;letter-spacing:-.01em}
+#panel .meta{color:var(--muted);font-size:12px;font-family:var(--mono);margin-bottom:14px}
+#panel .close{position:absolute;top:calc(12px + env(safe-area-inset-top,0px));right:14px;background:none;border:1px solid var(--line);border-radius:6px;color:var(--muted);padding:3px 10px;font:inherit;cursor:pointer}
+#panel h4{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:20px 0 6px;font-weight:600}
+#panel p{margin:0;max-width:62ch}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.stats div{border:1px solid var(--line);border-radius:6px;padding:8px 10px;min-width:0}
+.stats b{display:block;font:500 16px var(--mono)}
+.stats span{font-size:11px;color:var(--muted)}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0}
+.facts dt{color:var(--muted)} .facts dd{margin:0;font-family:var(--mono);text-align:right}
+#panel ul{margin:0;padding-left:18px} #panel li{margin-bottom:6px;max-width:62ch}
+.src{font-size:11px;color:var(--muted);margin-top:18px}
+</style>
+
+<div class="wrap">
+<header>
+  <h1>India Tech IPO Tracker</h1>
+  <div><span class="asof">Prices as of 15 Oct 2026</span> <button class="theme" id="theme" type="button">Theme</button></div>
+</header>
+<nav role="tablist" id="tabs">
+  <button role="tab" aria-selected="true" data-t="ov">Overview</button>
+  <button role="tab" aria-selected="false" data-t="mb" id="tab-mb"></button>
+  <button role="tab" aria-selected="false" data-t="sm" id="tab-sm"></button>
+</nav>
+
+<section id="ov">
+  <div class="tiles" id="tiles"></div>
+  <h2>Mainboard tech, by startup tag</h2>
+  <p class="sub">"Since IPO" compares today's price with the IPO issue price, adjusted for splits and bonus issues. Per year is the compound annual rate since listing. Listing gain is the listing-day open against the issue price.</p>
+  <div class="scroll"><table id="t-tag"></table></div>
+  <h2>Mainboard tech, by listing year</h2>
+  <div class="scroll"><table id="t-year"></table></div>
+  <h2>Mainboard tech, by industry</h2>
+  <div class="scroll"><table id="t-ind"></table></div>
+  <h2>SME tech, by listing year</h2>
+  <div class="scroll"><table id="t-sme"></table></div>
+  <h2>How to read this</h2>
+  <ul class="notes">
+    <li><b>Startup tags are a judgment call.</b> No source flags startups. Startup means new-age, venture or PE backed, and platform led.</li>
+    <li><b>The tech list is built from Yahoo's sector plus a hand-picked add of new-age names</b> Yahoo labels differently, such as Zomato, PB Fintech, Groww, Lenskart, PhysicsWallah and Delhivery. Ola Electric and Ather are left out as vehicle makers.</li>
+    <li><b>Stock analysis uses reported data only:</b> Yahoo's business description and trailing-twelve-month figures. The commentary is generated from those numbers by fixed rules. It describes what the numbers show and is not a recommendation.</li>
+    <li><b>SME tech is classified from business descriptions</b> on Chittorgarh, then pruned by hand. Some SME rows have no split history, so their gains are not split-adjusted. A split would make the true gain higher.</li>
+  </ul>
+</section>
+
+<section id="mb" hidden>
+  <div class="tools">
+    <input type="search" id="q-mb" placeholder="Search company or symbol" aria-label="Search mainboard tech">
+    <div class="chips" id="chips-mb">
+      <button class="chip" data-v="All" aria-pressed="true">All</button>
+      <button class="chip" data-v="Startup" aria-pressed="false">Startup</button>
+      <button class="chip" data-v="Borderline" aria-pressed="false">Borderline</button>
+      <button class="chip" data-v="Not" aria-pressed="false">Not startup</button>
+    </div>
+    <span class="count" id="c-mb"></span>
+  </div>
+  <p class="hint">Click a company for what it does and a short analysis.</p>
+  <div class="scroll"><table id="tb-mb"></table></div>
+</section>
+
+<section id="sm" hidden>
+  <div class="tools">
+    <input type="search" id="q-sm" placeholder="Search company or symbol" aria-label="Search SME tech">
+    <span class="count" id="c-sm"></span>
+  </div>
+  <p class="hint">Click a company for what it does.</p>
+  <div class="scroll"><table id="tb-sm"></table></div>
+</section>
+</div>
+
+<div id="scrim" hidden></div>
+<aside id="panel" role="dialog" aria-modal="true" aria-labelledby="p-title" hidden>
+  <button class="close" type="button" id="p-close">Close</button>
+  <h3 id="p-title"></h3>
+  <div class="meta" id="p-meta"></div>
+  <div id="p-body"></div>
+</aside>
+
+<script>
+const MB = __MB__;
+const SME = __SME__;
+
+const fmt = (v, d=2) => v == null ? "–" : v.toLocaleString("en-IN", {maximumFractionDigits: d});
+const pct = v => v == null || v === "" ? "–" : (v > 0 ? "+" : "") + Math.round(v).toLocaleString("en-IN") + "%";
+const mult = v => v == null ? "–" : (v >= 10 ? Math.round(v) : v.toFixed(1)) + "x";
+const med = a => { if (!a.length) return null; const s = [...a].sort((x,y)=>x-y), m = s.length>>1; return s.length%2 ? s[m] : (s[m-1]+s[m])/2; };
+const mean = a => a.reduce((x,y)=>x+y,0)/a.length;
+const cls = v => v == null || v === "" ? "" : v >= 0 ? "up" : "down";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function summaryTable(el, rows, keyFn, keyLabel, order) {
+  const groups = {};
+  rows.forEach(r => (groups[keyFn(r)] ||= []).push(r));
+  const keys = order || Object.keys(groups).sort();
+  let h = `<thead><tr><th>${keyLabel}</th><th class="num">N</th><th class="num">Above IPO price</th><th class="num">Median listing gain</th><th class="num">Median since IPO</th><th class="num">Mean since IPO</th><th class="num">Median per year</th><th class="num">Worst</th><th class="num">Best</th></tr></thead><tbody>`;
+  keys.filter(k => groups[k]).forEach(k => {
+    const g = groups[k].filter(r => r.g != null), gs = g.map(r => r.g), ls = groups[k].map(r => r.lg).filter(x => x != null);
+    const ys = g.map(r => r.y).filter(x => x !== "" && x != null);
+    h += `<tr><td>${esc(k)}</td><td class="num">${g.length}</td><td class="num">${Math.round(gs.filter(x=>x>0).length/g.length*100)}%</td>
+    <td class="num ${cls(med(ls))}">${pct(med(ls))}</td><td class="num ${cls(med(gs))}">${pct(med(gs))}</td><td class="num ${cls(mean(gs))}">${pct(mean(gs))}</td>
+    <td class="num ${cls(med(ys))}">${ys.length ? pct(med(ys)) : "–"}</td>
+    <td class="num down">${pct(Math.min(...gs))}</td><td class="num up">${pct(Math.max(...gs))}</td></tr>`;
+  });
+  el.innerHTML = h + "</tbody>";
+}
+
+function overview() {
+  const all = MB.filter(r=>r.g!=null), st = MB.filter(r=>r.t==="Startup"), sme = SME.filter(r=>r.g!=null);
+  const share = a => Math.round(a.filter(r=>r.g>0).length/a.length*100) + "%";
+  document.getElementById("tiles").innerHTML = [
+    [MB.length, "Mainboard tech IPOs"], [share(all), "above IPO price"],
+    [st.length, "tagged startups"], [share(st), "of startups above IPO price"],
+    [SME.length, "SME tech IPOs"], [share(sme), "of SME above IPO price"]
+  ].map(([b,s]) => `<div class="tile"><b>${b}</b><span>${s}</span></div>`).join("");
+  summaryTable(document.getElementById("t-tag"), MB, r => ({Startup:"Startup",Borderline:"Borderline",Not:"Not startup"})[r.t], "Tag", ["Startup","Borderline","Not startup"]);
+  summaryTable(document.getElementById("t-year"), MB, r => r.d.slice(0,4), "Year");
+  summaryTable(document.getElementById("t-ind"), MB, r => r.ind, "Industry");
+  summaryTable(document.getElementById("t-sme"), SME, r => r.d.slice(0,4), "Year");
+  document.getElementById("tab-mb").textContent = `Mainboard tech (${MB.length})`;
+  document.getElementById("tab-sm").textContent = `SME tech (${SME.length})`;
+}
+
+function sinceCell(r) {
+  if (r.g == null) return `<td class="num gain">–</td>`;
+  const w = Math.min(Math.abs(r.g), 300) / 300 * 46;
+  const bar = r.g >= 0 ? `left:50%;width:${w}%;background:var(--gain-bar)` : `right:50%;width:${w}%;background:var(--loss-bar)`;
+  return `<td class="num gain"><i style="${bar}"></i><span class="${cls(r.g)}">${pct(r.g)}</span><small>${mult(r.x)} IPO price</small></td>`;
+}
+
+function makeTable(el, rows, cols, state, kind) {
+  const head = cols.map(c => `<th class="${c.num?"num":""}" data-k="${c.k}" aria-sort="${state.k===c.k?(state.dir>0?"ascending":"descending"):"none"}"><button type="button">${c.l}</button></th>`).join("");
+  const sorted = [...rows].sort((a,b) => {
+    let x = a[state.k], y = b[state.k];
+    if (x === "" ) x = null; if (y === "") y = null;
+    if (x == null) return 1; if (y == null) return -1;
+    return (typeof x === "string" ? x.localeCompare(y) : x - y) * state.dir;
+  });
+  el.innerHTML = `<thead><tr>${head}</tr></thead><tbody>${sorted.map((r,i) => `<tr class="row" data-i="${i}">${cols.map(c => c.cell(r)).join("")}</tr>`).join("")}</tbody>`;
+  el.querySelectorAll("th").forEach(th => th.onclick = () => {
+    const k = th.dataset.k;
+    state.dir = state.k === k ? -state.dir : (["n","ind","d","b","t"].includes(k) ? 1 : -1);
+    state.k = k; makeTable(el, rows, cols, state, kind);
+  });
+  el.querySelectorAll("tr.row").forEach(tr => tr.onclick = () => openPanel(sorted[+tr.dataset.i], kind, tr));
+}
+
+const nameCell = r => `<td class="name"><button type="button">${esc(r.n)}</button><small>${esc(r.s || "no symbol")}</small></td>`;
+const priceCols = [
+  {k:"b", l:"Price band", cell:r=>`<td class="num">${esc(r.b)}</td>`},
+  {k:"i", l:"IPO price ₹", num:1, cell:r=>`<td class="num">${fmt(r.i)}</td>`},
+  {k:"o", l:"Listing open ₹", num:1, cell:r=>`<td class="num">${fmt(r.o)}</td>`},
+  {k:"lg", l:"Listing gain", num:1, cell:r=>`<td class="num ${cls(r.lg)}">${pct(r.lg)}</td>`},
+  {k:"c", l:"Now ₹", num:1, cell:r=>`<td class="num">${fmt(r.c)}</td>`},
+  {k:"g", l:"Since IPO", num:1, cell:sinceCell},
+  {k:"y", l:"Per year", num:1, cell:r=>`<td class="num ${cls(r.y)}">${pct(r.y)}</td>`},
+];
+const mbCols = [
+  {k:"n", l:"Company", cell:nameCell},
+  {k:"ind", l:"Industry", cell:r=>`<td>${esc(r.ind)}</td>`},
+  {k:"d", l:"Listed", cell:r=>`<td class="num">${r.d}</td>`},
+  ...priceCols,
+  {k:"t", l:"Tag", cell:r=>`<td><span class="tag ${r.t}">${r.t==="Not"?"Not startup":r.t}</span></td>`},
+];
+const smCols = [
+  {k:"n", l:"Company", cell:nameCell},
+  {k:"d", l:"Listed", cell:r=>`<td class="num">${r.d}</td>`},
+  ...priceCols,
+];
+
+const mbState = {k:"d", dir:-1, tag:"All", q:""}, smState = {k:"d", dir:-1, q:""};
+function renderMB() {
+  const q = mbState.q.toLowerCase();
+  const rows = MB.filter(r => (mbState.tag==="All" || r.t===mbState.tag) && (r.n+" "+r.s).toLowerCase().includes(q));
+  document.getElementById("c-mb").textContent = rows.length + " shown";
+  makeTable(document.getElementById("tb-mb"), rows, mbCols, mbState, "mb");
+}
+function renderSM() {
+  const q = smState.q.toLowerCase();
+  const rows = SME.filter(r => (r.n+" "+(r.s||"")).toLowerCase().includes(q));
+  document.getElementById("c-sm").textContent = rows.length + " shown";
+  makeTable(document.getElementById("tb-sm"), rows, smCols, smState, "sm");
+}
+
+let lastFocus = null;
+function openPanel(r, kind, from) {
+  lastFocus = from.querySelector("button") || from;
+  document.getElementById("p-title").textContent = r.n;
+  document.getElementById("p-meta").textContent = [r.s, kind === "mb" ? r.ind : "SME board", "listed " + r.d].filter(Boolean).join(" · ");
+  const stat = (b, s, c="") => `<div><b class="${c}">${b}</b><span>${s}</span></div>`;
+  let h = `<div class="stats">${stat("₹" + fmt(r.i), "IPO price")}${stat("₹" + fmt(r.o), "Listing open")}${stat("₹" + fmt(r.c), "Now")}
+    ${stat(mult(r.x), "Now vs IPO price", cls(r.g))}${stat(pct(r.g), "Since IPO", cls(r.g))}${stat(r.y === "" ? "–" : pct(r.y), r.y === "" ? "Per year (under 1 yr)" : "Per year", cls(r.y))}</div>
+    <p class="hint" style="margin-top:8px">Listing-day gain: <span class="${cls(r.lg)}">${pct(r.lg)}</span> · price band ${esc(r.b)}${kind==="sm" && !r.adj ? " · not split-adjusted" : ""}</p>`;
+  h += `<h4>What it does</h4><p>${esc(r.about || "No description available.")}</p>`;
+  if (kind === "mb") {
+    if (r.facts.length) h += `<h4>Business snapshot</h4><dl class="facts">${r.facts.map(([k,v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl>`;
+    h += `<h4>What the numbers show</h4><ul>${r.read.map(t => `<li>${esc(t)}</li>`).join("")}</ul>`;
+    if (r.web) h += `<p class="src"><a href="${esc(r.web)}" target="_blank" rel="noopener">${esc(r.web.replace(/^https?:\/\//,""))}</a></p>`;
+    h += `<p class="src">Description and figures: ${r.src}. Analysis is generated from reported numbers and is not investment advice.</p>`;
+  } else {
+    h += `<p class="src">Description: Chittorgarh. Financials are not available for SME listings here.</p>`;
+  }
+  document.getElementById("p-body").innerHTML = h;
+  document.getElementById("scrim").hidden = false;
+  const p = document.getElementById("panel"); p.hidden = false; p.scrollTop = 0;
+  document.getElementById("p-close").focus();
+}
+function closePanel() {
+  document.getElementById("panel").hidden = true; document.getElementById("scrim").hidden = true;
+  if (lastFocus) lastFocus.focus();
+}
+document.getElementById("p-close").onclick = closePanel;
+document.getElementById("scrim").onclick = closePanel;
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !document.getElementById("panel").hidden) closePanel(); });
+
+document.getElementById("q-mb").oninput = e => { mbState.q = e.target.value; renderMB(); };
+document.getElementById("q-sm").oninput = e => { smState.q = e.target.value; renderSM(); };
+document.querySelectorAll("#chips-mb .chip").forEach(b => b.onclick = () => {
+  mbState.tag = b.dataset.v;
+  document.querySelectorAll("#chips-mb .chip").forEach(x => x.setAttribute("aria-pressed", x===b));
+  renderMB();
+});
+document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("#tabs button").forEach(x => x.setAttribute("aria-selected", x===b));
+  ["ov","mb","sm"].forEach(id => document.getElementById(id).hidden = id !== b.dataset.t);
+});
+document.getElementById("theme").onclick = () => {
+  const r = document.documentElement, dark = r.dataset.theme === "dark" || (!r.dataset.theme && matchMedia("(prefers-color-scheme:dark)").matches);
+  r.dataset.theme = dark ? "light" : "dark";
+};
+overview(); renderMB(); renderSM();
+</script>

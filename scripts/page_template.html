@@ -84,6 +84,8 @@ td.name small{display:block;color:var(--muted);font:400 11px var(--mono)}
 .facts dt{color:var(--muted)} .facts dd{margin:0;font-family:var(--mono);text-align:right}
 #panel ul{margin:0;padding-left:18px} #panel li{margin-bottom:6px;max-width:62ch}
 .src{font-size:11px;color:var(--muted);margin-top:18px}
+.srcs{list-style:none;padding:0 !important;display:flex;flex-wrap:wrap;gap:6px 14px}
+.srcs li{margin:0 !important}
 </style>
 
 <div class="wrap">
@@ -156,6 +158,7 @@ const SME = __SME__;
 
 const fmt = (v, d=2) => v == null ? "–" : v.toLocaleString("en-IN", {maximumFractionDigits: d});
 const pct = v => v == null || v === "" ? "–" : (v > 0 ? "+" : "") + Math.round(v).toLocaleString("en-IN") + "%";
+const crore = v => v == null ? "–" : v >= 100000 ? "₹" + (v/100000).toFixed(2) + " lakh cr" : "₹" + Math.round(v).toLocaleString("en-IN") + " cr";
 const mult = v => v == null ? "–" : (v >= 10 ? Math.round(v) : v.toFixed(1)) + "x";
 const med = a => { if (!a.length) return null; const s = [...a].sort((x,y)=>x-y), m = s.length>>1; return s.length%2 ? s[m] : (s[m-1]+s[m])/2; };
 const mean = a => a.reduce((x,y)=>x+y,0)/a.length;
@@ -232,7 +235,9 @@ const mbCols = [
   {k:"n", l:"Company", cell:nameCell},
   {k:"ind", l:"Industry", cell:r=>`<td>${esc(r.ind)}</td>`},
   {k:"d", l:"Listed", cell:r=>`<td class="num">${r.d}</td>`},
-  ...priceCols,
+  ...priceCols.slice(0, 5),
+  {k:"mc", l:"Market cap", num:1, cell:r=>`<td class="num">${crore(r.mc)}</td>`},
+  ...priceCols.slice(5),
   {k:"t", l:"Tag", cell:r=>`<td><span class="tag ${r.t}">${r.t==="Not"?"Not startup":r.t}</span></td>`},
 ];
 const smCols = [
@@ -262,14 +267,18 @@ function openPanel(r, kind, from) {
   document.getElementById("p-meta").textContent = [r.s, kind === "mb" ? r.ind : "SME board", "listed " + r.d].filter(Boolean).join(" · ");
   const stat = (b, s, c="") => `<div><b class="${c}">${b}</b><span>${s}</span></div>`;
   let h = `<div class="stats">${stat("₹" + fmt(r.i), "IPO price")}${stat("₹" + fmt(r.o), "Listing open")}${stat("₹" + fmt(r.c), "Now")}
-    ${stat(mult(r.x), "Now vs IPO price", cls(r.g))}${stat(pct(r.g), "Since IPO", cls(r.g))}${stat(r.y === "" ? "–" : pct(r.y), r.y === "" ? "Per year (under 1 yr)" : "Per year", cls(r.y))}</div>
+    ${stat(mult(r.x), "Now vs IPO price", cls(r.g))}${stat(pct(r.g), "Since IPO", cls(r.g))}${stat(r.y === "" ? "–" : pct(r.y), r.y === "" ? "Per year (under 1 yr)" : "Per year", cls(r.y))}${kind === "mb" ? stat(crore(r.mc), "Market cap now") : ""}</div>
     <p class="hint" style="margin-top:8px">Listing-day gain: <span class="${cls(r.lg)}">${pct(r.lg)}</span> · price band ${esc(r.b)}${kind==="sm" && !r.adj ? " · not split-adjusted" : ""}<br>${r.ps === "kite" ? "Price: Zerodha Kite last traded price, 15 Oct 2026" : "Price: Chittorgarh, may lag (not found on Kite NSE)"}</p>`;
   h += `<h4>What it does</h4><p>${esc(r.about || "No description available.")}</p>`;
   if (kind === "mb") {
     if (r.facts.length) h += `<h4>Business snapshot</h4><dl class="facts">${r.facts.map(([k,v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl>`;
+    h += `<h4>Why the price moved</h4><p>${esc(r.why)}</p><h4>Outlook</h4><p>${esc(r.outlook)}</p>`;
     h += `<h4>What the numbers show</h4><ul>${r.read.map(t => `<li>${esc(t)}</li>`).join("")}</ul>`;
+    const safe = (r.links || []).filter(u => /^https:\/\//.test(u));
+    if (safe.length) h += `<h4>Sources</h4><ul class="srcs">${safe.map(u => `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https:\/\/(www\.)?/, "").split("/")[0])}</a></li>`).join("")}</ul>`;
+    h += `<p class="src">Research confidence: <b>${esc(r.conf)}</b>${r.conf === "low" ? " (thin or conflicting sources)" : ""}. ${r.mc ? "Market cap = shares outstanding (" + esc(r.mcb) + ") times the Kite price." : "Market cap not available."}</p>`;
     if (r.web) h += `<p class="src"><a href="${esc(r.web)}" target="_blank" rel="noopener">${esc(r.web.replace(/^https?:\/\//,""))}</a></p>`;
-    h += `<p class="src">Description and figures: ${r.src}. Analysis is generated from reported numbers and is not investment advice.</p>`;
+    h += `<p class="src">Description and figures: ${r.src}. Summaries come from the cited news and broker reports and are not investment advice.</p>`;
   } else {
     h += `<p class="src">Description: Chittorgarh. Financials are not available for SME listings here.</p>`;
   }

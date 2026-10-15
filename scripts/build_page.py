@@ -1,4 +1,4 @@
-import csv, json, re, sys
+import csv, json, re, sys, glob
 OUT = sys.argv[1]
 P = json.load(open("data/profiles.json"))
 desc = json.load(open("data/descriptions.json"))
@@ -36,9 +36,9 @@ def perf_read(r):
         b.append("Trades below the IPO price.")
     return b
 
-def fin_read(p, now):
+def fin_read(p, now, mc):
     b = []
-    g, nm, om, rev, mc = p.get("rev_growth"), p.get("net_margin"), p.get("op_margin"), p.get("revenue"), p.get("mcap")
+    g, nm, om, rev = p.get("rev_growth"), p.get("net_margin"), p.get("op_margin"), p.get("revenue")
     if g is not None:
         b.append("Latest-quarter revenue " + (f"grew {g*100:.0f}% year on year" + (", fast growth." if g > .3 else ".") if g >= 0 else f"fell {abs(g)*100:.0f}% year on year."))
     if nm is not None:
@@ -55,22 +55,26 @@ def fin_read(p, now):
         b.append(f"Analyst mean target ₹{t:,.0f} is {(t/pr-1)*100:+.0f}% from the current price" + (f" (consensus: {p['rec'].replace('_',' ')})." if p.get("rec") else "."))
     return b
 
+SH = json.load(open("data/shares_outstanding.json"))
+NOTES = {}
+for f in sorted(glob.glob("data/research/notes_*.json")): NOTES.update(json.load(open(f)))
 rows = list(csv.DictReader(open("data/tech_mainboard_v2.csv")))
 mb = []
 for r in rows:
     for k in ("issue","listing_open","listing_gain","now","multiple","total_gain","years"): r[k] = float(r[k])
     r["cagr"] = float(r["cagr"]) if r["cagr"] != "" else ""
     p = P[r["symbol"]]
+    sh = SH.get(r["symbol"]); mc = sh["shares"] * r["now"] if sh else None
+    note = NOTES[r["symbol"]]
     about = trim(p.get("summary")) or trim(desc.get(str(raw[r["symbol"]]["id"])))
     facts = []
     if p.get("revenue") is not None: facts.append(["Revenue (TTM)", inr(p["revenue"])])
     if p.get("ebitda") is not None: facts.append(["EBITDA (TTM)", inr(p["ebitda"])])
-    if p.get("mcap"): facts.append(["Market cap", inr(p["mcap"])])
     if p.get("employees"): facts.append(["Employees", f"{p['employees']:,}"])
     mb.append(dict(n=re.sub(r" (Ltd\.|Limited)$", "", r["company"]), s=r["symbol"], ind=r["industry"], d=r["listed"], b=r["band"],
         i=r["issue"], o=r["listing_open"], lg=r["listing_gain"], c=r["now"], x=r["multiple"], g=r["total_gain"], y=r["cagr"] if r["cagr"] == "" else r["cagr"],
-        yrs=r["years"], t=r["tag"], about=about, facts=facts, read=perf_read(r) + fin_read(p, r["now"]), web=p.get("website"),
-        ps=r["price_src"], src="Yahoo Finance" if p.get("summary") else "Chittorgarh"))
+        yrs=r["years"], t=r["tag"], about=about, facts=facts, read=perf_read(r) + fin_read(p, r["now"], mc), web=p.get("website"),
+        ps=r["price_src"], mc=round(mc / 1e7) if mc else None, mcb=sh["basis"] if sh else None, why=note["why"], outlook=note["outlook"], links=note["src"], conf=note.get("conf", "medium"), src="Yahoo Finance" if p.get("summary") else "Chittorgarh"))
 
 sme = []
 for r in csv.DictReader(open("data/sme_tech_last5y.csv")):

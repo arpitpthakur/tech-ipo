@@ -5,6 +5,7 @@ Sources (all fetched at runtime, nothing typed from memory):
   - Chittorgarh IPO detail page: price band
   - Yahoo Finance assetProfile: sector / industry
 """
+import html
 import json
 import re
 import sys
@@ -62,11 +63,12 @@ def clean(r, board):
 
 def band(row):
     r = get(f"https://www.chittorgarh.com/ipo/{row['slug']}/{row['id']}/")
-    m = re.search(r"Price Band\s*(?:</[^>]+>\s*<[^>]+>\s*)*₹?\s*([\d.,]+)\s*to\s*₹?\s*([\d.,]+)", r.text) if r else None
-    if not m and r:
-        t = re.sub(r"<[^>]+>", " ", r.text)
-        m = re.search(r"Price Band\s*₹\s*([\d.,]+)\s*to\s*₹\s*([\d.,]+)", re.sub(r"\s+", " ", t))
-    row["band_low"], row["band_high"] = (m.group(1).replace(",", ""), m.group(2).replace(",", "")) if m else (None, None)
+    row["band_low"] = row["band_high"] = None
+    if r:
+        t = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", r.text)))
+        m = re.search(r"Price Band\s*₹\s*([\d.,]+)\s*to\s*₹\s*([\d.,]+)", t)
+        if m:
+            row["band_low"], row["band_high"] = (g.replace(",", "") for g in m.groups())
     return row
 
 

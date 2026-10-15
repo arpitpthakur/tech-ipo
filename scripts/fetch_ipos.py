@@ -36,13 +36,14 @@ def get(url, retries=4, **kw):
 
 
 def listings(board, year):
-    rows, page = [], 1
+    rows, page, seen = [], 1, set()
     while True:
         r = get(f"{API}/25/{page}/10/{year}/2026-27/0/{board}/all?search=")
         d = r.json() if r else {}
-        chunk = d.get("reportTableData") or []
+        chunk = [c for c in (d.get("reportTableData") or []) if c.get("~id") not in seen]
         if not chunk:
             return rows
+        seen.update(c.get("~id") for c in chunk)
         rows += chunk
         page += 1
 
